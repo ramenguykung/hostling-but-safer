@@ -9,16 +9,17 @@ include("condb.php");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
  
     <!-- <title>Sidebar Example</title> -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" > 
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link href="../csss/as.css" rel="stylesheet" > 
+    
+    <link href="./หน้าบ้าน/css/as.css?v=1.0" rel="stylesheet" > 
+    <link href="./หน้าบ้าน/Navbar.css?v=1.0" rel="stylesheet" > 
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
    
-    <link rel="stylesheet" href="login/css/style.css">
+    
 
    
 
@@ -27,6 +28,7 @@ include("condb.php");
 
 </head>
 <body>
+<?php include('ตัวเสริม.php');?>
 
 <!-- <div class="your-element">
    <p> asdasdasddasdsadasdasdasads</p>
@@ -85,9 +87,12 @@ include("condb.php");
             <?php    } ?>
           
          
-            <div class="dt">
-          <p>สู้ๆนะ</p>
-          </div>
+            
+          <p class="ssa">สู้ๆนะ</p>
+          <p class="hh" > 55 </p>
+          
+          <p class="hh" >555</p>
+         
 
 
 

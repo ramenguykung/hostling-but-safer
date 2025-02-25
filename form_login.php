@@ -32,7 +32,7 @@
 								</div>
 								<h3 class="text-center mb-4">Have an account?</h3>
 								<form action="#" class="login-form">
-									<div class="form-group">
+									
 										<input type="text" name="m_user" class="form-control rounded-left" placeholder="Username" required>
 									</div>
 									<div class="form-group d-flex">

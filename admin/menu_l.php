@@ -3,14 +3,8 @@
   <section class="sidebar">
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel">
-      <div class="pull-left image">
-        <img src="../m_img/<?php echo $m_img; ?>" class="img-circle" alt="User Image">
-      </div>
-      <div class="pull-left info">
-        <p>คุณ <?php echo $m_name; ?></p>
-        <!-- Status -->
-        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-      </div>
+     
+    
     </div>
     <ul class="sidebar-menu" data-widget="tree">
         <li>
@@ -27,7 +21,7 @@
       </a>
     </li>
     
-      <li>
+      <!-- <li>
         <a href="member.php"><i class="glyphicon glyphicon-record"></i>
           <span> จัดการสมาชิก</span>
         </a>
@@ -46,7 +40,7 @@
         <a href="member_profile.php"><i class="glyphicon glyphicon-record"></i>
           <span> แก้ไขข้อมูลส่วนตัว </span>
         </a>
-      </li>
+      </li> -->
            <li class="active">
         <a href=""><i class="fa fa-cogs"></i> <span>จัดการข้อมูลรายงาน</span>
         <span class="pull-right-container">

@@ -1,72 +1,49 @@
 <?php 
-// print_r($_POST);
 session_start();
-        if(isset($_POST['m_user'])){
-        //connection
-                  include("condb.php");
-        //รับค่า user & mem_password
-                  $m_user = mysqli_real_escape_string($con,$_POST['m_user']);
-                  $m_pass = mysqli_real_escape_string($con,$_POST['m_pass']);
+if(isset($_POST['Email'])){
+    // connection
+    include("condb.php");
 
-                
-                    //query 
-                              $sql="SELECT * FROM tbl_member 
-                              WHERE m_user='".$m_user."' 
-                              AND m_pass='".$m_pass."'";
-                              $result = mysqli_query($con, $sql);
+    // รับค่า user & mem_password
+    $Email = mysqli_real_escape_string($con, $_POST['Email']);
+    $Password = mysqli_real_escape_string($con, $_POST['Password']);
 
-                               //echo $sql;
+    // query สำหรับ user
+    $sqlUser = "SELECT * FROM user WHERE Email ='".$Email."' AND user_password='".$Password."'";
+    $resultUser = mysqli_query($con, $sqlUser);
 
-                              // echo mysqli_num_rows($result);
+    // query สำหรับ admin
+    $sqlAdmin = "SELECT * FROM Web_admin WHERE Email ='".$Email."' AND admin_Password='".$Password."'";
+    $resultAdmin = mysqli_query($con, $sqlAdmin);
 
-                              //exit;
-                    
-                              if(mysqli_num_rows($result)==1){
+    if(mysqli_num_rows($resultUser) == 1){
+        $rowUser = mysqli_fetch_array($resultUser);
+        $_SESSION["Id_User"] = $rowUser["Id_User"];
+        $_SESSION["m_level"] = $rowUser["m_level"];
+        $_SESSION["user_name"] = $rowUser["user_name"];
+        $_SESSION["user_img"] = $rowUser["user_img"];
 
-                                  $row = mysqli_fetch_array($result);
-
-                                  $_SESSION["member_id"] = $row["member_id"];
-                                  $_SESSION["m_level"] = $row["m_level"];
-                                  $_SESSION["m_name"] = $row["m_name"];   
-                                  $_SESSION["m_img"] = $row["m_img"];     
-                                      
-
-                                      if($row['m_level']=="admin"){                                     
-                                          Header("Location: admin/");
-                                          
-                                      }elseif($row['m_level']=="Authorities"){
-                                          Header("Location: authorities/");
-                                      }elseif($row['m_level']=="Commission"){
-                                          Header("Location: commission/");
-                                      }elseif($row['m_level']=="Executive"){
-                                          Header("Location: executive/");
-                                      }elseif($row['m_level']=="DeputyExecutive"){
-                                          Header("Location: DeputyExecutive/");
-                                      }
-                                
-                                 
-                                 
-
-
-                              }else{
-                                    echo "<script>";
-                                    echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
-                                    echo "window.history.back()";
-                                    echo "</script>";
-                              }
-
-
-                    //close else chk trim
-
-                    //exit();
-
-
-
-
-        }else{
-
-
-             Header("Location: index.php"); //user & mem_password incorrect back to login again
-
+        if($rowUser['m_level'] == "User"){
+            Header("Location: User/");
         }
+
+    } else if(mysqli_num_rows($resultAdmin) == 1){
+        $rowAdmin = mysqli_fetch_array($resultAdmin);
+        $_SESSION["Id_Admin"] = $rowAdmin["Id_Admin"];
+        $_SESSION["m_level"] = $rowAdmin["m_level"];
+
+        if($rowAdmin['m_level'] == "admin"){
+            Header("Location: admin/");
+        }
+
+    } else {
+        echo "<script>";
+        echo "alert(\" user หรือ password ไม่ถูกต้อง\");"; 
+        echo "window.history.back()";
+        echo "</script>";
+    }
+
+} else {
+    Header("Location: index.php"); // user & mem_password incorrect back to login again
+}
 ?>

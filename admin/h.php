@@ -5,17 +5,15 @@
 <?php 
     //print_r($_SESSION);
     include('../condb.php');
-    $member_id = $_SESSION['member_id'];
-    $m_name = $_SESSION['m_name'];
+    $Id_Admin = $_SESSION['Id_Admin'];
     $m_level = $_SESSION['m_level'];
     if($m_level!='admin'){
     Header("Location: ../logout.php");
     }
-    $sql = "SELECT m_name,m_img FROM tbl_member WHERE member_id=$member_id";
+    $sql = "SELECT *  FROM web_admin WHERE Id_Admin =$Id_Admin ";
     $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
     $row = mysqli_fetch_array($result);
-    $m_img = $row['m_img'];
-    $m_name = $row['m_name'];
+   
     ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,4 +39,7 @@
       <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+
+
+        <link href="../หน้าบ้าน/Navbar.css?v=1.0" rel="stylesheet" > 
     </head>
