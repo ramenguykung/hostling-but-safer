@@ -28,7 +28,9 @@
       <h3 style="color:black"> Home</h3>
       </a>
       
-      <h3> Contact</h3>
+      <a class="btn btn-Light" href="index.php?act=Contact" role="button" style="text-decoration: none;" >
+      <h3 style="color:black"> Contact</h3>
+      </a>
 
      
 
@@ -49,7 +51,12 @@
 
       </div>
 
-     
+      <ul  class="navbar-nav mr-auto">
+            <a class="btn btn-Light" href="index.php?act=Rentnow" role="button" >
+                        <button class="s">Rent Now</button>
+                        </a>
+                 
+                </ul>
           
      
             <a   href="../logout.php" onclick="return confirm('คุณต้องการออกจากระบบหรือไม่ ?')"   style="text-decoration: none;"> 

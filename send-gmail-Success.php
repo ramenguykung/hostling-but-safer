@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		
-        <link href="./หน้าบ้าน/forgotpassword.css" rel="stylesheet">
+        <link href="./หน้าบ้าน/send-gmail-Success.css" rel="stylesheet">
 	</head>
 
     <body>
@@ -17,55 +17,44 @@
 		
 
 
-    <div class="frame4">
-    <div class="frame3">
+   
+    <div class="Frame4">
+    <div class="Frame3">
         <div class="login">
-            <div class="textmo">
-                <h2 class="text">Aw Snap,</h2>
-            </div>
+            <div class="textmo"></div>
+                    <br> <br> 
+            <h2 class="text">It’s on your inbox!</h2>
 
-            <h2 class="text">forgot password?</h2>
-
-            <h2 class="textcontent">Don’t worry. We’ve got you covered!</h2>
+            <h2 class="textcontent">
+                If the credential matched,
+            </h2>
+            <h2 class="textcontent">
+                Instructions will send to your email.
+            </h2>
             <br>
-            <br>
-
-            <form name="register" action="send-password-reset.php" method="POST" enctype="multipart/form-data" class="form-horizontal" id="signupForm" onsubmit="handleSubmit(event)">
-            
-
-                <div class="ipg1">
-                    <input
-                    name="email"
-                        id="Email"
-                        class="input"
-                        type="email"
-                        placeholder="Email"
-                        required
-                    />
-                    
-                    <button type="submit" class="button">
-                        <h6 class="fontLogin">Get Email To Reset Password</h6>
-                    </button>
+            <br> <br> 
+            <div class="ipg1">
+                <input
+                    class="input"
+                    type="Email"
+                    placeholder="Email"
+                />
+                
+                <div class="button">
+                    <h6 class="fontSuccess">Success!</h6>
                 </div>
-            </form>
 
-            <div class="o">
-                <div class="nt">
-                    <h4 class="textAm"> Already a member? </h4>
-                    <a href="formlogin.php">
-                        <h4 class="textLogin"> Login </h4>
-                    </a>
-                </div>
+                <h4> </h4>
             </div>
-
             <br>
         </div>
 
         <div class="logologin">
-            <img src="icon/ตัดกรอบ.png" width="550" height="500" alt="logo">
+        <img src="icon/ตัดกรอบ.png" width="550" height="500" alt="logo">
         </div>
     </div>
 </div>
+
 
 
 

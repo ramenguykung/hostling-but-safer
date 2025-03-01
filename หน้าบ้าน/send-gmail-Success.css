@@ -9,7 +9,7 @@
     position: relative;
     left: -300px;
 
-    top: -70px;
+    top: -50px;
 }
 
 .containerLogin {
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.containers {
+.container {
     position: relative;
     top: 15px;
 
@@ -38,33 +38,12 @@
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #000;
     font-family: Supreme;
-    font-size: 40px;
+    font-size: 55px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 70.4px */
     letter-spacing: -1.28px;
     text-transform: capitalize;
-}
-
-.buttonIconLeft{
-    position: relative;
-    left: -0px;
-
-    top: 10px;
-
-    display: flex;
-width: 50px;
-height: var(--large-80px, 50px);
-padding: 16px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-
-
-border-radius: var(--large-40px, 40px);
-background: var(--button-secondary, #B68D4F);
-
-
 }
 
 .home {
@@ -82,16 +61,8 @@ background: var(--button-secondary, #B68D4F);
 }
 
 .o {
-    position: absolute;
-    right: 340px;
-
-    color: var(--Error, #f93827);
-    font-family: Supreme;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 21px */
-    letter-spacing: 0.28px;
+    position: relative;
+    right: -140px;
 }
 
 .space {
@@ -147,38 +118,30 @@ background: var(--button-secondary, #B68D4F);
 
 .button {
     display: flex;
-    width: 500px;
-    height: 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--small-4px, 4px);
-    flex-shrink: 0;
-    align-items: center;
+    height: 80px;
+    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
     justify-content: center;
-    padding: var(--medium-24px, 2px) var(--small-8px, 4px);
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
 
-    border-radius: var(--medium-20px, 20px);
-    background: var(--button-primary, #B68D4F);
+    border-radius: var(--medium-12px, 12px);
+    background: var(--surface-success, #85a947);
+    box-shadow: 0px 4px var(--large-40px, 40px) 0px
+        var(--surface-success, #85a947);
 }
 
-.fontLogin {
-    color: var(--text-primary, #0f0e0a);
-    text-align: center;
+.fontSuccess {
+    color: var(--text-invert, #fbfbf9);
     font-feature-settings: "liga" off;
 
     /* Heading 3/Emphasized */
     font-family: Supreme;
-    font-size: var(--large-32px, 20px);
+    font-size: var(--large-32px, 32px);
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 35.2px */
     text-transform: capitalize;
-}
-
-.MovetoggleButton {
-    position: relative;
-    top: -50px;
-    right: -465px;
 }
 
 .Move {
@@ -217,13 +180,6 @@ background: var(--button-secondary, #B68D4F);
     line-height: 24px; /* 150% */
 }
 
-.nt {
-    display: flex;
-    padding: var(--small-6px, 6px);
-    align-items: center;
-    gap: var(--medium-20px, 20px);
-}
-
 .Frame4 {
     display: flex;
     padding: var(--large-80px, 80px) var(--large-40px, 40px)
@@ -246,7 +202,7 @@ background: var(--button-secondary, #B68D4F);
 }
 
 .logologin {
-    right: 40px;
+    right: 50px;
     position: absolute;
     top: 30px;
     flex: 1 0 0;
@@ -254,45 +210,61 @@ background: var(--button-secondary, #B68D4F);
 
     border-radius: var(--medium-16px, 16px);
 }
-
-.error {
-    background-color: #f56565; /* bg-red-500 */
-    width: fit-content; /* w-fit */
-    font-size: 0.875rem; /* text-sm */
-    color: white; /* text-white */
-    padding-top: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-bottom: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-left: 0.75rem; /* px-3 (left and right padding) */
-    padding-right: 0.75rem; /* px-3 (left and right padding) */
-    border-radius: 0.375rem; /* rounded-md */
-    margin-top: 0.5rem; /* mt-2 */
-
+.textmo {
+    right: 100px;
     position: relative;
-    top: -10px;
-    right: -170px;
+}
 
+.textcontent {
+    color: #000;
+    font-feature-settings: "liga" off;
+
+    /* Heading 3/Regular */
+    font-family: Supreme;
+    font-size: var(--large-32px, 25px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 35.2px */
+
+    right: -40px;
+    position: relative;
+}
+
+.textLogin {
+    color: var(--surface-contrast, #858582);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.textAm {
+    color: #000;
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.nt {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: var(--small-6px, 6px);
     align-items: center;
+    gap: var(--medium-20px, 20px);
 }
-.buttoneye{
-
-
-    display: flex;
-width: 15px;
-height: var(--large-80px, 15px);
-padding: 12px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-
-
-border-radius: var(--large-40px, 40px);
-background: var(--button-secondary, #ffffff);
-
-
-}
-
-
-

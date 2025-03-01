@@ -67,10 +67,13 @@ include("../condb.php");
 
               include("EditProfile.php");
 
-            }else{
+            }else if($act=='Rentnow'){
 
-            
+              include("Rent-page.php");
 
+            }else if($act=='Contact'){
+
+              include("Contact.php");
             }
 
 

@@ -136,7 +136,7 @@ include("condb.php");
 
                     <input name="Email" id="Email"  class="input" type="email" id="emailInput" placeholder="Email" required>
                     <input name="Password" id="Password"  class="input" type="password" placeholder="Password" required>
-                    <input name="ConfirmPassword" id="Passwords"  class="input" type="password" placeholder="Confirmpassword" required>
+                    <input name="ConfirmPassword" id="Passwords"  class="input" type="password" placeholder="Confirm password" required>
                     <div class="containers" >
                     <h1 class="fon">Profile picture</h1>
                     </div>

@@ -47,8 +47,23 @@ include('condb.php');
 		";
 		$result1 = mysqli_query($con, $check) or die(mysqli_error());
 		$num=mysqli_num_rows($result1);
-	
-		if($num > 0)
+
+
+
+		$check_phone = "
+SELECT Phone
+FROM user
+WHERE Phone = '$Phone'
+";
+$result_phone = mysqli_query($con, $check_phone) or die(mysqli_error());
+$num_phone = mysqli_num_rows($result_phone);
+
+if($num_phone > 0) {
+    echo '<script>';
+    echo "alert('ขออภัย หมายเลขโทรศัพท์นี้มีผู้ใช้งานแล้ว กรุณากรอกหมายเลขโทรศัพท์ใหม่อีกครั้ง');";
+    echo "window.history.back()";
+    echo '</script>';
+} else if($num > 0)
 		{
 
 			echo '<script>';
