@@ -1,3 +1,32 @@
+:root {
+    /* Base Color Variables */
+        /* neutral */
+        --color-neutral-0: hsla(60, 20%, 98%, 1);
+        --color-neutral-100: hsla(60, 5%, 93%, 1);
+        --color-neutral-200: hsla(60, 2%, 75%, 1)l;
+        --color-neutral-300: hsla(60, 2%, 63%, 1);
+        --color-neutral-400: hsla(60, 1%, 52%, 1);
+        --color-neutral-600: hsla(60, 3%, 28%, 1);
+        --color-neutral-1000: hsla(48, 20%, 5%, 1);
+
+        /* gold */
+        --color-gold-100: hsla(45, 20%, 53%, 1);
+        --color-gold-300: hsla(45, 100%, 31%, 1);
+
+        /* blue */
+        --color-blue-100: hsla(139, 20%, 72%, 1);
+        --color-blue-200: hsla(168, 20%, 61%, 1);
+
+        /* red */
+        --color-red-300: hsla(5, 95%, 60%, 1);
+        --color-red-800: hsla(5, 90%, 50%, 1);
+
+        /* green */
+        --color-green-400: hsla(82, 41%, 47%, 1);
+        --color-green-600: hsla(104, 52%, 32%, 1);
+
+    /* Base Spacing Variables */
+}
 .container {
     position: relative;
     top: 15px;
