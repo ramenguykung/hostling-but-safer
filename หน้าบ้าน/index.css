@@ -26,6 +26,25 @@
         --color-green-600: hsla(104, 52%, 32%, 1);
 
     /* Base Spacing Variables */
+        /* small */
+        --small-0px: 0px;
+        --small-2px: 2px;
+        --small-4px: 4px;
+        --small-6px: 6px;
+        --small-8px: 8px;
+
+        /* medium */
+        --medium-12px: 12px;
+        --medium-16px: 16px;
+        --medium-20px: 20px;
+        --medium-24px: 24px;
+        
+        /* large */
+        --large-32px: 32px;
+        --large-40px: 40px;
+        --large-48px: 48px;
+        --large-64px: 64px;
+        --large-80px: 80px;
 }
 .container {
     position: relative;
