@@ -45,6 +45,57 @@
         --large-48px: 48px;
         --large-64px: 64px;
         --large-80px: 80px;
+    
+    /* Tokens */
+        /* surface */
+        --surface-primary: var(--color-neutral-0);
+        --surface-minimal: var(--color-neutral-100);
+        --surface-mild-contrast: var(--color-neutral-200);
+        --surface-contrast: var(--color-neutral-400);
+        --surface-heavy-contrast: var(--color-neutral-1000);
+        --surface-brand-primary: var(--color-gold-100);
+        --surface-brand-primary-contrast: var(--color-gold-300);
+        --surface-brand-secondary: var(--color-blue-100);
+        --surface-brand-secondary-contrast: var(--color-blue-200);
+        --surface-error: var(--color-red-300);
+        --surface-error-contrast: var(--color-red-800);
+        --surface-success: var(--color-green-400);
+        --surface-success-contrast: var(--color-green-600);
+        
+        /* text */
+        --text-primary: var(--color-neutral-1000);
+        --text-secondary: var(--color-neutral-600);
+        --text-contrast: var(--color-neutral-300);
+        --text-invert: var(--color-neutral-0);
+        --text-success: var(--color-green-400);
+        --text-success-contrast: var(--color-green-600);
+        --text-error: var(--color-red-300);
+        --text-error-contrast: var(--color-red-800);
+
+        /* border */
+        --border-primary: var(--color-neutral-1000);
+        --border-contrast: var(--color-neutral-400);
+        --border-invert: var(--color-neutral-0);
+        --border-brand-primary: var(--color-gold-100);
+        --border-success: var(--color-green-400);
+        --border-success-contrast: var(--color-green-600);
+        --border-error: var(--color-red-300);
+        --border-error-contrast: var(--color-red-800);
+
+        /* button */
+        --button-primary: var(--color-neutral-0);
+        --button-minimal: var(--color-neutral-100);
+        --button-mild-contrast: var(--color-neutral-200);
+        --button-contrast: var(--color-neutral-400);
+        --button-heavy-contrast: var(--color-neutral-1000);
+        --button-brand-primary: var(--color-gold-100);
+        --button-brand-primary-contrast: var(--color-gold-300);
+        --button-brand-secondary: var(--color-blue-100);
+        --button-brand-secondary-contrast: var(--color-blue-200);
+        --button-error: var(--color-red-300);
+        --button-error-contrast: var(--color-red-800);
+        --button-success: var(--color-green-400);
+        --button-success-contrast: var(--color-green-600);
 }
 .container {
     position: relative;
