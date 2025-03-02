@@ -61,7 +61,7 @@
                         <div class="fp">Forgot password?</div>
                     </a>
                     <div class="space"></div>
-                    <a href="singup.php">
+                    <a href="signup.php">
                         <div class="su">Sign up</div>
                     </a>
                 </div>
