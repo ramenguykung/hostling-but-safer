@@ -143,18 +143,15 @@
 .buttonIconLeft {
     position: relative;
     display: flex;
-    width: var(--large-48px);
-    height: var(--large-48px);
-    padding: var(--medium-16px);
+    width: 50px;
+    height: var(--large-80px, 50px);
+    padding: 16px;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+
     border-radius: var(--large-40px, 40px);
     background: var(--button-secondary, #b68d4f);
-}
-
-.buttonIconLeft img {
-    width: var(--medium-20px);
-    height: var(--medium-20px);
 }
 
 .home {
@@ -247,8 +244,8 @@
     justify-content: center;
     padding: var(--medium-24px, 2px) var(--small-8px, 4px);
 
-    border-radius: var(--medium-12px);
-    background: var(--button-brand-primary);
+    border-radius: var(--medium-20px, 20px);
+    background: var(--button-brand-primary, #b68d4f);
 }
 
 .fontLogin {

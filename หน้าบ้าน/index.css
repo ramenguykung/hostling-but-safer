@@ -21,7 +21,7 @@
     --color-red-300: hsla(5, 95%, 60%, 1);
     --color-red-800: hsla(5, 90%, 50%, 1);
 
-    /* green */ 
+    /* green */
     --color-green-400: hsla(82, 41%, 47%, 1);
     --color-green-600: hsla(104, 52%, 32%, 1);
 
@@ -487,9 +487,7 @@
     position: absolute;
 
     top: 105px;
-    right: 80px;
-
- 
+    right: 230px;
 }
 
 .fip7 {
