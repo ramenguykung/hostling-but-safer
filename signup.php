@@ -14,7 +14,7 @@ include("condb.php");
  
     <!-- <title>Sidebar Example</title> -->
 
-    <link href="./หน้าบ้าน/singup.css?v=1.0" rel="stylesheet" > 
+    <link href="./หน้าบ้าน/signup.css?v=1.0" rel="stylesheet" > 
    
 
   
