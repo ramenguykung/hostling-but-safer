@@ -60,7 +60,10 @@ include("condb.php");
                        
                             <input name="Name" id="Name" class="input1" type="text" placeholder="Name" required>
                             <input name="Surname" id="Surname"  class="input1" type="text" placeholder="Surname" required>
-                        
+
+                           
+                          
+                           
                         </div>
                     </div>
                     
@@ -136,7 +139,7 @@ include("condb.php");
 
                     <input name="Email" id="Email"  class="input" type="email" id="emailInput" placeholder="Email" required>
                     <input name="Password" id="Password"  class="input" type="password" placeholder="Password" required>
-                    <input name="ConfirmPassword" id="Passwords"  class="input" type="password" placeholder="Confirm password" required>
+                    <input name="ConfirmPassword" id="Passwords"  class="input" type="password" placeholder="Confirm Password" required>
                     <div class="containers" >
                     <h1 class="fon">Profile picture</h1>
                     </div>

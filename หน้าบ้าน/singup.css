@@ -99,7 +99,7 @@ letter-spacing: 0.32px;
 .input1{
 
     display: flex;
-padding: var(--medium-12px, 12px) var(--medium-12px, 12px) var(--medium-12px, 5px) var(--medium-16px, 16px);
+padding: var(--medium-12px, 12px) var(--medium-12px, 90px) var(--medium-12px, 5px) var(--medium-16px, 16px);
 align-items: center;
 align-self: stretch;
 

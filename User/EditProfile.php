@@ -34,9 +34,9 @@ $row = mysqli_fetch_array($result);
             <h5 class="fip44">Day</h5>
             <h5 class="fip55">Month</h5>
             <h5 class="fip66">Year</h5>
-            <div class="nt">
+            <div class="ntED">
 
-            <input name="Day" id="Day"  class="input1" type="text" required list="day-options" value="<?php echo $row['user_Day'];?>">
+            <input name="Day" id="Day"  class="inputDayED " type="text" required list="day-options" value="<?php echo $row['user_Day'];?>">
                         <datalist id="day-options">
                                 
                        
@@ -72,10 +72,15 @@ $row = mysqli_fetch_array($result);
                                 <option value="29"></option>
                                 <option value="30"></option>
                                 <option value="31"></option>
+
+
+
                             </datalist>
 
-                            <select name="Month" id="Month"  class="input1"   required>
-                        <option value="<?php echo $row['user_Month'];?>"><?php echo $row['user_Month'];?></option>
+                            <input name="Month" id="Month"  class="inputMonthED " type="text" required list="Month-options" value="<?php echo $row['user_Month'];?>">
+                            
+                            <datalist id="Month-options" >
+                        
                         <option value="January">January</option>
                         <option value="February">February</option>
                         <option value="March">March</option>
@@ -88,12 +93,25 @@ $row = mysqli_fetch_array($result);
                         <option value="October">October</option>
                         <option value="November">November</option>
                         <option value="December">December</option>
-                    </select>
+
+                       
+
+                        </datalist>
 
                
                 
-                <input name="Year" id="Year"  class="input1" type="text" value="<?php echo $row['user_Year'];?>" required>
-                
+                <input name="Year" id="Year"  class="inputYearED " type="text" list="Year-options"  value="<?php echo $row['user_Year'];?>" required>
+                <datalist id="Year-options">
+
+                <?php
+        $currentYear = date("Y");
+        for ($year = 1984; $year <= $currentYear; $year++) {
+            echo "<option value=\"$year\">$year</option>";
+        }
+         ?>
+
+
+                </datalist>
 
                
                 
