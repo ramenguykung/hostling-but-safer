@@ -102,8 +102,8 @@
     height: 420px;
     flex-shrink: 0;
 
-    border-radius: var(--medium-20px, 20px);
-    background: var(--surface-minimal, #f9feef);
+    border-radius: var(--medium-20px);
+    background: var(--surface-minimal);
 
     position: relative;
     left: -300px;
@@ -129,13 +129,13 @@
 }
 
 .text {
-    color: #000;
+    color: var(--text-primary);
     text-align: center;
     font-feature-settings: "liga" off;
 
     /* Heading 1/Regular */
     -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: var(--bordet-primary);
     font-family: Supreme;
     font-size: 40px;
     font-style: normal;
