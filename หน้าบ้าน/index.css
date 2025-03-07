@@ -1,101 +1,101 @@
 :root {
     /* Base Color Variables */
-        /* neutral */
-        --color-neutral-0: hsla(60, 20%, 98%, 1);
-        --color-neutral-100: hsla(60, 5%, 93%, 1);
-        --color-neutral-200: hsla(60, 2%, 75%, 1)l;
-        --color-neutral-300: hsla(60, 2%, 63%, 1);
-        --color-neutral-400: hsla(60, 1%, 52%, 1);
-        --color-neutral-600: hsla(60, 3%, 28%, 1);
-        --color-neutral-1000: hsla(48, 20%, 5%, 1);
+    /* neutral */
+    --color-neutral-0: hsla(60, 20%, 98%, 1);
+    --color-neutral-100: hsla(60, 5%, 93%, 1);
+    --color-neutral-200: hsla(60, 2%, 75%, 1);
+    --color-neutral-300: hsla(60, 2%, 63%, 1);
+    --color-neutral-400: hsla(60, 1%, 52%, 1);
+    --color-neutral-600: hsla(60, 3%, 28%, 1);
+    --color-neutral-1000: hsla(48, 20%, 5%, 1);
 
-        /* gold */
-        --color-gold-100: hsla(45, 20%, 53%, 1);
-        --color-gold-300: hsla(45, 100%, 31%, 1);
+    /* gold */
+    --color-gold-100: hsla(45, 20%, 53%, 1);
+    --color-gold-300: hsla(45, 100%, 31%, 1);
 
-        /* blue */
-        --color-blue-100: hsla(139, 20%, 72%, 1);
-        --color-blue-200: hsla(168, 20%, 61%, 1);
+    /* blue */
+    --color-blue-100: hsla(139, 20%, 72%, 1);
+    --color-blue-200: hsla(168, 20%, 61%, 1);
 
-        /* red */
-        --color-red-300: hsla(5, 95%, 60%, 1);
-        --color-red-800: hsla(5, 90%, 50%, 1);
+    /* red */
+    --color-red-300: hsla(5, 95%, 60%, 1);
+    --color-red-800: hsla(5, 90%, 50%, 1);
 
-        /* green */
-        --color-green-400: hsla(82, 41%, 47%, 1);
-        --color-green-600: hsla(104, 52%, 32%, 1);
+    /* green */
+    --color-green-400: hsla(82, 41%, 47%, 1);
+    --color-green-600: hsla(104, 52%, 32%, 1);
 
     /* Base Spacing Variables */
-        /* small */
-        --small-0px: 0px;
-        --small-2px: 2px;
-        --small-4px: 4px;
-        --small-6px: 6px;
-        --small-8px: 8px;
+    /* small */
+    --small-0px: 0px;
+    --small-2px: 2px;
+    --small-4px: 4px;
+    --small-6px: 6px;
+    --small-8px: 8px;
 
-        /* medium */
-        --medium-12px: 12px;
-        --medium-16px: 16px;
-        --medium-20px: 20px;
-        --medium-24px: 24px;
-        
-        /* large */
-        --large-32px: 32px;
-        --large-40px: 40px;
-        --large-48px: 48px;
-        --large-64px: 64px;
-        --large-80px: 80px;
-    
+    /* medium */
+    --medium-12px: 12px;
+    --medium-16px: 16px;
+    --medium-20px: 20px;
+    --medium-24px: 24px;
+
+    /* large */
+    --large-32px: 32px;
+    --large-40px: 40px;
+    --large-48px: 48px;
+    --large-64px: 64px;
+    --large-80px: 80px;
+
     /* Tokens */
-        /* surface */
-        --surface-primary: var(--color-neutral-0);
-        --surface-minimal: var(--color-neutral-100);
-        --surface-mild-contrast: var(--color-neutral-200);
-        --surface-contrast: var(--color-neutral-400);
-        --surface-heavy-contrast: var(--color-neutral-1000);
-        --surface-brand-primary: var(--color-gold-100);
-        --surface-brand-primary-contrast: var(--color-gold-300);
-        --surface-brand-secondary: var(--color-blue-100);
-        --surface-brand-secondary-contrast: var(--color-blue-200);
-        --surface-error: var(--color-red-300);
-        --surface-error-contrast: var(--color-red-800);
-        --surface-success: var(--color-green-400);
-        --surface-success-contrast: var(--color-green-600);
-        
-        /* text */
-        --text-primary: var(--color-neutral-1000);
-        --text-secondary: var(--color-neutral-600);
-        --text-contrast: var(--color-neutral-300);
-        --text-invert: var(--color-neutral-0);
-        --text-success: var(--color-green-400);
-        --text-success-contrast: var(--color-green-600);
-        --text-error: var(--color-red-300);
-        --text-error-contrast: var(--color-red-800);
+    /* surface */
+    --surface-primary: var(--color-neutral-0);
+    --surface-minimal: var(--color-neutral-100);
+    --surface-mild-contrast: var(--color-neutral-200);
+    --surface-contrast: var(--color-neutral-400);
+    --surface-heavy-contrast: var(--color-neutral-1000);
+    --surface-brand-primary: var(--color-gold-100);
+    --surface-brand-primary-contrast: var(--color-gold-300);
+    --surface-brand-secondary: var(--color-blue-100);
+    --surface-brand-secondary-contrast: var(--color-blue-200);
+    --surface-error: var(--color-red-300);
+    --surface-error-contrast: var(--color-red-800);
+    --surface-success: var(--color-green-400);
+    --surface-success-contrast: var(--color-green-600);
 
-        /* border */
-        --border-primary: var(--color-neutral-1000);
-        --border-contrast: var(--color-neutral-400);
-        --border-invert: var(--color-neutral-0);
-        --border-brand-primary: var(--color-gold-100);
-        --border-success: var(--color-green-400);
-        --border-success-contrast: var(--color-green-600);
-        --border-error: var(--color-red-300);
-        --border-error-contrast: var(--color-red-800);
+    /* text */
+    --text-primary: var(--color-neutral-1000);
+    --text-secondary: var(--color-neutral-600);
+    --text-contrast: var(--color-neutral-300);
+    --text-invert: var(--color-neutral-0);
+    --text-success: var(--color-green-400);
+    --text-success-contrast: var(--color-green-600);
+    --text-error: var(--color-red-300);
+    --text-error-contrast: var(--color-red-800);
 
-        /* button */
-        --button-primary: var(--color-neutral-0);
-        --button-minimal: var(--color-neutral-100);
-        --button-mild-contrast: var(--color-neutral-200);
-        --button-contrast: var(--color-neutral-400);
-        --button-heavy-contrast: var(--color-neutral-1000);
-        --button-brand-primary: var(--color-gold-100);
-        --button-brand-primary-contrast: var(--color-gold-300);
-        --button-brand-secondary: var(--color-blue-100);
-        --button-brand-secondary-contrast: var(--color-blue-200);
-        --button-error: var(--color-red-300);
-        --button-error-contrast: var(--color-red-800);
-        --button-success: var(--color-green-400);
-        --button-success-contrast: var(--color-green-600);
+    /* border */
+    --border-primary: var(--color-neutral-1000);
+    --border-contrast: var(--color-neutral-400);
+    --border-invert: var(--color-neutral-0);
+    --border-brand-primary: var(--color-gold-100);
+    --border-success: var(--color-green-400);
+    --border-success-contrast: var(--color-green-600);
+    --border-error: var(--color-red-300);
+    --border-error-contrast: var(--color-red-800);
+
+    /* button */
+    --button-primary: var(--color-neutral-0);
+    --button-minimal: var(--color-neutral-100);
+    --button-mild-contrast: var(--color-neutral-200);
+    --button-contrast: var(--color-neutral-400);
+    --button-heavy-contrast: var(--color-neutral-1000);
+    --button-brand-primary: var(--color-gold-100);
+    --button-brand-primary-contrast: var(--color-gold-300);
+    --button-brand-secondary: var(--color-blue-100);
+    --button-brand-secondary-contrast: var(--color-blue-200);
+    --button-error: var(--color-red-300);
+    --button-error-contrast: var(--color-red-800);
+    --button-success: var(--color-green-400);
+    --button-success-contrast: var(--color-green-600);
 }
 .container {
     position: relative;
@@ -115,7 +115,7 @@
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #000;
     font-family: Supreme;
-    font-size: var(--large-48px, 48px);
+    font-size: var(--larg48);
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 52.8px */
@@ -137,8 +137,7 @@
     width: 540px;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--large-80px, 80px);
-
+    gap: var(--large-80px);
 
     position: relative;
     left: -300px;
@@ -161,12 +160,12 @@
 }
 
 .fon {
-    color: var(--text-primary, #0f0e0a);
+    color: var(--textpr);
     font-feature-settings: "liga" off;
 
     /* Body/Emphasized */
     font-family: Supreme;
-    font-size: var(--medium-16px, 16px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
@@ -180,9 +179,9 @@
 
 .nt {
     display: flex;
-    padding: var(--small-6px, 6px);
+    padding: var(--small-6px);
     align-items: center;
-    gap: var(--medium-20px, 20px);
+    gap: var(--me-20);
 }
 
 .ntPF {
@@ -230,8 +229,8 @@
 
 .inputMonthED {
     display: flex;
-    padding: var(--medium-12px, 5px) var(--medium-12px, 40px)
-        var(--medium-12px, 5px) var(--medium-16px, 10px);
+    padding: var(--small-6px) var(--large-40px)
+        var(--small-6px) var(--medium-12px);
     align-items: center;
     align-self: stretch;
 
@@ -263,20 +262,20 @@
 
 .inputYearED {
     display: flex;
-    padding: var(--medium-12px, 5px) var(--medium-12px, 70px)
-        var(--medium-12px, 5px) var(--medium-16px, 10px);
+    padding: var(--medium-12px, 5px) var(--medium-12px, 0px)
+        var(--medium-12px, 5px) var(--medium-16px, 63px);
     align-items: center;
     align-self: stretch;
 
-    border-radius: var(--medium-12px, 12px);
-    border: 1px solid var(--border-primary, #0f0e0a);
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
 
-    color: var(--text-contrast, #0f0e0a);
+    color: var(--text-contrast);
     font-feature-settings: "liga" off;
 
     /* Body/Regular */
     font-family: Supreme;
-    font-size: var(--medium-16px, 16px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -290,9 +289,6 @@
     padding-right: 20px;
     box-sizing: border-box;
 }
-
-
-
 
 .inputDay {
     display: flex;
@@ -320,8 +316,8 @@
 
 .inputMonth {
     display: flex;
-    padding: var(--medium-12px, 5px) var(--medium-12px, 135px)
-        var(--medium-12px, 5px) var(--medium-16px, 10px);
+    padding: var(--small-6px) 135px
+        var(--small-6px) var(--medium-12px);
     align-items: center;
     align-self: stretch;
 
@@ -348,20 +344,20 @@
 
 .inputYear {
     display: flex;
-    padding: var(--medium-12px, 5px) var(--medium-12px, 150px)
-        var(--medium-12px, 5px) var(--medium-16px, 10px);
+    padding: var(--medium-12px, 12px) var(--medium-12px, 50px)
+        var(--medium-12px, 0px) var(--medium-16px, 75px);
     align-items: center;
     align-self: stretch;
 
-    border-radius: var(--medium-12px, 12px);
-    border: 1px solid var(--border-primary, #0f0e0a);
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
 
-    color: var(--text-contrast, #0f0e0a);
+    color: var(--text-contrast);
     font-feature-settings: "liga" off;
 
     /* Body/Regular */
     font-family: Supreme;
-    font-size: var(--medium-16px, 16px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -380,11 +376,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--medium-20px, 20px);
+    gap: var(--medium-20px);
 }
 
 .fontMonth {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -402,7 +398,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--small-4px, 4px);
+    gap: var(--small-4px);
     align-self: stretch;
 
     position: relative;
@@ -410,7 +406,7 @@
 }
 
 .fip2 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -425,7 +421,7 @@
 }
 
 .fip3 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -440,7 +436,7 @@
 }
 
 .fip4 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -455,7 +451,7 @@
 }
 
 .fip5 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -464,7 +460,7 @@
     line-height: 150%; /* 21px */
     letter-spacing: 0.28px;
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -474,7 +470,7 @@
 }
 
 .fip6 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -483,7 +479,7 @@
     line-height: 150%; /* 21px */
     letter-spacing: 0.28px;
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -496,7 +492,7 @@
 }
 
 .fip7 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -505,7 +501,7 @@
     line-height: 150%; /* 21px */
     letter-spacing: 0.28px;
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -515,7 +511,7 @@
     right: 590px;
 }
 .fip78 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -524,7 +520,7 @@
     line-height: 150%; /* 21px */
     letter-spacing: 0.28px;
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -534,10 +530,8 @@
     right: 590px;
 }
 
-
-
 .fip8 {
-    color: var(--text-secondary, #4a4a46);
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -547,7 +541,7 @@
     letter-spacing: 0.28px;
 
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -559,7 +553,7 @@
 
 .fip9 {
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -579,7 +573,7 @@
 
 .fip10 {
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -596,9 +590,9 @@
     letter-spacing: 0.28px;
 }
 
-.fip11{
+.fip11 {
     display: flex;
-    padding-right: var(--small-8px, 8px);
+    padding-right: var(--small-8px);
     align-items: center;
     gap: 80px;
     align-self: stretch;
@@ -619,14 +613,12 @@
 }
 
 .po {
-
-
     display: flex;
     width: 540px;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--large-80px, 80px);
-     
+    gap: var(--large-80px);
+
     position: relative;
     top: 20px;
     right: 170px;
@@ -634,20 +626,20 @@
 
 .Select {
     display: flex;
-    padding: var(--medium-12px, 12px) var(--medium-12px, 12px)
-        var(--medium-12px, 12px) var(--medium-16px, 16px);
+    padding: var(--medium-12px) var(--medium-12px) var(--medium-12px)
+        var(--medium-16px);
     align-items: center;
     align-self: stretch;
 
-    border-radius: var(--medium-12px, 12px);
-    border: 1px solid var(--border-primary, #0f0e0a);
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
 
-    color: var(--text-primary, #0f0e0a);
+    color: var(--text-primary);
     font-feature-settings: "liga" off;
 
     /* Body/Regular */
     font-family: Supreme;
-    font-size: var(--medium-16px, 16px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -656,20 +648,20 @@
 
 .input {
     display: flex;
-    padding: var(--medium-12px, 12px) var(--medium-12px, 12px)
-        var(--medium-12px, 0px) var(--medium-16px, 16px);
+    padding: var(--medium-12px) var(--medium-12px) var(--small-0px)
+        var(--medium-16px);
     align-items: center;
     align-self: stretch;
 
-    border-radius: var(--medium-12px, 12px);
-    border: 1px solid var(--border-primary, #0f0e0a);
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
 
-    color: var(--text-contrast, #0f0e0a);
+    color: var(--text-primary);
     font-feature-settings: "liga" off;
 
     /* Body/Regular */
     font-family: Supreme;
-    font-size: var(--medium-16px, 16px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -680,23 +672,23 @@
     display: flex;
     width: 702px;
     height: 69px;
-    padding: var(--medium-24px, 24px) var(--small-8px, 8px);
+    padding: var(--medium-24px) var(--small-8px);
     justify-content: center;
     align-items: center;
-    gap: var(--small-0px, 0px);
+    gap: var(--small-0px);
     flex-shrink: 0;
 
-    border-radius: var(--medium-20px, 20px);
-    background: var(--button-primary, #9f936f);
+    border-radius: var(--medium-20px);
+    background: var(--button-primary);
 }
 
 .fontsignup {
-    color: var(--text-primary, #0f0e0a);
+    color: var(--text-primary);
     font-feature-settings: "liga" off;
 
     /* Body/Emphasized */
     font-family: Supreme;
-    font-size: var(--medium-16px, 25px);
+    font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
@@ -747,8 +739,8 @@
     align-items: center;
 }
 
-.fip44{
-    color: var(--text-secondary, #4a4a46);
+.fip44 {
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -762,8 +754,8 @@
     right: 585px;
 }
 
-.fip55{
-    color: var(--text-secondary, #4a4a46);
+.fip55 {
+    color: var(--text-secondary);
     font-feature-settings: "liga" off;
     font-family: Supreme;
     font-size: 14px;
@@ -777,111 +769,102 @@
     right: 325px;
 }
 
+.fip66 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
- 
+    position: absolute;
+    top: 105px;
+    right: 100px;
+}
 
+.fip77 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
-    .fip66{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 105px;
-        right: 100px;
-    }
+    position: absolute;
+    top: 175px;
+    right: 660px;
+}
 
+.fip88 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
-    .fip77{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 175px;
-        right: 660px;
-    }
+    position: absolute;
+    top: 305px;
+    width: 100px;
+    right: 590px;
+}
 
-    .fip88{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 305px;
-        width: 100px;
-        right: 590px;
-    }
+.fip99 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
-    .fip99{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 242px;
-        width: 100px;
-        right: 590px;
-    }
+    position: absolute;
+    top: 242px;
+    width: 100px;
+    right: 590px;
+}
 
-    .fip100{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 370px;
-        width: 300px;
-        right: 390px;
-    }
+.fip100 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
-    .fip111{
-        color: var(--text-secondary, #4a4a46);
-        font-feature-settings: "liga" off;
-        font-family: Supreme;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%; /* 21px */
-        letter-spacing: 0.28px;
-    
-        position: absolute;
-        top: 435px;
-        width: 100px;
-        right: 590px;
-    }
+    position: absolute;
+    top: 370px;
+    width: 300px;
+    right: 390px;
+}
 
-    .Moveinputimg {
-        position: relative;
-        top: 80px;
-        right: 200px;
+.fip111 {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
 
+    position: absolute;
+    top: 435px;
+    width: 100px;
+    right: 590px;
+}
 
-        
-    }
- 
+.Moveinputimg {
+    position: relative;
+    top: 80px;
+    right: 200px;
+}
