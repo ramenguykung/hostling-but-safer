@@ -21,12 +21,13 @@
       </a>
     </li>
     
-      <!-- <li>
-        <a href="member.php"><i class="glyphicon glyphicon-record"></i>
-          <span> จัดการสมาชิก</span>
+      <li>
+        <a href="room.php"><i class="glyphicon glyphicon-record"></i>
+          <span> Room</span>
         </a>
       </li>
-      <li>
+      
+      <!-- <li>
         <a href="type.php"><i class="glyphicon glyphicon-record"></i>
           <span> จัดการประเภท </span>
         </a>

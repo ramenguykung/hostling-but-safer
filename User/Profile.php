@@ -30,31 +30,35 @@ $row = mysqli_fetch_array($result);
             <h5 class="fip4">Day</h5>
             <h5 class="fip5">Month</h5>
             <h5 class="fip6">Year</h5>
-            <div class="nt">
-                <div class="input12">
+
+            <div class="ntPF">
+                <div class="inputDay">
                 <?php echo $row['user_Day'];?>
                 
                 </div>
-                <div class="input12">
+                <div class="inputMonth">
                 <?php echo $row['user_Month'];?>
                    
                 </div>
-                <div class="input12">
+                <div class="inputYear">
                 <?php echo $row['user_Year'];?>
                   
                 </div>
 
-                <div class="input12">
-            <?php echo $row['Age'];?>
               
-            </div>
+
+                
 
             </div>
             <br>
 
             <h5 class="fip7">Age</h5>
            
-          
+            <div class="input">
+            <?php echo $row['Age'];?>
+              
+            </div>
+            <br>
            
             <h5 class="fip78">Gender</h5>
             <div class="input">

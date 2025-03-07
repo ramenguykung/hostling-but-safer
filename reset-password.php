@@ -140,7 +140,7 @@ $currentPassword = $user["user_password"];
 
 
                     if (P === currentPassword) {
-        alert('The new password cannot be the same as the current password.');
+        alert("The new password can't be the same as the current password.");
         return;
     }
 

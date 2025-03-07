@@ -10,17 +10,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
            
       <div class="nt"> 
-           <?php  $act = $_GET['act'] ?? ''; if( $act != 'Pr'&& $act != 'Edit'){?>
+          
             <a class="btn btn-Light" href="index.php?act=Pr" role="button" style="text-decoration: none;" >
       <img src="../user_img/<?php echo $row['user_img']; ?>" width="60" height="60" class="d-inline-block align-top" alt="">
             </a>
-              <?php   } ?>
               
-              <?php  $act = $_GET['act'] ?? ''; if( $act != 'Pr' ){?>   
+              
+              
       <a class="btn btn-Light" href="index.php?act=Pr" role="button" style="text-decoration: none;" >
       <h3 style="color:black">Profile</h3>
       </a>
-      <?php   } ?>
+      
 
       <h1> | </h1>
 

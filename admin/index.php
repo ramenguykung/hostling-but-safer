@@ -33,7 +33,7 @@
                   }elseif($act=='view'){
                   include('member_form_view.php');
                   }else {
-                  // include('member_list.php');
+                
                   }
                   ?>                   
                   </div>
