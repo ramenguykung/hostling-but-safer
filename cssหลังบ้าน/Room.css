@@ -1,539 +1,535 @@
-.div{
+:root {
+    /* Base Color Variables */
+    /* neutral */
+    --color-neutral-0: hsla(60, 20%, 98%, 1);
+    --color-neutral-100: hsla(60, 5%, 93%, 1);
+    --color-neutral-200: hsla(60, 2%, 75%, 1);
+    --color-neutral-300: hsla(60, 2%, 63%, 1);
+    --color-neutral-400: hsla(60, 1%, 52%, 1);
+    --color-neutral-600: hsla(60, 3%, 28%, 1);
+    --color-neutral-1000: hsla(48, 20%, 5%, 1);
 
+    /* gold */
+    --color-gold-100: hsla(45, 20%, 53%, 1);
+    --color-gold-300: hsla(45, 100%, 31%, 1);
 
-    display: flex;
-padding: var(--large-32px, 32px);
-flex-direction: column;
-align-items: flex-end;
-gap: var(--medium-12px, 12px);
-align-self: stretch;
+    /* blue */
+    --color-blue-100: hsla(139, 20%, 72%, 1);
+    --color-blue-200: hsla(168, 20%, 61%, 1);
+
+    /* red */
+    --color-red-300: hsla(5, 95%, 60%, 1);
+    --color-red-800: hsla(5, 90%, 50%, 1);
+
+    /* green */
+    --color-green-400: hsla(82, 41%, 47%, 1);
+    --color-green-600: hsla(104, 52%, 32%, 1);
+
+    /* Base Spacing Variables */
+    /* small */
+    --small-0px: 0px;
+    --small-2px: 2px;
+    --small-4px: 4px;
+    --small-6px: 6px;
+    --small-8px: 8px;
+
+    /* medium */
+    --medium-12px: 12px;
+    --medium-16px: 16px;
+    --medium-20px: 20px;
+    --medium-24px: 24px;
+
+    /* large */
+    --large-32px: 32px;
+    --large-40px: 40px;
+    --large-48px: 48px;
+    --large-64px: 64px;
+    --large-80px: 80px;
+
+    /* Tokens */
+    /* surface */
+    --surface-primary: var(--color-neutral-0);
+    --surface-minimal: var(--color-neutral-100);
+    --surface-mild-contrast: var(--color-neutral-200);
+    --surface-contrast: var(--color-neutral-400);
+    --surface-heavy-contrast: var(--color-neutral-1000);
+    --surface-brand-primary: var(--color-gold-100);
+    --surface-brand-primary-contrast: var(--color-gold-300);
+    --surface-brand-secondary: var(--color-blue-100);
+    --surface-brand-secondary-contrast: var(--color-blue-200);
+    --surface-error: var(--color-red-300);
+    --surface-error-contrast: var(--color-red-800);
+    --surface-success: var(--color-green-400);
+    --surface-success-contrast: var(--color-green-600);
+
+    /* text */
+    --text-primary: var(--color-neutral-1000);
+    --text-secondary: var(--color-neutral-600);
+    --text-contrast: var(--color-neutral-300);
+    --text-invert: var(--color-neutral-0);
+    --text-success: var(--color-green-400);
+    --text-success-contrast: var(--color-green-600);
+    --text-error: var(--color-red-300);
+    --text-error-contrast: var(--color-red-800);
+
+    /* border */
+    --border-primary: var(--color-neutral-1000);
+    --border-contrast: var(--color-neutral-400);
+    --border-invert: var(--color-neutral-0);
+    --border-brand-primary: var(--color-gold-100);
+    --border-success: var(--color-green-400);
+    --border-success-contrast: var(--color-green-600);
+    --border-error: var(--color-red-300);
+    --border-error-contrast: var(--color-red-800);
+
+    /* button */
+    --button-primary: var(--color-neutral-0);
+    --button-minimal: var(--color-neutral-100);
+    --button-mild-contrast: var(--color-neutral-200);
+    --button-contrast: var(--color-neutral-400);
+    --button-heavy-contrast: var(--color-neutral-1000);
+    --button-brand-primary: var(--color-gold-100);
+    --button-brand-primary-contrast: var(--color-gold-300);
+    --button-brand-secondary: var(--color-blue-100);
+    --button-brand-secondary-contrast: var(--color-blue-200);
+    --button-error: var(--color-red-300);
+    --button-error-contrast: var(--color-red-800);
+    --button-success: var(--color-green-400);
+    --button-success-contrast: var(--color-green-600);
 }
 
-.room-card{
-
-
-    display: flex;
-height: 180px;
-min-height: 160px;
-padding: var(--medium-16px, 16px);
-justify-content: space-between;
-align-items: center;
-row-gap: 17px;
-align-self: stretch;
-flex-wrap: wrap;
-
-
-border-radius: var(--medium-16px, 16px);
-background: var(--surface-minimal, #d9d9d8);
+.div {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--medium-12px, 12px);
+  align-self: stretch;
 }
 
-.div-align-left{
+.room-card {
+  display: flex;
+  height: 180px;
+  min-height: 160px;
+  padding: var(--medium-16px, 16px);
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 17px;
+  align-self: stretch;
+  flex-wrap: wrap;
 
-
-    display: flex;
-    padding-right: var(--small-8px, 8px);
-    justify-content: center;
-    align-items: center;
-    gap: var(--medium-16px, 16px);
-    flex: 1 0 0;
-    align-self: stretch;
-
-
+  border-radius: var(--medium-16px, 16px);
+  background: var(--surface-minimal, #d9d9d8);
 }
 
-.placeholder{
-
-    width: 128px;
-align-self: stretch;
-aspect-ratio: 1/1;
-
-border-radius: var(--medium-16px, 16px);
-background: #FFF;
-
-/* Default Drop Shadow */
-box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
-
-
+.div-align-left {
+  display: flex;
+  padding-right: var(--small-8px, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--medium-16px, 16px);
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-.flex-column-row{
-    display: flex;
-    min-width: 280px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
+.placeholder {
+  width: 128px;
+  align-self: stretch;
+  aspect-ratio: 1/1;
 
+  border-radius: var(--medium-16px, 16px);
+  background: #fff;
 
-
+  /* Default Drop Shadow */
+  box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px)
+    rgba(15, 14, 10, 0.1);
 }
 
-.flex-column-div{
-
-
-    display: flex;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+.flex-column-row {
+  display: flex;
+  min-width: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-
-
-.message{
-
-    color: var(--text-primary, #0F0E0A);
-font-feature-settings: 'liga' off;
-
-/* Body/Emphasized */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 16px);
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 24px */
-letter-spacing: 0.32px;
+.flex-column-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
-.messageflex{
+.message {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
 
-
-
-    color: var(--text-primary, #0F0E0A);
-font-feature-settings: 'liga' off;
-
-/* Body/Regular */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 140px);
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 24px */
-letter-spacing: 0.32px;
-
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
 
+.messageflex {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
 
-.messagebuilding{
-
-
-
-    color: var(--text-primary, #0F0E0A);
-font-feature-settings: 'liga' off;
-
-/* Body/Regular */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 40px);
-font-style: normal;
-font-weight: 400;
-
-
-
-}
-.action-button{
-
-    display: flex;
-    width: 107px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-
-
-
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 140px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
 
+.messagebuilding {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
 
-.containers{
-
-    position: relative;
-    top: 15px;
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 40px);
+  font-style: normal;
+  font-weight: 400;
 }
-.containersbuilding{
-
-    position: relative;
-    top: 15px;
- 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-
-    position: relative;
-    top: 60px;
-    /* right: 200px; */
-    
+.action-button {
+  display: flex;
+  width: 107px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
-.frame{
+.containers {
+  position: relative;
+  top: 15px;
 
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containersbuilding {
+  position: relative;
+  top: 15px;
 
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    border-radius: var(--medium-20px, 20px);
-background: var(--surface-minimal, #EDEDEB);
-box-shadow: 0px 4px var(--small-8px, 8px) 0px var(--surface-minimal, #EDEDEB);
-
-
-
-
+  position: relative;
+  top: 60px;
+  /* right: 200px; */
 }
 
-.Moveframe{
-    position: relative;
-    top: 100px;
-    right: 200px;
+.frame {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
 
-
-    
+  border-radius: var(--medium-20px, 20px);
+  background: var(--surface-minimal, #ededeb);
+  box-shadow: 0px 4px var(--small-8px, 8px) 0px var(--surface-minimal, #ededeb);
 }
 
+.Moveframe {
+  position: relative;
+  top: 100px;
+  right: 200px;
+}
 
-.Moveframe2{
-    position: relative;
-    top: 80px;
-    right: 200px;
-
-
-    
+.Moveframe2 {
+  position: relative;
+  top: 80px;
+  right: 200px;
 }
 
 .Lineup {
-    display: flex;
-    padding: var(--small-6px, 6px);
-    align-items: center;
-    gap: var(--medium-20px, 100px);
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 100px);
 }
 
-.Lineupfile{
-    display: flex;
-    padding: var(--small-6px, 6px);
-    align-items: center;
-    gap: var(--medium-20px, 10px);
-
+.Lineupfile {
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 10px);
 }
-.ButtonEdit{
+.ButtonEdit {
+  display: flex;
+  padding: 12px var(--medium-16px, 35px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
 
-    display: flex;
-    padding: 12px var(--medium-16px, 35px);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ededeb);
 
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
 
-    border-radius: var(--medium-12px, 12px);
-border: 1px solid var(--border-primary, #0F0E0A);
-background: var(--button-minimal, #EDEDEB);
-
-
-
-
-color: var(--text-primary, #0F0E0A);
-font-feature-settings: 'liga' off;
-
-/* Body/Emphasized */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 16px);
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 24px */
-letter-spacing: 0.32px;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
 
+.ButtonNewRoom {
+  display: flex;
+  width: 180px;
+  padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-brand-primary, #9f936f);
 
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
 
-.ButtonNewRoom{
-
-    display: flex;
-    width: 180px;
-    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-
-    border-radius: var(--medium-12px, 12px);
-    background: var(--button-brand-primary, #9F936F);
-
-
-
-
-    color: var(--text-primary, #0F0E0A);
-    font-feature-settings: 'liga' off;
-    
-    /* Body/Emphasized */
-    font-family: "Supreme Variable";
-    font-size: var(--medium-16px, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
-.ButtonDelete{
+.ButtonDelete {
+  display: flex;
+  padding: 12px var(--medium-16px, 25px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
 
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-error, #f94839);
+  background: var(--button-minimal, #ededeb);
 
-    display: flex;
-padding: 12px var(--medium-16px, 25px);
-justify-content: center;
-align-items: center;
-gap: 10px;
-align-self: stretch;
+  color: var(--surface-error, #f94839);
+  font-feature-settings: "liga" off;
 
-border-radius: var(--medium-12px, 12px);
-border: 1px solid var(--border-error, #F94839);
-background: var(--button-minimal, #EDEDEB);
-
-
-
-color: var(--surface-error, #F94839);
-font-feature-settings: 'liga' off;
-
-/* Body/Emphasized */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 16px);
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 24px */
-letter-spacing: 0.32px;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
-
-
 
 /* ด้านล่าง หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit  */
 
-.divEdit{
-
-
-    display: flex;
-padding: var(--large-32px, 32px);
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
+.divEdit {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-
-.divEditin{
-
-    display: flex;
-padding: 10px;
-justify-content: space-between;
-align-items: flex-start;
-align-self: stretch;
-
+.divEditin {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
 }
 
-.Feature_picture{
-
-
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
+.Feature_picture {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.textFeature_picture{
+.textFeature_picture {
+  color: #000;
+  font-feature-settings: "liga" off;
 
-    color: #000;
-    font-feature-settings: 'liga' off;
-    
-    /* Body/Emphasized */
-    font-family: "Supreme Variable";
-    font-size: var(--medium-16px, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.32px;
-    
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
-.imgmin{
+.imgmin {
+  height: 114px;
+  width: 114px;
+  align-self: stretch;
+  aspect-ratio: 1/1;
 
-    height: 114px;
-      width: 114px;
-align-self: stretch;
-aspect-ratio: 1/1;
-
-background: var(--surface-mild-contrast, #C0C0BE);
+  background: var(--surface-mild-contrast, #c0c0be);
 }
 
-.ButtonFile{
+.ButtonFile {
+  display: flex;
+  padding: 12px var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    display: flex;
-padding: 12px var(--medium-16px, 16px);
-justify-content: center;
-align-items: center;
-gap: 10px;
+  width: 210px;
 
-width: 210px;
-
-border-radius: var(--medium-12px, 12px);
-background: var(--button-minimal, #EDEDEB);
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-minimal, #ededeb);
 }
 
-.Feature_pictureimg{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+.Feature_pictureimg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.Picture{
-
-
-    display: flex;
-align-items: flex-start;
-gap: var(--small-8px, 8px);
+.Picture {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--small-8px, 8px);
 }
 
-.imgexample{
+.imgexample {
+  width: 114px;
+  height: 114px;
+  aspect-ratio: 1/1;
 
-    width: 114px;
-height: 114px;
-aspect-ratio: 1/1;
-
-background: var(--surface-mild-contrast, #C0C0BE);
+  background: var(--surface-mild-contrast, #c0c0be);
 }
 
-.room-info{
-
-    display: flex;
-align-items: flex-start;
-gap: var(--medium-12px, 12px);
-flex: 1 0 0;
-align-self: stretch;
-
-
+.room-info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--medium-12px, 12px);
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-.flex-row-div{
-
-    display: flex;
-padding: 10px;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
+.flex-row-div {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
-.Frame81{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: var(--medium-16px, 16px);   
+.Frame81 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--medium-16px, 16px);
 }
 
-.ButtonSave{
-    display: flex;
-padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-justify-content: center;
-align-items: center;
-gap: 10px;
-align-self: stretch;
+.ButtonSave {
+  display: flex;
+  padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
 
-border-radius: var(--medium-12px, 12px);
-background: var(--button-brand-primary, #9F936F);
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-brand-primary, #9f936f);
 }
 
-
-.flex-row-div{
-
-    display: flex;
-justify-content: space-between;
-align-items: flex-start;
-flex: 1 0 0;
-align-self: stretch;
+.flex-row-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-
-.div1{
-    display: flex;
-padding: 0px var(--small-8px, 8px);
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
+.div1 {
+  display: flex;
+  padding: 0px var(--small-8px, 8px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
 
-.Frame83{
+.Frame83 {
+  display: flex;
+  padding: var(--medium-12px, 12px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-12px, 12px);
+  flex: 1 0 0;
+  align-self: stretch;
 
-    display: flex;
-    padding: var(--medium-12px, 12px);
-    flex-direction: column;
-    align-items: center;
-    gap: var(--medium-12px, 12px);
-    flex: 1 0 0;
-    align-self: stretch;
-
-    border-radius: var(--medium-16px, 16px);
-background: var(--surface-mild-contrast, #C0C0BE);
+  border-radius: var(--medium-16px, 16px);
+  background: var(--surface-mild-contrast, #c0c0be);
 }
 
-.Description{
+.Description {
+  color: #000;
+  font-feature-settings: "liga" off;
 
-    color: #000;
-font-feature-settings: 'liga' off;
-
-/* Heading 3/Emphasized */
-font-family: "Supreme Variable";
-font-size: var(--large-32px, 32px);
-font-style: normal;
-font-weight: 700;
-line-height: 110%; /* 35.2px */
-    
+  /* Heading 3/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--large-32px, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 35.2px */
 }
 
+.Frame84 {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
 
-.Frame84{
-
-    display: flex;
-padding: 10px;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
-
-border-radius: var(--medium-12px, 12px);
-background: #FFF;
+  border-radius: var(--medium-12px, 12px);
+  background: #fff;
 }
 
-.textinFrame84{
+.textinFrame84 {
+  flex: 1 0 0;
 
-    flex: 1 0 0;
+  color: #000;
+  font-feature-settings: "liga" off;
 
-    color: #000;
-font-feature-settings: 'liga' off;
-
-/* Body/Regular */
-font-family: "Supreme Variable";
-font-size: var(--medium-16px, 16px);
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 24px */
-letter-spacing: 0.32px;
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
 }
 
-.div2{
-    display: flex;
-padding: 0px var(--small-8px, 8px);
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
-
-
+.div2 {
+  display: flex;
+  padding: 0px var(--small-8px, 8px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
-
