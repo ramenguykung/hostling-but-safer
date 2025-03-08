@@ -18,6 +18,7 @@ include("../condb.php");
     <title>BC House</title>
     <link href="../หน้าบ้าน/Navbar.css?v=1.0" rel="stylesheet" > 
     <link href="../หน้าบ้าน/index.css?v=1.0" rel="stylesheet" > 
+    <!-- <link href="../หน้าบ้าน/แก้ไข.css?v=1.0" rel="stylesheet" >  -->
 
 </head>
 <body class="hold-transition skin-purple sidebar-mini">

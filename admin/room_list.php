@@ -24,7 +24,7 @@
 
 
 
-
+<a href="room.php?act=building_2" >
 <div class="frame">
 
 <div class="containers">
@@ -33,6 +33,7 @@
 </div>
 
 </div>
+</a>
 
 
 

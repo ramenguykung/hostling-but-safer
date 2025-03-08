@@ -176,12 +176,12 @@
 }
 
 .messageflex {
-  color: var(--text-primary, #0f0e0a);
+  color: var(--text-primary, #0f0b0a);
   font-feature-settings: "liga" off;
 
   /* Body/Regular */
   font-family: "Supreme Variable";
-  font-size: var(--medium-16px, 140px);
+  font-size: 140px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */

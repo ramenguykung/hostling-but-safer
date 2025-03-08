@@ -23,7 +23,7 @@
                     if($act == 'add'){
                         include('room_from_add_building_1.php');
                     }elseif ($act == 'edit') {
-                        include('room_edit.php');
+                        include('room_edit_building_1.php');
                     }else if($act == 'building_1'){
 
                       include('room_list_building_1.php');

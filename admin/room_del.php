@@ -12,7 +12,7 @@ if($_SESSION['m_level']!='admin'){
 	
 	if($result){
 	echo "<script type='text/javascript'>";
-	echo "window.location = 'room.php'; ";
+	echo "window.location='room.php?act=building_1';";
 	echo "</script>";
 	}else{
 	echo "<script type='text/javascript'>";

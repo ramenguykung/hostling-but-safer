@@ -56,6 +56,11 @@ $result = mysqli_query($con, $query);
 <h class= "message"><?php echo $row["RoomSatatus"]?></h>
 </div>
 
+<div class="flex-column-div">
+<h class= "message">floor: </h>
+<h class= "message"><?php echo $row["building_1_id"]?></h>
+</div>
+
 
 </div>
 

@@ -125,11 +125,13 @@
     justify-content: center;
     align-items: center;
     border-radius: var(--medium-12px, 12px);
-    background: var(--button-primary, #9f936f);
+    
+    background: var(--button-brand-primary);
+
     color: var(--text-primary, #0f0e0a);
     font-feature-settings: "liga" off;
     font-family: "Supreme Variable";
-    font-size: var(--medium-16px, 16px);
+    font-size:  20px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
