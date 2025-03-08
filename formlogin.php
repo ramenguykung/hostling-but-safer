@@ -25,20 +25,18 @@
 									</div> -->
 
 			
-			<div class="Frame4">
+    <div class="Frame4">
         <div class="Frame3">
+            <h1 class="text">Welcome back!</h1>
             <div class="login">
-                <h2 class="text">Welcome back!</h2>
                 <a href="index.php">
                     <button class="buttonIconLeft">
-                        <img src="icon/IconLeft.png" width="20" height="20" alt="logo">
+                        <img src="icon/IconLeft.png" alt="logo">
                     </button>
                 </a>
                 <div class="containers">
-                    <img src="icon/LogoBC.png" width="120" height="120" alt="logo">
+                    <img src="icon/LogoBC.png" width="160" height="160" alt="logo">
                 </div>
-                <br><br>
-
                 <form class="login100-form validate-form p-b-33 p-t-5" action="cheack_login.php" method="POST" id="signupForm" onsubmit="handleSubmit(event)">
                 
                     <div class="ipg1">
@@ -66,9 +64,9 @@
                     </a>
                 </div>
             </div>
-            <div class="logologin">
-                <img src="icon/ตัดกรอบ.png" width="550" height="500" alt="logo">
-            </div>
+        </div>
+        <div class="logologin">
+                <img src="icon\ตัดกรอบ.png" alt="A girl in a room">
         </div>
     </div>
 

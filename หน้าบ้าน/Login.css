@@ -98,17 +98,12 @@
     --button-success-contrast: var(--color-green-600);
 }
 .login {
-    width: 510px;
-    height: 420px;
-    flex-shrink: 0;
-
-    border-radius: var(--medium-20px);
-    background: var(--surface-minimal);
-
-    position: relative;
-    left: -300px;
-
-    top: -70px;
+    display: flex;
+    padding: var(--small-8px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--large-32px);
+    align-self: stretch;
 }
 
 .containerLogin {
@@ -119,13 +114,13 @@
 }
 
 .containers {
-    position: relative;
-    top: 15px;
-
     display: flex;
-    flex-direction: column;
+    width: 180px;
+    height: 180px;
+    padding: var(--medium-24px);
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1/1;
 }
 
 .text {
@@ -147,20 +142,19 @@
 
 .buttonIconLeft {
     position: relative;
-    left: -0px;
-
-    top: 10px;
-
     display: flex;
-    width: 50px;
-    height: var(--large-80px, 50px);
-    padding: 16px;
+    width: var(--large-48px);
+    height: var(--large-48px);
+    padding: var(--medium-16px);
     justify-content: center;
     align-items: center;
-    gap: 8px;
-
     border-radius: var(--large-40px, 40px);
     background: var(--button-secondary, #b68d4f);
+}
+
+.buttonIconLeft img {
+    width: var(--medium-20px);
+    height: var(--medium-20px);
 }
 
 .home {
@@ -253,8 +247,8 @@
     justify-content: center;
     padding: var(--medium-24px, 2px) var(--small-8px, 4px);
 
-    border-radius: var(--medium-20px, 20px);
-    background: var(--button-primary, #b68d4f);
+    border-radius: var(--medium-12px);
+    background: var(--button-brand-primary);
 }
 
 .fontLogin {
@@ -322,33 +316,43 @@
 
 .Frame4 {
     display: flex;
-    padding: var(--large-80px, 80px) var(--large-40px, 40px)
-        var(--large-80px, 80px) 80px;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    padding: var(--large-80px) var(--large-40px) var(--large-80px) var(--large-80px);
+    justify-content: stretch;
+    align-items: stretch;
     gap: var(--large-80px, 80px);
     flex: 1 0 0;
     align-self: stretch;
-
-    background: var(--surface-primary, #fbfbf9);
+    background: var(--surface-primary);
 }
 
 .Frame3 {
     display: flex;
     width: 540px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: var(--large-80px, 80px);
+    align-items: stretch;
+    gap: var(--large-80px);
+    border-radius: var(--medium-16px);
 }
 
 .logologin {
-    right: 40px;
-    position: absolute;
-    top: 30px;
-    flex: 1 0 0;
+    display: flex;
+    height: auto;
+    min-height: 500px;
+    flex: 1;
     align-self: stretch;
+    box-shadow: var(--small-0px) var(--small-4px) var(--large-32px) var(--small-8px) rgba(15, 14, 10, 0.1);
+    border-radius: var(--medium-16px);
+    overflow: hidden;
+    position: relative;
+}
 
-    border-radius: var(--medium-16px, 16px);
+.logologin img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .error {
