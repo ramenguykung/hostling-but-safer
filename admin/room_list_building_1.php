@@ -8,7 +8,7 @@ $result = mysqli_query($con, $query);
 
 <div class="div">
 
-<a href="room.php?act=add" >
+<a href="room.php?act=add1" >
 <button class="ButtonNewRoom" id="btn"> <h6 class="message">New Room</h6>
 </button> 
 </a>
@@ -37,13 +37,18 @@ $result = mysqli_query($con, $query);
 </div>
 
 <div class="flex-column-div">
+<h class= "message">floor: </h>
+<h class= "message"><?php echo $row["building_1_id"]?></h>
+</div>
+
+<div class="flex-column-div">
 <h class= "message">Dimensions: </h>
 <h class= "message"> <?php echo $row["Room_Dimensions"]?></h>
 </div>
 
 <div class="flex-column-div">
 <h class= "message">Price: </h>
-<h class= "message"><?php echo $row["MonthlyPrice"]?></h>
+<h class= "message"><?php echo $row["MonthlyPrice"]?> บาท</h>
 </div>
 
 <div class="flex-column-div">
@@ -52,14 +57,22 @@ $result = mysqli_query($con, $query);
 </div>
 
 <div class="flex-column-div">
+<h class= "message">ค่าไฟ: </h>
+<h class= "message"><?php echo $row["ค่าไฟ"]?> หน่วย</h>
+</div>
+
+
+<div class="flex-column-div">
+<h class= "message">ค่าน้ำ: </h>
+<h class= "message"><?php echo $row["ค่าน้ำ"]?>  หน่วย</h>
+</div>
+
+<div class="flex-column-div">
 <h class= "message">RoomSatatus: </h>
 <h class= "message"><?php echo $row["RoomSatatus"]?></h>
 </div>
 
-<div class="flex-column-div">
-<h class= "message">floor: </h>
-<h class= "message"><?php echo $row["building_1_id"]?></h>
-</div>
+
 
 
 </div>
@@ -73,12 +86,12 @@ $result = mysqli_query($con, $query);
  
  <div class="action-button">
 
- <a href="room.php?act=edit&ID=<?php echo$row["Id_Room"]?>" >
+ <a href="room.php?act=edit1&ID=<?php echo$row["Id_Room"]?>" >
  <button  class="ButtonEdit" id="btn"> <h6 class="message">Edit</h6>
  </button> 
  </a>
 
- <a href="room_del.php?ID=<?php echo$row["Id_Room"]?>" onclick="return confirm('Confirm deletion');" >
+ <a href="room_del_1.php?ID=<?php echo$row["Id_Room"]?>" onclick="return confirm('Confirm deletion');" >
  <button class="ButtonDelete" id="btn"> <h6 class="message">Delete</h6>
  </button> 
  </a>

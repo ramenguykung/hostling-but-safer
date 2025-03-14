@@ -1,7 +1,7 @@
 <?php 
 $ID = mysqli_real_escape_string($con,$_GET['ID']);
-$sql = "SELECT * FROM room_building_1 as p 
-INNER JOIN building_1 as t ON p.building_1_id  = t.building_1_id 
+$sql = "SELECT * FROM room_building_2 as p 
+INNER JOIN building_2 as t ON p.building_2_id  = t.building_2_id 
 WHERE Id_Room =$ID
 ORDER BY p.Id_Room  DESC" or die("Error:" . mysqli_error());
 $result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
@@ -10,8 +10,8 @@ $row = mysqli_fetch_array($result);
 
 
 
-$sql2 = "SELECT * FROM building_1 
-ORDER BY building_1_id DESC" or die("Error:" . mysqli_error());
+$sql2 = "SELECT * FROM building_2 
+ORDER BY building_2_id DESC" or die("Error:" . mysqli_error());
 $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_error());
 
 
@@ -32,7 +32,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
     }
 </script>
 
-<form  name="register" action="room_process_edit_building_1.php" method="POST" enctype="multipart/form-data" class="form-horizontal"   onsubmit="handleSubmit(event)">
+<form  name="register" action="room_process_edit_building_2.php" method="POST" enctype="multipart/form-data" class="form-horizontal"  >
 <div class="divEdit">
     <div class="divEditin">
         <div class="Feature_picture">
@@ -90,11 +90,11 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
                                           <h class="Room_number"> Room Number</h>
 
-                                          <input name="RoomNumber" id="RoomNumber" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
+                                          <input name="RoomNumber" id="" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
 
                                   </div>
 
-                             
+                                
 
 
 
@@ -103,8 +103,8 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
                                          <h class="Room_number">floor</h> 
 
                         
-                                         <select name="building_1_id" class="Textinputfloor" required>
-                 <option value="<?php echo $row['building_1_id'];?>"><?php echo $row['floor'];?></option>
+                                         <select name="building_2_id" class="Textinputfloor" required>
+                 <option value="<?php echo $row['building_2_id'];?>"><?php echo $row['floor'];?></option>
            
                  <?php foreach($result_t as $results){?>
                  <option value="<?php echo $results["building_1_id"];?>">
@@ -121,17 +121,17 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
             <h class="Room_number">Dimension</h> 
 
             <input name="Room_Dimensions" id="" class="Textinput" type="text" value="<?php echo $row['Room_Dimensions']; ?>" required>
-            <h class="Room_number">เมตร</h>
+
                         </div>
+
 
                         <div class="Room_numberandCost">
 
-<h class="Room_number">Cost </h> 
+                                         <h class="Room_number">Cost </h> 
 
-<input name="MonthlyPrice" id="" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
-
-<h class="Room_number">บาท </h> 
-</div>
+                                         <input name="MonthlyPrice" id="" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
+                                         <h class="Room_number">บาท </h> 
+                                </div>
 
 
 
@@ -141,7 +141,6 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 <h class="Room_number">ค่าไฟ</h> 
 
 <input name="ค่าไฟ" id="" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
-
 <h class="Room_number">หน่วย</h> 
             </div>
 
@@ -160,7 +159,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
                          </div>
 
                          <input type="hidden" name="RoomSatatus" value="<?php echo $row['RoomSatatus'];?>" /> 
-                        
+                          
 
                          <input type="hidden" name="Id_Room" value="<?php echo $ID; ?>" />
                                 
@@ -178,6 +177,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
              <div class="Addroomflex-row-div2">
 
+                         
 
 
 
@@ -201,22 +201,3 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
     </div>
 
     </form>
-
-
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            const RoomNumber = document.getElementById('RoomNumber').value;
-
-            if (  !/^\d+$/.test(RoomNumber)) {
-                
-                alert('Phone must contain only numbers ');
-               
-                return;
-            }
-
-            event.target.submit();
-        }
-
-
-        </script>

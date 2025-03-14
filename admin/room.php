@@ -20,10 +20,19 @@
                   <div class="box-body">
                     <?php
                     $act = (isset($_GET['act']) ? $_GET['act'] : '');
-                    if($act == 'add'){
+                    if($act == 'add1'){
                         include('room_from_add_building_1.php');
-                    }elseif ($act == 'edit') {
+                    }else if($act == 'add2'){
+                        include('room_from_add_building_2.php');
+
+
+                    } elseif ($act == 'edit1') {
                         include('room_edit_building_1.php');
+                    }elseif ($act == 'edit2') {
+                    
+                      include('room_edit_building_2.php');
+                    
+                    
                     }else if($act == 'building_1'){
 
                       include('room_list_building_1.php');

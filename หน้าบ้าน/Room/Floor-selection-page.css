@@ -1,0 +1,120 @@
+.navigation-holder{
+
+
+    display: flex;
+    padding: var(--large-32px, 32px);
+    align-items: center;
+    gap: var(--large-32px, 32px);
+    align-self: stretch;
+
+    background: var(--surface-primary, #FBFBF9);
+
+/* Default Drop Shadow */
+box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
+
+
+}
+
+.fromdivFoor{
+
+    display: flex;
+padding: var(--large-32px, 32px);
+flex-direction: column;
+align-items: center;
+gap: var(--medium-24px, 24px);
+align-self: stretch;
+}
+
+.flex-column-divFoor{display: flex;
+    align-items: center;
+    gap: 10px;}
+
+.textRoomflor{
+
+    color: #000;
+text-align: center;
+font-feature-settings: 'liga' off;
+
+/* Body/Emphasized */
+font-family: "Supreme Variable";
+font-size: var(--medium-16px, 16px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 24px */
+letter-spacing: 0.32px;
+}
+
+.Room-filter-select
+{
+
+    display: flex;
+width: 356px;
+align-items: center;
+gap: var(--small-8px, 8px);
+
+
+}
+
+.frombuttonsFlor{
+
+    display: flex;
+align-items: center;
+gap: var(--small-8px, 8px);
+}
+
+.buttonsFlor{
+
+    display: flex;
+padding: var(--small-8px, 8px) var(--medium-16px, 16px);
+justify-content: center;
+align-items: center;
+
+border-radius: var(--medium-24px, 24px);
+background: var(--button-brand-primary, #9F936F);
+
+}
+
+.divFoor{
+
+
+    display: flex;
+padding: var(--medium-24px, 24px);
+justify-content: center;
+align-items: flex-end;
+gap: var(--large-32px, 32px);
+
+
+border-radius: var(--medium-16px, 16px);
+background: var(--surface-minimal, #EDEDEB);
+
+/* Default Drop Shadow */
+box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
+}
+
+.flex-row-div-building{
+
+
+    display: flex;
+padding: var(--small-8px, 8px);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: var(--small-8px, 8px);
+background: var(--surface-mild-contrast, #C0C0BE);
+}
+
+.text-flex-row-div-building{
+
+    color: #000;
+text-align: center;
+
+/* หัวข้อ 2/เน้นข้อความ */
+font-family: "IBM Plex Sans Thai Looped";
+font-size: var(--large-48px, 48px);
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 52.8px */
+letter-spacing: -0.48px;
+}
