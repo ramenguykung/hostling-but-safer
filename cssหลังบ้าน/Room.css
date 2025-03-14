@@ -109,7 +109,7 @@
 
 .room-card {
   display: flex;
-  height: 180px;
+  height: 230px;
   min-height: 160px;
   padding: var(--medium-16px, 16px);
   justify-content: space-between;
@@ -267,7 +267,7 @@
 }
 .ButtonEdit {
   display: flex;
-  padding: 12px var(--medium-16px, 35px);
+  padding: 12px 25px ;
   justify-content: center;
   align-items: center;
   gap: 10px;

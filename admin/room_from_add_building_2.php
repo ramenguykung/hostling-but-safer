@@ -1,5 +1,5 @@
 <?php
-$query2 = "SELECT * FROM building_1 ORDER BY building_1_id asc" or die("Error:" . mysqli_error());
+$query2 = "SELECT * FROM building_2 ORDER BY building_2_id asc" or die("Error:" . mysqli_error());
 $result2 = mysqli_query($con, $query2);
 ?>
 
@@ -17,7 +17,7 @@ $result2 = mysqli_query($con, $query2);
     }
 </script>
 
-<form  name="register" action="room_process_add_building_1.php" method="POST" enctype="multipart/form-data" class="form-horizontal"  onsubmit="handleSubmit(event)"   >
+<form  name="register" action="room_process_add_building_2.php" method="POST" enctype="multipart/form-data" class="form-horizontal"  >
 <div class="divEdit">
     <div class="divEditin">
         <div class="Feature_picture">
@@ -66,11 +66,11 @@ $result2 = mysqli_query($con, $query2);
 
                                           <h class="Room_number"> Room Number</h>
 
-                                          <input name="RoomNumber" id="RoomNumber" class="Textinput" type="text" placeholder="" required>
+                                          <input name="RoomNumber" id="" class="Textinput" type="text" placeholder="" required>
 
                                   </div>
 
-                             
+                               
 
 
 
@@ -80,17 +80,16 @@ $result2 = mysqli_query($con, $query2);
 
                         
 
-                                         <select name="building_1_id" class="Textinputfloor" required>
+                                         <select name="building_2_id" class="Textinputfloor" required>
                                           <option value=""><h class="textFeature_picture"> Select room floor</h></option>
                                           <?php foreach($result2 as $results){?>
-                                       <option value="<?php echo $results["building_1_id"];?>">
+                                       <option value="<?php echo $results["building_2_id"];?>">
                                             <?php echo $results["floor"]; ?>
                                           </option>
                                        <?php } ?>
                                          </select>
 
                                 </div>
-
 
 
 
@@ -112,6 +111,8 @@ $result2 = mysqli_query($con, $query2);
 <h class="Room_number">บาท </h> 
 </div>
 
+
+                                            
 
                         <div class="Room_numberandCost">
 
@@ -137,6 +138,7 @@ $result2 = mysqli_query($con, $query2);
 
                          <input type="hidden" name="RoomSatatus" value="ห้องว่าง" /> 
                         
+                                
                             <br>   <br>
                          <button type="submit"  class="AddroomButtonSave">
                            <h class="textFeature_picture">Save</h> 
@@ -151,22 +153,7 @@ $result2 = mysqli_query($con, $query2);
 
              <div class="Addroomflex-row-div2">
 
-                         <div class="divAddroom">
-
-
-                                       <div class="AddroomFrame83">
-                                       <h class="Room_number">Description</h>
-
-                                       
-                                       <textarea name="RoomDetails" class="AddroomFrame84" type="text" required></textarea>
-                                       </div>
-                                        
-                                     
-                                       
-
-
-
-                         </div>
+                        
 
 
 
@@ -195,22 +182,29 @@ $result2 = mysqli_query($con, $query2);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            const RoomNumber = document.getElementById('RoomNumber').value;
-
-            if (  !/^\d+$/.test(RoomNumber)) {
-                
-                alert('Phone must contain only numbers ');
-               
-                return;
-            }
-
-            event.target.submit();
-        }
-
-
-        </script>
