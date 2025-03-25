@@ -8,15 +8,20 @@ if($_SESSION['m_level']!='admin'){
 	$ID  = mysqli_real_escape_string($con,$_GET["ID"]);
 	$sql = "DELETE FROM room_building_2 WHERE Id_Room =$ID";
 	$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());	
+
 	mysqli_close($con);
-	
 	if($result){
+		
 	echo "<script type='text/javascript'>";
-	echo "window.location='room.php?act=building_2';";
+	echo "window.location = 'Admin-room.php?act=building_2'; ";
 	echo "</script>";
 	}else{
 	echo "<script type='text/javascript'>";
 	echo "window.location = 'room.php'; ";
 	echo "</script>";
-}
+
+	
+	}
+
+
 ?>

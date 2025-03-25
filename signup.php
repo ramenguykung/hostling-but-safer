@@ -130,7 +130,35 @@ include("condb.php");
                         <option value="man">Man</option>
                         <option value="woman">Woman</option>
                     </select>
-                    <input name="Job" id="Job"  class="input1" type="text" placeholder="Job" required>
+
+
+                                        <select name="Job" type="text" class="input"required >
+                        <option value="">Job</option>
+                    <option value="พนักงานบริษัท">พนักงานบริษัท</option>
+                    <option value="ข้าราชการ">ข้าราชการ</option>
+                    <option value="พนักงานรัฐวิสาหกิจ">พนักงานรัฐวิสาหกิจ</option>
+                    <option value="นักธุรกิจ/ผู้ประกอบการ">นักธุรกิจ/ผู้ประกอบการ</option>
+                    <option value="ฟรีแลนซ์">ฟรีแลนซ์</option>
+                    <option value="เจ้าของกิจการส่วนตัว">เจ้าของกิจการส่วนตัว</option>
+                    <option value="แพทย์/พยาบาล">แพทย์/พยาบาล</option>
+                    <option value="ครู/อาจารย์">ครู/อาจารย์</option>
+                    <option value="นักกฎหมาย/ทนาย">นักกฎหมาย/ทนาย</option>
+                    <option value="วิศวกร">วิศวกร</option>
+                    <option value="สถาปนิก">สถาปนิก</option>
+                    <option value="เกษตรกร">เกษตรกร</option>
+                    <option value="ชาวประมง">ชาวประมง</option>
+                    <option value="แรงงานก่อสร้าง">แรงงานก่อสร้าง</option>
+                    <option value="พนักงานโรงงาน">พนักงานโรงงาน</option>
+                    <option value="พนักงานขาย">พนักงานขาย</option>
+                    <option value="คนขับรถ">คนขับรถ</option>
+                    <option value="พ่อครัว/แม่ครัว">พ่อครัว/แม่ครัว</option>
+                    <option value="ช่างทำผม/เสริมสวย">ช่างทำผม/เสริมสวย</option>
+                    <option value="นักเรียน/นักศึกษา">นักเรียน/นักศึกษา</option>
+                    <option value="เกษียณอายุ">เกษียณอายุ</option>
+                    <option value="ว่างงาน">ว่างงาน</option>
+                    <option value="แม่บ้าน">แม่บ้าน</option>
+                    </select>
+                    
                     <input name="Age" id="Age"  class="input1" type="text" placeholder="Age" required>
                     <input name="Card_Address" id="Card_Address"  class="input" type="text" placeholder="Address according to ID card" required>
                     <input name="Phone" id="phonenumber"   class="input" type="text" placeholder="Phone number" required>

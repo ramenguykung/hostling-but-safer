@@ -6,21 +6,24 @@ $result = mysqli_query($con, $query);
 
 ?>
 
-<div class="div">
 
-<a href="room.php?act=add2" >
+
+<div class="LineupBuildingandNewRoom">
+
+<a href="Admin-room.php?act=building_1" style="text-decoration: none;" >
+<button class="ButtonNewRoom" id="btn"> <h6 class="message">Go to Building 1</h6>
+</button> 
+</a>
+
+<a href="Admin-room.php?act=add2" style="text-decoration: none;" >
 <button class="ButtonNewRoom" id="btn"> <h6 class="message">New Room</h6>
 </button> 
 </a>
+</div>
 
 <?php while($row = mysqli_fetch_array($result)) { ?>
 
 
-<!-- 
-    <img src="../Room_img/<?php echo $row['Room_img']; ?>" width="150" height="150" alt="logo" />
-<h1> เลขห้อง : <?php echo $row["RoomNumber"]?> </h1>
-<h1> สถานะห้อง : <?php echo $row["RoomSatatus"]?></h1>
-<br> -->
 
 
 
@@ -39,6 +42,11 @@ $result = mysqli_query($con, $query);
 <div class="flex-column-div">
 <h class= "message">floor: </h>
 <h class= "message"><?php echo $row["building_2_id"]?></h>
+</div>
+
+<div class="flex-column-div">
+<h class= "message">Building : </h>
+<h class= "message"><?php echo $row["Building"]?></h>
 </div>
 
 <div class="flex-column-div">
@@ -61,13 +69,13 @@ $result = mysqli_query($con, $query);
 
 <div class="flex-column-div">
 <h class= "message">ค่าไฟ: </h>
-<h class= "message"><?php echo $row["ค่าไฟ"]?> หน่วย</h>
+<h class= "message"><?php echo $row["ค่าไฟ"]?> ต่อหน่วย</h>
 </div>
 
 
 <div class="flex-column-div">
 <h class= "message">ค่าน้ำ: </h>
-<h class= "message"><?php echo $row["ค่าน้ำ"]?>  หน่วย</h>
+<h class= "message"><?php echo $row["ค่าน้ำ"]?>  ต่อคน</h>
 </div>
 
 
@@ -93,7 +101,7 @@ $result = mysqli_query($con, $query);
  
  <div class="action-button">
 
- <a href="room.php?act=edit2&ID=<?php echo$row["Id_Room"]?>" >
+ <a href="Admin-room.php?act=edit2&ID=<?php echo$row["Id_Room"]?>" >
  <button  class="ButtonEdit" id="btn"> <h6 class="message">Edit</h6>
  </button> 
  </a>
@@ -120,4 +128,3 @@ $result = mysqli_query($con, $query);
 
 ?>
 
-</div>

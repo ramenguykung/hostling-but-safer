@@ -32,13 +32,23 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
     }
 </script>
 
-<form  name="register" action="room_process_edit_building_2.php" method="POST" enctype="multipart/form-data" class="form-horizontal"  >
+<form  name="register" action="room_process_edit_building_2.php" method="POST" enctype="multipart/form-data" class="form-horizontal"    onsubmit="handleSubmit(event)" >
 <div class="divEdit">
     <div class="divEditin">
         <div class="Feature_picture">
             <h class="textFeature_picture">Feature Picture</h>
             <img id="img1" src="#" alt="" class="imgmin" onerror="this.onerror=null; this.src='../Room_img/<?php echo $row['Room_img']; ?>';">
             <input type="file" name="Room_img[]"  class="ButtonFile" accept="image/*" onchange="readURL(this, 'img1');"/>
+
+          
+
+            <a href="room-del-img-2.php?ID=<?php echo$row["Id_Room"]?>" onclick="return confirm('Confirm deletion');"  style="text-decoration: none;">
+            <button   type="button"   class="ButtonDeleteimg">
+            <h class="textButtonDeleteimg">     
+            Delete all photos
+            </h>
+            </button>
+            </a>
             <input type="hidden" name="Room_img0[]" value="<?php echo $row['Room_img'];?>">
         </div>
 
@@ -86,18 +96,10 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
                         <div class="Admin-room-createFrame81">
 
-                                <div class="Room_numberandCost">
 
-                                          <h class="Room_number"> Room Number</h>
 
-                                          <input name="RoomNumber" id="" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
-
-                                  </div>
 
                                 
-
-
-
                                  <div class="Room_numberandCost">
 
                                          <h class="Room_number">floor</h> 
@@ -107,13 +109,26 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
                  <option value="<?php echo $row['building_2_id'];?>"><?php echo $row['floor'];?></option>
            
                  <?php foreach($result_t as $results){?>
-                 <option value="<?php echo $results["building_1_id"];?>">
+                 <option value="<?php echo $results["building_2_id"];?>">
                    <?php echo $results["floor"]; ?>
                  </option>
                          <?php } ?>
                                           </select>
 
                                 </div>
+
+                                <div class="Room_numberandCost">
+
+                                          <h class="Room_number"> Room Number</h>
+
+                                          <input name="RoomNumber" id="RoomNumber" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
+
+                                  </div>
+
+                                
+
+
+
 
 
                                 <div class="Room_numberandCost">
@@ -129,7 +144,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
                                          <h class="Room_number">Cost </h> 
 
-                                         <input name="MonthlyPrice" id="" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
+                                         <input name="MonthlyPrice" id="MonthlyPrice" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
                                          <h class="Room_number">บาท </h> 
                                 </div>
 
@@ -140,8 +155,8 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
 <h class="Room_number">ค่าไฟ</h> 
 
-<input name="ค่าไฟ" id="" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
-<h class="Room_number">หน่วย</h> 
+<input name="ค่าไฟ" id="ค่าไฟ" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
+<h class="Room_number">บาทต่อหน่วย</h> 
             </div>
 
 
@@ -151,7 +166,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
 <h class="Room_number">ค่าน้ำ</h> 
 
-<input name="ค่าน้ำ" id="" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
+<input name="ค่าน้ำ" id="ค่าน้ำ" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
 <h class="Room_number">หน่วย</h> 
             </div>
 
@@ -201,3 +216,78 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
     </div>
 
     </form>
+
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const RoomNumber = document.getElementById('RoomNumber').value;
+
+       
+
+            const ค่าน้ำ = document.getElementById('ค่าน้ำ').value;
+            const ค่าไฟ = document.getElementById('ค่าไฟ').value;
+            const MonthlyPrice = document.getElementById('MonthlyPrice').value;
+
+           
+
+            if ( !/^\d+$/.test(RoomNumber)) {
+                
+                alert('Room number 1must contain only numbers ');
+               
+                return;
+            }
+
+
+            if (RoomNumber < 1 || RoomNumber > 19) {
+    alert('Room number must be between 1 and 19 (inclusive), and must not be 0.');
+    return;
+}
+
+
+
+            
+            if ( !/^\d+$/.test(ค่าน้ำ)) {
+                
+                alert('Water rates must be entered as numbers only. ');
+               
+                return;
+            }
+
+            
+            if ( !/^\d+$/.test(ค่าไฟ)) {
+                
+                alert('Electricity rates must be entered as numbers only. ');
+               
+                return;
+            }
+
+            
+            if ( !/^\d+$/.test(MonthlyPrice)) {
+                
+                alert('Monthly price must contain only numbers ');
+               
+                return;
+            }
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            event.target.submit();
+        }
+
+        
+
+
+        </script>

@@ -21,3 +21,8 @@
 <!-- <a class="btn btn-Light active" href="form_login.php" style="font-size: 15px;"> 
     login | เข้าสู่ระบบ
 </a> -->
+
+<?php include('navbar.php'); ?>
+   <br>
+   
+   <?php include('ตัวเสริม.php');?>

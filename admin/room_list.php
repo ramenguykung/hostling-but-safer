@@ -11,11 +11,11 @@
 <div class="Lineup">
 
 
-<a href="room.php?act=building_1" >
+<a href="Admin-room.php?act=building_1"  style="text-decoration: none;" >
 <div class="frame">
 
 <div class="containers">
-<h1 class="messagebuilding" > อาคาร</h1>
+<h1 class="messagebuilding"  > อาคาร</h1>
 <h1 class="messageflex" > 1</h1>
 </div>
 </div>
@@ -24,7 +24,7 @@
 
 
 
-<a href="room.php?act=building_2" >
+<a href="Admin-room.php?act=building_2" style="text-decoration: none;" >
 <div class="frame">
 
 <div class="containers">
@@ -39,13 +39,5 @@
 
 </div></div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+

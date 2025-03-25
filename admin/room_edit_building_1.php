@@ -39,6 +39,14 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
             <h class="textFeature_picture">Feature Picture</h>
             <img id="img1" src="#" alt="" class="imgmin" onerror="this.onerror=null; this.src='../Room_img/<?php echo $row['Room_img']; ?>';">
             <input type="file" name="Room_img[]"  class="ButtonFile" accept="image/*" onchange="readURL(this, 'img1');"/>
+         
+            <a href="room-del-img-1.php?ID=<?php echo$row["Id_Room"]?>" onclick="return confirm('Confirm deletion');"  style="text-decoration: none;">
+            <button   type="button"   class="ButtonDeleteimg">
+            <h class="textButtonDeleteimg">     
+            Delete all photos
+            </h>
+            </button>
+            </a>
             <input type="hidden" name="Room_img0[]" value="<?php echo $row['Room_img'];?>">
         </div>
 
@@ -55,6 +63,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
             <div class="Lineupfile">
                 <input type="file" name="Room_img[]"  class="ButtonFile" accept="image/*" onchange="readURL(this, 'img2');"/>
+                
                 <input type="file" name="Room_img[]"  class="ButtonFile" accept="image/*" onchange="readURL(this, 'img3');"/>
                 <input type="file" name="Room_img[]"  class="ButtonFile" accept="image/*" onchange="readURL(this, 'img4');"/>
 
@@ -86,19 +95,26 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
                         <div class="Admin-room-createFrame81">
 
-                                <div class="Room_numberandCost">
 
-                                          <h class="Room_number"> Room Number</h>
+                        
+            <div class="Room_numberandCost">
+            <h class="Room_number">Status Room</h> 
+            <select name="statusrooom" class="Textinputfloor" required>
+            <option value="<?php echo $row['RoomSatatus'];?>"><?php echo $row['RoomSatatus'];?></option>
+                 <option value="ห้องว่าง">ห้องว่าง</option>
+                 <option value="ไม่ห้องว่าง">ไม่ห้องว่าง</option>
+           
+               
+                               </select>
 
-                                          <input name="RoomNumber" id="RoomNumber" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
-
-                                  </div>
-
-                             
 
 
 
-                                 <div class="Room_numberandCost">
+                               
+                                          </div>
+
+
+                                           <div class="Room_numberandCost">
 
                                          <h class="Room_number">floor</h> 
 
@@ -115,12 +131,26 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
                                 </div>
 
+                                <div class="Room_numberandCost">
+
+                                          <h class="Room_number"> Room Number</h>
+
+                                          <input name="RoomNumber" id="RoomNumber" class="Textinput" type="text" value="<?php echo $row['RoomNumber']; ?>" required>
+
+                                  </div>
+
+                             
+
+
+
+                                 
+
 
                                 <div class="Room_numberandCost">
 
             <h class="Room_number">Dimension</h> 
 
-            <input name="Room_Dimensions" id="" class="Textinput" type="text" value="<?php echo $row['Room_Dimensions']; ?>" required>
+            <input name="Room_Dimensions" id="Room_Dimensions" class="Textinput" type="text" value="<?php echo $row['Room_Dimensions']; ?>" required>
             <h class="Room_number">เมตร</h>
                         </div>
 
@@ -128,7 +158,7 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
 <h class="Room_number">Cost </h> 
 
-<input name="MonthlyPrice" id="" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
+<input name="MonthlyPrice" id="MonthlyPrice" class="Textinput" type="text" value="<?php echo $row['MonthlyPrice']; ?>" required>
 
 <h class="Room_number">บาท </h> 
 </div>
@@ -140,9 +170,9 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
 <h class="Room_number">ค่าไฟ</h> 
 
-<input name="ค่าไฟ" id="" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
+<input name="ค่าไฟ" id="ค่าไฟ" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
 
-<h class="Room_number">หน่วย</h> 
+<h class="Room_number">ต่อหน่วย</h> 
             </div>
 
 
@@ -152,10 +182,13 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
 
 <h class="Room_number">ค่าน้ำ</h> 
 
-<input name="ค่าน้ำ" id="" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
-<h class="Room_number">หน่วย</h> 
+<input name="ค่าน้ำ" id="ค่าน้ำ" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
+<h class="Room_number">฿คน</h> 
             </div>
 
+
+
+                                          
 
                          </div>
 
@@ -208,15 +241,69 @@ $result_t = mysqli_query($con, $sql2) or die ("Error in query: $sql " . mysqli_e
             event.preventDefault();
             const RoomNumber = document.getElementById('RoomNumber').value;
 
-            if (  !/^\d+$/.test(RoomNumber)) {
+            const Room_Dimensions = document.getElementById('Room_Dimensions').value;
+
+            const ค่าน้ำ = document.getElementById('ค่าน้ำ').value;
+            const ค่าไฟ = document.getElementById('ค่าไฟ').value;
+            const MonthlyPrice = document.getElementById('MonthlyPrice').value;
+
+           
+
+            if ( !/^\d+$/.test(RoomNumber)) {
                 
-                alert('Phone must contain only numbers ');
+                alert('Room numbers must consist only of numbers and must not contain spaces in the input fields.');
                
                 return;
             }
 
+
+            if (RoomNumber < 1 || RoomNumber > 19) {
+    alert('Room number must be between 1 and 19 (inclusive), and must not be 0.');
+    return;}
+
+
+            
+            if ( !/^\d+$/.test(ค่าน้ำ)) {
+                
+                alert('Water rates must be entered as numbers only and must not contain spaces in the input fields.');
+               
+                return;
+            }
+
+            
+            if ( !/^\d+$/.test(ค่าไฟ)) {
+                
+                alert('Electricity rates must be entered as numbers only and must not contain spaces in the input fields.');
+               
+                return;
+            }
+
+            
+            if ( !/^\d+$/.test(MonthlyPrice)) {
+                
+                alert('Monthly price must contain only numbers and must not contain spaces in the input fields. ');
+               
+                return;
+            }
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
             event.target.submit();
         }
+
+        
 
 
         </script>
