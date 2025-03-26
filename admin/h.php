@@ -17,7 +17,7 @@
     ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shopping Cart</title>
+    <title>BC House</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -41,11 +41,7 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
 
 
-        <link href="../หน้าบ้าน/Navbar.css?v=1.0" rel="stylesheet" > 
-        
-        
-        <link href="../cssหลังบ้าน/Addroom.css?v=1.0" rel="stylesheet" > 
-        <link href="../cssหลังบ้าน/Room.css?v=1.0" rel="stylesheet" > 
+       
 
 
 

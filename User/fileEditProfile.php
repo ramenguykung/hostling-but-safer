@@ -44,6 +44,7 @@ if($_SESSION['m_level']!='admin'){
 	}
 	
 	$sql = "UPDATE user SET 
+	
 	user_name='$Name',
 	Surname='$Surname',
 	user_Day='$Day',
