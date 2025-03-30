@@ -1,30 +1,29 @@
 <script type="text/javascript">
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
-                reader.onload = function (e) {
-                    $('#blah').attr('src', e.target.result);
-                }
-                
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
+      reader.onload = function(e) {
+        $('#blah').attr('src', e.target.result);
+      }
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
 </script>
-<?php 
- if(@$_GET['do']=='f'){
-            echo '<script type="text/javascript">
+<?php
+if (@$_GET['do'] == 'f') {
+  echo '<script type="text/javascript">
             swal("", "กรุณาใส่ข้อมูลให้ถูกต้อง !!", "warning");
             </script>';
-            echo '<meta http-equiv="refresh" content="2;url=member.php?act=add" />';
- }elseif(@$_GET['do']=='d'){
-            echo '<script type="text/javascript">
+  echo '<meta http-equiv="refresh" content="2;url=member.php?act=add" />';
+} elseif (@$_GET['do'] == 'd') {
+  echo '<script type="text/javascript">
             swal("", "ข้อมูลซ้ำ กรุณาเปลี่ยน  !!", "error");
             </script>';
-            echo '<meta http-equiv="refresh" content="1;url=member.php?act=add" />';
-
- }
- ?>
+  echo '<meta http-equiv="refresh" content="1;url=member.php?act=add" />';
+}
+?>
 
 <form action="member_form_add_db.php" method="post" class="form-horizontal" enctype="multipart/form-data">
   <div class="form-group">
@@ -35,7 +34,7 @@
       <select name="m_level" class="form-control" required>
         <option value="">เลือกข้อมูล</option>
         <option value="admin">ผู้ดูแลระบบ</option>
-        <option value="member">สมาชิก</option>   
+        <option value="member">สมาชิก</option>
       </select>
     </div>
   </div>
@@ -48,7 +47,7 @@
     </div>
   </div>
   <div class="form-group">
-    <div class="col-sm-2 control-label" class="form-control" >
+    <div class="col-sm-2 control-label" class="form-control">
       Password :
     </div>
     <div class="col-sm-3">
@@ -79,7 +78,7 @@
       <input type="email" name="m_email" required class="form-control">
     </div>
   </div>
-    <div class="form-group">
+  <div class="form-group">
     <div class="col-sm-2 control-label">
       ที่อยู่ :
     </div>
@@ -92,8 +91,8 @@
       รูปภาพ :
     </div>
     <div class="col-sm-4">
-      <input type="file" name="m_img" required class="form-control" accept="image/*" onchange="readURL(this);"/>
-      <img id="blah" src="#" alt="" width="250" class="img-rounded"/ style="margin-top: 10px;">
+      <input type="file" name="m_img" required class="form-control" accept="image/*" onchange="readURL(this);" />
+      <img id="blah" src="#" alt="" width="250" class="img-rounded" / style="margin-top: 10px;">
     </div>
   </div>
   <div class="form-group">

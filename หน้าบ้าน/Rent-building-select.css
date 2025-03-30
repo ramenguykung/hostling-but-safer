@@ -1,0 +1,217 @@
+.divRent-building-select {
+    background-color: #E2EDD2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-24px, 24px);
+    padding: var(--large-32px, 32px);
+    align-self: stretch;
+    margin-top: -50px;
+    overflow: hidden;
+    /* ป้องกันการเลื่อน */
+}
+
+.flex-column-divB {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.textRoomfor {
+    color: var(--text-primary, #0F0E0A);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Body/Emphasized */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+
+}
+
+.Room-filter-select {
+    display: flex;
+    width: 356px;
+    align-items: center;
+    gap: var(--small-8px, 8px);
+
+}
+
+.buttonsB {
+    display: flex;
+    align-items: center;
+    gap: var(--small-8px, 8px);
+
+}
+
+.Selection_pill {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    padding: var(--small-8px, 8px) var(--medium-16px, 16px);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-24px, 24px);
+    background: var(--button-brand-primary, #9F936F);
+
+
+}
+
+
+.Selection_pillmain {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    padding: var(--small-8px, 8px) var(--medium-16px, 16px);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-24px, 24px);
+
+    background: var(--button-brand-primary, #40c96b);
+
+
+}
+
+
+
+.divbuilding-select {
+    margin-top: -30px;
+    display: flex;
+    padding: var(--medium-24px, 24px);
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--large-32px, 32px);
+    flex-wrap: wrap;
+    /* ให้ขยายตามเนื้อหาเมื่อจอเล็ก */
+}
+
+.flex-row-div-building1 {
+    height: 350px;
+    display: flex;
+    padding: var(--small-8px, 8px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-mild-contrast, #C0C0BE);
+    min-height: auto;
+    /* ให้ขนาดขยายตามเนื้อหา */
+    overflow: hidden;
+    /* ป้องกันเลื่อน */
+}
+
+.Selector-building1 {
+
+    display: flex;
+    padding: var(--medium-24px, 24px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--large-40px, 15px);
+
+
+}
+
+.textflor {
+    height: 10px;
+    width: 30px;
+    color: var(--text-primary, #0F0E0A);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Heading 1/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--small-16px, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -1.28px;
+}
+
+
+
+
+.textอาคาร1 {
+
+    color: #000;
+    text-align: center;
+
+    /* หัวข้อ 2/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--large-48px, 30px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 52.8px */
+    letter-spacing: -0.48px;
+
+}
+
+
+
+.flex-row-div-building2 {
+    height: 200px;
+    display: flex;
+    padding: var(--small-8px, 8px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-mild-contrast, #C0C0BE);
+    min-height: auto;
+    /* ให้ขนาดขยายตามเนื้อหา */
+    overflow: hidden;
+    /* ป้องกันเลื่อน */
+
+}
+
+.Selector-building2 {
+
+    display: flex;
+    padding: var(--medium-24px, 24px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--large-40px, 20px);
+
+
+}
+
+.textอาคาร2 {
+
+
+    color: #000;
+    text-align: center;
+
+    /* หัวข้อ 2/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--large-48px, 30px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 52.8px */
+    letter-spacing: -0.48px;
+
+
+}
+
+.SelectBuilding {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #40c96b);
+}

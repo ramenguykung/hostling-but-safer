@@ -1,0 +1,62 @@
+/* ปรับแต่งพื้นหลังและเลย์เอาต์ */
+.feedback {
+    padding: 150px;
+    margin-top: -80px;
+    background-color: #E2EDD2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    overflow: auto;
+    /* ให้เลื่อนหน้าจอเมื่อมีเนื้อหาเยอะ */
+}
+
+/* จัดสไตล์ให้กับคอนเทนเนอร์หลัก */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* สไตล์ของหัวข้อใหญ่ */
+.SU {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* ลดระยะห่างลงเล็กน้อย */
+    color: #333;
+}
+
+/* กรอบรีวิว */
+.frameReview {
+    background: #d9d9d8;
+    border-radius: 10px;
+    padding: 15px;
+    /* ลด padding ลงเพื่อให้ขนาดกระชับขึ้น */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+    /* ลดระยะห่างระหว่างรีวิว */
+    height: auto;
+}
+
+/* ปรับแต่งข้อความ */
+.text1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    /* ลดระยะห่างบนลง */
+    margin-bottom: 5px;
+    /* ลดระยะห่างล่างลง */
+}
+
+.text2 {
+    font-size: 18px;
+    color: black;
+    margin-left: 5px;
+    /* ลดระยะห่างระหว่างข้อความ */
+}

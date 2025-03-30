@@ -23,7 +23,7 @@ $image_urls = array_fill(0, 7, ''); // เตรียม array สำหรั�
 
 foreach ($_FILES["Room_img"]["name"] as $key => $name) {
     $upload = $_FILES["Room_img"]["name"][$key];
-    if ($upload != '') { 
+    if ($upload != '') {
         $path = "../Room_img/";
         $type = strrchr($_FILES["Room_img"]["name"][$key], ".");
         $newname = $numrand . $date1 . $key . $type;
@@ -94,7 +94,7 @@ if ($row_check > 0) {
     if ($result) {
         echo '<script>';
         echo "alert('เพิ่มห้อง สำเร็จ');";
-        echo "window.location='Admin-room.php?act=building_2';";        
+        echo "window.location='Admin-room.php?act=building_2';";
         echo '</script>';
     } else {
         echo '<script>';
@@ -103,4 +103,3 @@ if ($row_check > 0) {
         echo '</script>';
     }
 }
-?>

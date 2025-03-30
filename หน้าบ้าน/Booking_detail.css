@@ -1,0 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E2EDD2;
+    margin: 0;
+    padding: 0;
+}
+
+.divBooking_detail {
+    display: flex;
+    padding: 32px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+
+.textBookingDetail {
+
+    align-self: stretch;
+
+    color: var(--text-primary, #0F0E0A);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Heading 1/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--large-64px, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -1.28px;
+}
+.textBookingDetailnot {
+
+    align-self: stretch;
+
+    color: var(--text-primary, #565eec);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Heading 1/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--large-64px, 34px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -1.28px;
+}
+
+.flex-column-div-data {
+    display: flex;
+    align-items: flex-start;
+
+    align-self: stretch;
+}
+
+.flex-row-divdataform {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #FBFBF9;
+    box-shadow: 0px 4px 32px 8px rgba(15, 14, 10, 0.10);
+
+
+
+}
+
+
+.flex-column-divd-atatext {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.textdata {
+    color: #0F0E0A;
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+}
+
+
+.flex-row-div-dataDetail {
+    display: flex;
+    padding: 24px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 0px 16px 16px 0px;
+    background: #9F936F;
+    box-shadow: 0px 4px 32px 8px rgba(15, 14, 10, 0.10);
+}
+
+.flex-column-div-textdataDetail {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+
+
+
+
+
+.Textinput {
+
+    display: flex;
+    width: 131px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--small-4px, 4px);
+
+}
+
+
+
+.Button {
+
+
+    display: flex;
+    padding: 25px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px, 40px);
+    background: var(--button-brand-primary, #A9C6B2);
+}
+
+
+
+
+.BookingStatus {
+
+    display: flex;
+    width: 265px;
+    height: 222px;
+    max-height: 380px;
+    padding: var(--small-8px, 8px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-24px, 24px);
+
+    border-radius: var(--medium-16px, 16px);
+    background: var(--surface-minimal, #EDEDEB);
+}
+
+.Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+
+}
+
+.textTitle {
+
+    flex: 1 0 0;
+    color: var(--text-primary, #0F0E0A);
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.Frame89Status {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+
+
+}
+
+.Frame86Status1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #e7e96d);
+}
+
+.textFrame86Status1 {
+    color: #000;
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.Frame86Status2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #ffffff);
+
+
+}
+
+.textFrame86Status2 {
+    color: #FFF;
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.Frame86Status3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #ffffff);
+}
+
+
+
+
+
+
+
+.Frame86Status1-1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #ffffff);
+}
+
+
+
+
+.Frame86Status1-2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #7EAA92);
+
+
+}
+
+
+
+
+.Frame86Status1-3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #ffffff);
+}
+
+
+
+
+
+
+
+.Frame86Status2-1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #ffffff);
+}
+
+
+
+
+.Frame86Status2-2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #ffffff);
+
+
+}
+
+
+
+
+.Frame86Status2-3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #F15A59);
+}
+
+
+.containersbuilding {
+    position: relative;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.textdetail {
+
+    color: var(--text-contrast, #A3A3A0);
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}

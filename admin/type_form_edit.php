@@ -1,7 +1,7 @@
-<?php 
-$ID = mysqli_real_escape_string($con,$_GET['ID']);
+<?php
+$ID = mysqli_real_escape_string($con, $_GET['ID']);
 $sql = "SELECT * FROM tbl_type WHERE type_id=$ID";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+$result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error());
 $row = mysqli_fetch_array($result);
 ?>
 <form action="type_form_edit_db.php" method="post" class="form-horizontal">
@@ -10,10 +10,10 @@ $row = mysqli_fetch_array($result);
       ประเภทสินค้า :
     </div>
     <div class="col-sm-3">
-      <input type="text" name="type_name" required class="form-control" value="<?php echo $row['type_name'];?>">
+      <input type="text" name="type_name" required class="form-control" value="<?php echo $row['type_name']; ?>">
     </div>
   </div>
-    <div class="form-group">
+  <div class="form-group">
     <div class="col-sm-2">
     </div>
     <div class="col-sm-3">

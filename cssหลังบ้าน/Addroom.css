@@ -1,14 +1,12 @@
-.Admin-room-createFrame82{
-
-
+.Admin-room-createFrame82 {
     display: flex;
-align-items: flex-start;
-gap: var(--medium-12px, 12px);
-flex: 1 0 0;
-align-self: stretch;
+    align-items: flex-start;
+
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
-.Addroomflex-row-div1{
+.Addroomflex-row-div1 {
     display: flex;
     padding: 10px;
     flex-direction: column;
@@ -17,36 +15,34 @@ align-self: stretch;
     align-self: stretch;
 }
 
-.Admin-room-createFrame81{
-
+.Admin-room-createFrame81 {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-end;
-gap: var(--medium-16px, 16px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--medium-16px, 16px);
 
 }
 
-.Room_numberandCost{
+.Room_numberandCost {
     display: flex;
-align-items: baseline;
-gap: 20px;
+    align-items: baseline;
+    gap: 20px;
 }
 
-.Room_number{
-
+.Room_number {
     color: #000;
-font-feature-settings: 'liga' off;
-
-/* Heading 3/Emphasized */
-font-family: "Supreme Variable";
-font-size: var(--large-32px, 32px);
-font-style: normal;
-font-weight: 700;
-line-height: 110%; /* 35.2px */
+    font-feature-settings: 'liga' off;
+    /* Heading 3/Emphasized */
+    font-family: "Supreme Variable";
+    font-size: var(--large-32px, 32px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 35.2px */
 }
 
-.Textinput{
+.Textinput {
     display: flex;
     width: 173px;
     flex-direction: column;
@@ -54,7 +50,7 @@ line-height: 110%; /* 35.2px */
     gap: var(--small-4px, 4px);
 }
 
-.Textinputfloor{
+.Textinputfloor {
     display: flex;
     width: 173px;
     height: 30px;
@@ -63,63 +59,197 @@ line-height: 110%; /* 35.2px */
     gap: var(--small-4px, 4px);
 }
 
-.AddroomButtonSave{
-
+.AddroomButtonSave {
     display: flex;
-padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-justify-content: center;
-align-items: center;
-gap: 10px;
-align-self: stretch;
-
-
-border-radius: var(--medium-12px, 12px);
-background: var(--button-brand-primary, #9F936F);
+    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: var(--medium-12px, 12px);
+    background: var(--button-brand-primary, #9F936F);
 }
 
-.Addroomflex-row-div2{
-
+.Addroomflex-row-div2 {
     display: flex;
-justify-content: space-between;
-align-items: flex-start;
-flex: 1 0 0;
-align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
-.divAddroom{
-
+.divAddroom {
     display: flex;
-padding: 0px var(--small-8px, 8px);
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
+    padding: 0px var(--small-8px, 8px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
-.AddroomFrame83{
-
+.AddroomFrame83 {
     display: flex;
-padding: var(--medium-12px, 12px);
-flex-direction: column;
-align-items: center;
-gap: var(--medium-12px, 12px);
-flex: 1 0 0;
-align-self: stretch;
-
-border-radius: var(--medium-16px, 16px);
-background: var(--surface-mild-contrast, #C0C0BE);
+    padding: var(--medium-12px, 12px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-12px, 12px);
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--medium-16px, 16px);
+    background: var(--surface-mild-contrast, #C0C0BE);
 }
 
-.AddroomFrame84{
-
+.AddroomFrame84 {
     display: flex;
-padding: 10px;
-align-items: flex-start;
-gap: 10px;
-flex: 1 0 0;
-align-self: stretch;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--medium-12px, 12px);
+    background: #FFF;
+}
 
-border-radius: var(--medium-12px, 12px);
-background: #FFF;
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .divAddroom {
+        flex: none;
+        width: 300px;
+    }
+
+    .AddroomFrame83 {
+        margin-left: 10px;
+
+    }
+
+    .Room_number {
+        font-size: var(--large-32px, 20px);
+    }
+
+    .Addroomflex-row-div1 {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+    .divAddroom {
+        flex: none;
+        width: 300px;
+    }
+
+    .AddroomFrame83 {
+        margin-left: 10px;
+
+    }
+
+    .Room_number {
+        font-size: var(--large-32px, 20px);
+    }
+
+    .Addroomflex-row-div1 {
+        margin-left: 130px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 899px) {
+    .divAddroom {
+        flex: none;
+        width: 290px;
+    }
+
+    .AddroomFrame83 {
+        margin-left: 10px;
+    }
+
+    .Room_number {
+        font-size: var(--large-32px, 15px);
+    }
+
+    .Addroomflex-row-div1 {
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 759px) {
+    .divAddroom {
+        flex: none;
+        width: 230px;
+    }
+
+    .AddroomFrame83 {
+        margin-left: -10px;
+    }
+
+    .Room_number {
+        font-size: var(--large-32px, 11px);
+    }
+
+    .Addroomflex-row-div1 {
+        margin-left: 235px;
+    }
+
+    .Admin-room-createFrame81 {
+        gap: var(--medium-16px, 8px);
+    }
+
+    .Admin-room-createFrame82 {
+        margin-top: -50px;
+    }
+
+    .Textinputfloor {
+        width: 150px;
+        height: 20px;
+    }
+
+    .Textinput {
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .divAddroom {
+        flex: none;
+        width: 123px;
+        margin-left: -10px;
+    }
+
+    .AddroomFrame83 {
+        margin-left: 10px;
+    }
+
+    .Room_number {
+        font-size: var(--large-32px, 8px);
+    }
+
+    .Addroomflex-row-div1 {
+        margin-left: 250px;
+    }
+
+    .Admin-room-createFrame81 {
+        gap: var(--medium-16px, 8px);
+    }
+
+    .Admin-room-createFrame82 {
+        margin-top: -50px;
+    }
+
+    .Textinputfloor {
+        width: 92px;
+        height: 20px;
+    }
+
+    .Textinput {
+        width: 50px;
+    }
+
+    .Room_numberandCost {
+        gap: 10px;
+    }
+
+    .AddroomButtonSave {
+        width: 55px;
+        height: 30px;
+        margin-left: 45px;
+    }
 }

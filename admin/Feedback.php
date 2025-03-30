@@ -2,7 +2,6 @@
 $sql = "SELECT * FROM review";
 $result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error($con));
 
-
 $sql2 = "SELECT * FROM user";
 $result_t = mysqli_query($con, $sql2) or die("Error in query: $sql2 " . mysqli_error($con));
 
@@ -11,13 +10,10 @@ $row2 = mysqli_fetch_array($result_t);
 ?>
 
 <div class="CM_Frame64">
-
-
-
-<!-- <?php
-while ($row = mysqli_fetch_array($result)) {
-    $row2 = mysqli_fetch_array($result_t); 
-?> -->
+    <!-- <?php
+            while ($row = mysqli_fetch_array($result)) {
+                $row2 = mysqli_fetch_array($result_t);
+            ?> -->
 
     <div class="CM_Frame60">
         <div class="Label-username">
@@ -39,7 +35,7 @@ while ($row = mysqli_fetch_array($result)) {
             <h class="CM_text"><?php echo $row['Date']; ?></h>
         </div>
     </div>
-    
+
     <div class="CM_Frame62">
         <div class="Label-Comment">
             <h class="CM_textหลัก">Rating</h>
@@ -58,16 +54,9 @@ while ($row = mysqli_fetch_array($result)) {
             <h class="CM_text"><?php echo $row['Comment']; ?></h>
         </div>
     </div>
-
-
-    
-  
-            
-   
-    
-<!-- <?php
-}
-mysqli_close($con);
-?> -->
+    <!-- <?php
+            }
+            mysqli_close($con);
+            ?> -->
 
 </div>

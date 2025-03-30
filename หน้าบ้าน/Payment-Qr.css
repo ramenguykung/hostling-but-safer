@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E2EDD2;
+}
+
+.Payment {
+    display: flex;
+    width: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.PaymentLeft {
+    width: 50%;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.PaymentLeft-Top {
+    display: flex;
+
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-qrcode,
+.btn-cash {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-qrcodee,
+.btn-cash {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-qrcode {
+    background-color: #A3895B;
+    color: black;
+}
+
+.btn-qrcodes {
+
+    color: black;
+}
+
+.btn-cash {
+
+    color: black;
+}
+
+.btn img {
+    margin-right: 10px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.comment {
+    color: red;
+}
+
+.PaymentRight {
+    width: 50%;
+    padding: 20px;
+    background-color: #abc498;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.BQr {
+    margin-bottom: 10px;
+}
+
+.text-Detailpayment {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.Up-fire {
+    margin-top: 20px;
+    background-color: #A3895B;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 2px 50px;
+    background-color: #9E7700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttonPA {
+
+    width: 360px;
+    height: 50px;
+}

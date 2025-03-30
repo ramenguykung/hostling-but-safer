@@ -1,4 +1,3 @@
-
 <!-- jQuery 3  devbanban.com -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -14,24 +13,25 @@
 <script src="../dist/js/demo.js"></script>
 <!-- page script -->
 <script>
-$(document).ready(function() {
-$('#example1').DataTable( {
-"aaSorting" :[[0,'desc']],
-//"lengthMenu":[[20,50, 100, -1], [20,50, 100,"All"]]
-});
-} );
-
+  $(document).ready(function() {
+    $('#example1').DataTable({
+      "aaSorting": [
+        [0, 'desc']
+      ],
+      //"lengthMenu":[[20,50, 100, -1], [20,50, 100,"All"]]
+    });
+  });
 </script>
 <script>
-  $(function () {
+  $(function() {
     $('#example1').DataTable()
     $('#example2').DataTable({
-      'paging'      : true,
+      'paging': true,
       'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
+      'searching': false,
+      'ordering': true,
+      'info': true,
+      'autoWidth': false
     })
   })
 </script>

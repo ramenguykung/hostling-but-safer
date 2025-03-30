@@ -3,9 +3,9 @@
 <p style="text-align:center;">For more awesome templates please visit <strong><a href="https://colorlib.com/wp/templates/">Colorlib</a></strong>.</p>
 
 <style>
-img {
-  margin: 0 auto;
-  display: block;
-  margin-top: 20%;
-}
+  img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20%;
+  }
 </style>

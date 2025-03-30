@@ -10,12 +10,12 @@ if ($_SESSION['m_level'] != 'admin') {
 $Id_Room = mysqli_real_escape_string($con, $_POST["Id_Room"]);
 $RoomNumber = mysqli_real_escape_string($con, $_POST["RoomNumber"]);
 $MonthlyPrice = mysqli_real_escape_string($con, $_POST["MonthlyPrice"]);
-$RoomSatatus = mysqli_real_escape_string($con, $_POST["RoomSatatus"]);
 $Room_Dimensions = mysqli_real_escape_string($con, $_POST["Room_Dimensions"]);
 $building_2_id = mysqli_real_escape_string($con, $_POST["building_2_id"]);
 $ค่าไฟ = mysqli_real_escape_string($con, $_POST["ค่าไฟ"]);
 $ค่าน้ำ = mysqli_real_escape_string($con, $_POST["ค่าน้ำ"]);
 $RoomSupplies = mysqli_real_escape_string($con, $_POST["RoomSupplies"]);
+$statusrooom = mysqli_real_escape_string($con, $_POST["statusrooom"]);
 
 $date1 = date("Ymd_His");
 $numrand = (mt_rand());
@@ -55,7 +55,7 @@ if ($row_check > 0) {
     // ดำเนินการแก้ไขข้อมูล
     $sql = "UPDATE room_building_2 SET 
             RoomNumber='$RoomNumber',
-            RoomSatatus='$RoomSatatus',
+            RoomSatatus='$statusrooom',
             Room_Dimensions='$Room_Dimensions',
             MonthlyPrice='$MonthlyPrice',
             ค่าไฟ='$ค่าไฟ',
@@ -86,4 +86,3 @@ if ($row_check > 0) {
         echo '</script>';
     }
 }
-?>

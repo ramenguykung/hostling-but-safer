@@ -1,0 +1,314 @@
+/* General container for booking details */
+.divBooking_detail {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for each data row */
+.flex-row-divdataform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-column-divd-atatext {
+    flex: 1 1 30%;
+    /* Allowing each item to take up 30% of space */
+    min-width: 250px;
+    /* Preventing it from getting too small */
+}
+
+.textdata {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Data detail section */
+.flex-row-div-dataDetail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.flex-column-div-textdataDetail {
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+/* Styling for the status section */
+.BookingStatus {
+    margin-top: 30px;
+}
+
+.Title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Frame89Status {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Frame86Status1,
+.Frame86Status2,
+.Frame86Status3 {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.Frame86Status1-1,
+.Frame86Status1-2,
+.Frame86Status1-3 {
+    flex: 1;
+    background-color: #dcdcdc;
+}
+
+.Frame86Status2-1,
+.Frame86Status2-2,
+.Frame86Status2-3 {
+    flex: 1;
+    background-color: #f7f7f7;
+}
+
+/* Divider line */
+.divider {
+    margin-top: 30px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+
+.BookingStatus {
+
+    display: flex;
+    width: 265px;
+    height: 222px;
+    max-height: 380px;
+    padding: var(--small-8px, 8px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-24px, 24px);
+
+    border-radius: var(--medium-16px, 16px);
+    background: var(--surface-minimal, #EDEDEB);
+}
+
+.Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+
+}
+
+.textTitle {
+
+    flex: 1 0 0;
+    color: var(--text-primary, #0F0E0A);
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.Frame89Status {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+
+
+}
+
+.Frame86Status1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #e7e96d);
+}
+
+.textFrame86Status1 {
+    color: #000;
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.Frame86Status2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #ffffff);
+
+
+}
+
+.textFrame86Status2 {
+    color: #FFF;
+    text-align: center;
+
+    /* ย่อหน้า/เน้นข้อความ */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.Frame86Status3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #ffffff);
+}
+
+
+
+
+
+
+
+.Frame86Status1-1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #ffffff);
+}
+
+
+
+
+.Frame86Status1-2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #7EAA92);
+
+
+}
+
+
+
+
+.Frame86Status1-3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #ffffff);
+}
+
+
+
+
+
+
+
+.Frame86Status2-1 {
+    display: flex;
+    padding: -10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-brand-secondary, #ffffff);
+}
+
+
+
+
+.Frame86Status2-2 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-success, #ffffff);
+
+
+}
+
+
+
+
+.Frame86Status2-3 {
+
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--small-8px, 8px);
+    background: var(--surface-error, #F15A59);
+}
