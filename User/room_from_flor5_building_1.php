@@ -82,25 +82,24 @@ WHERE t.floor = $floor_5" or die("Error:" . mysqli_error($con));
                                             <h1 class="textmaindata">Room status:</h1>
                                             <h1 class="textdata"><?php echo $row["RoomSatatus"] ?></h1>
                                         </div>
-
                                         <div class="Frame51">
-                                            <h1 class="textmaindata">Dimensions:</h1>
-                                            <h1 class="textdata"><?php echo $row["Room_Dimensions"] ?></h1>
-                                        </div>
+                                        <h1 class="textmaindata">Dimensions:</h1>
+                                        <h1 class="textdata"><?php echo $row["Room_Dimensions"] ?>เมตร</h1>
+                                    </div>
 
-                                        <div class="Frame51">
-                                            <h1 class="textmaindata">Price/Month:</h1>
-                                            <h1 class="textdata"><?php echo $row["MonthlyPrice"] ?></h1>
-                                        </div>
+                                    <div class="Frame51">
+                                        <h1 class="textmaindata">Price/Month:</h1>
+                                        <h1 class="textdata"><?php echo $row["MonthlyPrice"] ?> บาท</h1>
+                                    </div>
 
                                         <div class="Frame51">
                                             <h1 class="textmaindata">ค่าไฟ:</h1>
-                                            <h1 class="textdata"><?php echo $row["ค่าไฟ"] ?></h1>
+                                            <h1 class="textdata"><?php echo $row["ค่าไฟ"] ?> บาทต่อหน่วย</h1>
                                         </div>
 
                                         <div class="Frame51">
                                             <h1 class="textmaindata">ค่าน้ำ:</h1>
-                                            <h1 class="textdata"><?php echo $row["ค่าน้ำ"] ?></h1>
+                                            <h1 class="textdata"><?php echo $row["ค่าน้ำ"] ?> บาทต่อคน</h1>
                                         </div>
 
                                         <div class="Frame51">
@@ -126,23 +125,23 @@ WHERE t.floor = $floor_5" or die("Error:" . mysqli_error($con));
 
                                     <div class="Frame51">
                                         <h1 class="textmaindata">Dimensions:</h1>
-                                        <h1 class="textdata"><?php echo $row["Room_Dimensions"] ?></h1>
+                                        <h1 class="textdata"><?php echo $row["Room_Dimensions"] ?>เมตร</h1>
                                     </div>
 
                                     <div class="Frame51">
                                         <h1 class="textmaindata">Price/Month:</h1>
-                                        <h1 class="textdata"><?php echo $row["MonthlyPrice"] ?></h1>
+                                        <h1 class="textdata"><?php echo $row["MonthlyPrice"] ?> บาท</h1>
                                     </div>
 
                                     <div class="Frame51">
-                                        <h1 class="textmaindata">ค่าไฟ:</h1>
-                                        <h1 class="textdata"><?php echo $row["ค่าไฟ"] ?></h1>
-                                    </div>
+                                            <h1 class="textmaindata">ค่าไฟ:</h1>
+                                            <h1 class="textdata"><?php echo $row["ค่าไฟ"] ?> บาทต่อหน่วย</h1>
+                                        </div>
 
-                                    <div class="Frame51">
-                                        <h1 class="textmaindata">ค่าน้ำ:</h1>
-                                        <h1 class="textdata"><?php echo $row["ค่าน้ำ"] ?></h1>
-                                    </div>
+                                        <div class="Frame51">
+                                            <h1 class="textmaindata">ค่าน้ำ:</h1>
+                                            <h1 class="textdata"><?php echo $row["ค่าน้ำ"] ?> บาทต่อคน</h1>
+                                        </div>
 
                                     <div class="Frame51">
                                         <h1 class="textmaindata">Supplies:</h1>

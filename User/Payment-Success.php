@@ -13,7 +13,7 @@
 
     <div class="Success">
         <h1>ชำระเงินสำเร็จแล้ว</h1>
-        <a class="btn btn-Light" href="Home.php" role="button" style="text-decoration: none;">
+        <a class="btn btn-Light" href="Profile.php" role="button" style="text-decoration: none;">
             <button type="submit" class="button">
                 <h2 class="submit">Go to Home Page</h2>
             </button>

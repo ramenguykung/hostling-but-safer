@@ -30,11 +30,8 @@ body {
     align-items: flex-start;
     gap: 80px;
     width: 100%;
-    /* ให้เต็มความกว้างของหน้าจอ */
     max-width: 1200px;
-    /* จำกัดความกว้างเพื่อให้อ่านง่าย */
-    margin: 0 auto;
-    /* จัดให้อยู่กึ่งกลาง */
+    margin: 60px auto
 }
 
 .verticle-holderC {
