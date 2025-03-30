@@ -114,13 +114,13 @@ $result_t = mysqli_query($con, $sql2) or die("Error in query: $sql " . mysqli_er
                     <div class="Room_numberandCost">
                         <h class="Room_number">ค่าไฟ</h>
                         <input name="ค่าไฟ" id="ค่าไฟ" class="Textinput" type="text" value="<?php echo $row['ค่าไฟ']; ?>" required>
-                        <h class="Room_number">ต่อหน่วย</h>
+                        <h class="Room_number">บาทต่อหน่วย</h>
                     </div>
 
                     <div class="Room_numberandCost">
                         <h class="Room_number">ค่าน้ำ</h>
                         <input name="ค่าน้ำ" id="ค่าน้ำ" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
-                        <h class="Room_number">฿คน</h>
+                        <h class="Room_number">บาทต่อคน</h>
                     </div>
                 </div>
                 <input type="hidden" name="Id_Room" value="<?php echo $ID; ?>" />

@@ -158,17 +158,17 @@ ORDER BY p.Id_Room  DESC" or die("Error:" . mysqli_error());
 
             <div class="Frame50data">
               <h1 class="texttext">Price/Month:</h1>
-              <h1 class="texts"><?php echo $row["MonthlyPrice"] ?>฿</h1>
+              <h1 class="texts"><?php echo $row["MonthlyPrice"] ?> บาท</h1>
             </div>
 
             <div class="Frame50data">
               <h1 class="texttext">ค่าไฟ:</h1>
-              <h1 class="texts"><?php echo $row["ค่าไฟ"] ?>฿/หน่วย</h1>
+              <h1 class="texts"><?php echo $row["ค่าไฟ"] ?> บาทต่อหน่วย</h1>
             </div>
 
             <div class="Frame50data">
               <h1 class="texttext">ค่าน้ำ:</h1>
-              <h1 class="texts"><?php echo $row["ค่าน้ำ"] ?>฿/หน่วย</h1>
+              <h1 class="texts"><?php echo $row["ค่าน้ำ"] ?> บาทต่อคน</h1>
             </div>
 
             <div class="Frame50data">

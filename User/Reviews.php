@@ -37,18 +37,18 @@ $row12 = mysqli_fetch_array($resulttt);
     </div>
 
 
-    
+
     <?php if (!empty($row12) && $row12["Statuss"] === "สำเร็จ") { ?>
-    <a class="btn btn-Light" href="Feedback-Write.php" role="button">
+      <a class="btn btn-Light" href="Feedback-Write.php" role="button">
         <button type="submit" class="buttonreview">
-            <h3 class="submit">Fill in the review Feedback</h3>
+          <h3 class="submit">Fill in the review Feedback</h3>
         </button>
-    </a>
-<?php } else { ?>
-  <div class="container">
-    <p>You need to complete your booking before submitting a review.</p>
-    </div>
-<?php } ?>
+      </a>
+    <?php } else { ?>
+      <div class="container1">
+        <p>You need to complete your booking before submitting a review.</p>
+      </div>
+    <?php } ?>
 
     <?php while ($row = mysqli_fetch_array($result)) {
       $row2 = mysqli_fetch_array($result_t);  ?>

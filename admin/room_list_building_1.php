@@ -44,7 +44,7 @@ $result = mysqli_query($con, $query);
 
                 <div class="flex-column-div">
                     <h class="message">Dimensions: </h>
-                    <h class="message"> <?php echo $row["Room_Dimensions"] ?></h>
+                    <h class="message"> <?php echo $row["Room_Dimensions"] ?> เมตร</h>
                 </div>
 
                 <div class="flex-column-div">

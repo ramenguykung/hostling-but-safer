@@ -140,6 +140,10 @@ ORDER BY p.Id_Room  DESC" or die("Error:" . mysqli_error());
         function handleSubmit(event) {
             event.preventDefault();
             const totalGuest = document.getElementById('totalGuest').value;
+
+            const rentalStart = document.getElementById('rentalStart').value;
+            const rentalEnd = document.getElementById('rentalEnd').value;
+
             if (!/^\d+$/.test(totalGuest)) {
                 alert('อัตรารวมแขกจะต้องป้อนเป็นตัวเลขเท่านั้น และต้องไม่มีช่องว่างในช่องป้อนข้อมูล.');
                 return;
@@ -148,7 +152,21 @@ ORDER BY p.Id_Room  DESC" or die("Error:" . mysqli_error());
             if (totalGuest > 4) {
     alert('จำนวนคนเข้าพักต้องไม่มากกว่า 4 คน.');
     return;
-}
+}               
+
+              // ตรวจสอบวันที่เริ่มและวันที่ออกว่าห่างกันอย่างน้อย 6 เดือน
+    if (rentalStart && rentalEnd) {
+        const startDate = new Date(rentalStart);
+        const endDate = new Date(rentalEnd);
+
+        // คำนวณความต่างของเดือนระหว่างวันที่
+        const diffMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+
+        if (diffMonths < 6) {
+            alert('วันที่ย้ายออกต้องห่างจากวันที่เริ่มเข้าพักอย่างน้อย 6 เดือน.');
+            return;
+        }
+    }
             event.target.submit();
         }
     </script>

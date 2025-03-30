@@ -70,21 +70,7 @@ $result_t = mysqli_query($con, $sql2) or die("Error in query: $sql " . mysqli_er
             <div class="Addroomflex-row-div1">
                 <div class="Admin-room-createFrame81">
 
-                    <!-- <div class="Room_numberandCost">
-
-<h class="Room_number">Status Room</h> 
-<select name="statusrooom" class="Textinputfloor" required>
-<?php if ($row["RoomSatatus"] != "ห้องว่าง") { ?>
-
-<option value="<?php echo $row['RoomSatatus']; ?> อะไรเนี้ย"><?php echo $row['RoomSatatus']; ?></option>
-<option value="ห้องว่าง">ห้องว่าง</option>
-     <?php    } else { ?>
-        <option value="<?php echo $row['RoomSatatus']; ?> อะไรเนี้ย"><?php echo $row['RoomSatatus']; ?></option>
-        <option value="ไม่ห้องว่าง">ไม่ห้องว่าง</option>
-        <?php      } ?>
-
-        </select>
-                              </div> -->
+      
                     <div class="Room_numberandCost">
                         <h class="Room_number">Status Room</h>
                         <select name="statusrooom" class="Textinputfloor">
@@ -135,7 +121,7 @@ $result_t = mysqli_query($con, $sql2) or die("Error in query: $sql " . mysqli_er
                     <div class="Room_numberandCost">
                         <h class="Room_number">ค่าน้ำ</h>
                         <input name="ค่าน้ำ" id="ค่าน้ำ" class="Textinput" type="text" value="<?php echo $row['ค่าน้ำ']; ?>" required>
-                        <h class="Room_number">หน่วย</h>
+                        <h class="Room_number">บาทต่อคน</h>
                     </div>
                 </div>
 
