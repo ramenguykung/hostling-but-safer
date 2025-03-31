@@ -13,7 +13,7 @@ if (isset($_POST['Email'])) {
     $resultUser = mysqli_query($con, $sqlUser);
 
     // query สำหรับ admin
-    $sqlAdmin = "SELECT * FROM Web_admin WHERE Email ='" . $Email . "' AND admin_Password='" . $Password . "'";
+    $sqlAdmin = "SELECT * FROM web_admin WHERE Email ='" . $Email . "' AND admin_Password='" . $Password . "'";
     $resultAdmin = mysqli_query($con, $sqlAdmin);
 
     if (mysqli_num_rows($resultUser) == 1) {
