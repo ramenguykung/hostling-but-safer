@@ -1,0 +1,514 @@
+:root {
+    /* Base Color Variables */
+    /* neutral */
+    --color-neutral-0: hsla(60, 20%, 98%, 1);
+    --color-neutral-100: hsla(60, 5%, 93%, 1);
+    --color-neutral-200: hsla(60, 2%, 75%, 1);
+    --color-neutral-300: hsla(60, 2%, 63%, 1);
+    --color-neutral-400: hsla(60, 1%, 52%, 1);
+    --color-neutral-600: hsla(60, 3%, 28%, 1);
+    --color-neutral-1000: hsla(48, 20%, 5%, 1);
+
+    /* gold */
+    --color-gold-100: hsla(45, 20%, 53%, 1);
+    --color-gold-300: hsla(45, 100%, 31%, 1);
+
+    /* blue */
+    --color-blue-100: hsla(139, 20%, 72%, 1);
+    --color-blue-200: hsla(168, 20%, 61%, 1);
+
+    /* red */
+    --color-red-300: hsla(5, 95%, 60%, 1);
+    --color-red-800: hsla(5, 90%, 50%, 1);
+
+    /* green */
+    --color-green-400: hsla(82, 41%, 47%, 1);
+    --color-green-600: hsla(104, 52%, 32%, 1);
+
+    /* Base Spacing Variables */
+    /* small */
+    --small-0px: 0px;
+    --small-2px: 2px;
+    --small-4px: 4px;
+    --small-6px: 6px;
+    --small-8px: 8px;
+
+    /* medium */
+    --medium-12px: 12px;
+    --medium-16px: 16px;
+    --medium-20px: 20px;
+    --medium-24px: 24px;
+
+    /* large */
+    --large-32px: 32px;
+    --large-40px: 40px;
+    --large-48px: 48px;
+    --large-64px: 64px;
+    --large-80px: 80px;
+
+    /* Tokens */
+    /* surface */
+    --surface-primary: var(--color-neutral-0);
+    --surface-minimal: var(--color-neutral-100);
+    --surface-mild-contrast: var(--color-neutral-200);
+    --surface-contrast: var(--color-neutral-400);
+    --surface-heavy-contrast: var(--color-neutral-1000);
+    --surface-brand-primary: var(--color-gold-100);
+    --surface-brand-primary-contrast: var(--color-gold-300);
+    --surface-brand-secondary: var(--color-blue-100);
+    --surface-brand-secondary-contrast: var(--color-blue-200);
+    --surface-error: var(--color-red-300);
+    --surface-error-contrast: var(--color-red-800);
+    --surface-success: var(--color-green-400);
+    --surface-success-contrast: var(--color-green-600);
+
+    /* text */
+    --text-primary: var(--color-neutral-1000);
+    --text-secondary: var(--color-neutral-600);
+    --text-contrast: var(--color-neutral-300);
+    --text-invert: var(--color-neutral-0);
+    --text-success: var(--color-green-400);
+    --text-success-contrast: var(--color-green-600);
+    --text-error: var(--color-red-300);
+    --text-error-contrast: var(--color-red-800);
+
+    /* border */
+    --border-primary: var(--color-neutral-1000);
+    --border-contrast: var(--color-neutral-400);
+    --border-invert: var(--color-neutral-0);
+    --border-brand-primary: var(--color-gold-100);
+    --border-success: var(--color-green-400);
+    --border-success-contrast: var(--color-green-600);
+    --border-error: var(--color-red-300);
+    --border-error-contrast: var(--color-red-800);
+
+    /* button */
+    --button-primary: var(--color-neutral-0);
+    --button-minimal: var(--color-neutral-100);
+    --button-mild-contrast: var(--color-neutral-200);
+    --button-contrast: var(--color-neutral-400);
+    --button-heavy-contrast: var(--color-neutral-1000);
+    --button-brand-primary: var(--color-gold-100);
+    --button-brand-primary-contrast: var(--color-gold-300);
+    --button-brand-secondary: var(--color-blue-100);
+    --button-brand-secondary-contrast: var(--color-blue-200);
+    --button-error: var(--color-red-300);
+    --button-error-contrast: var(--color-red-800);
+    --button-success: var(--color-green-400);
+    --button-success-contrast: var(--color-green-600);
+}
+
+.containers {
+    position: relative;
+    top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SU {
+    color: #000;
+    font-feature-settings: "liga" off;
+
+    /* Heading 2/Regular */
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Supreme;
+    font-size: var(--large-48px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 52.8px */
+    letter-spacing: -0.48px;
+}
+
+.frame {
+
+    height: 1010px;
+    flex-shrink: 0;
+    border-radius: var(--medium-20px);
+    background: var(--surface-minimal);
+    box-shadow: var(--small-0px) var(--small-4px) var(--small-8px) var(--small-0px) var(--surface-minimal);
+}
+
+.signup {
+    position: relative;
+    left: 150px;
+
+    display: inline-flex;
+    padding: var(--small-8px) var(--medium-16px) var(--small-8px) var(--medium-12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--small-8px);
+    font-size: var(--medium-20px);
+
+    border-radius: 8px;
+}
+
+.fon {
+    color: var(--text-primary);
+    font-feature-settings: "liga" off;
+
+    /* Body/Emphasized */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.Move {
+    position: relative;
+    top: var(--medium-20px);
+}
+
+.nt {
+    display: flex;
+    padding: var(--small-6px);
+    align-items: center;
+    gap: var(--medium-20px);
+}
+
+
+
+.input1 {
+    display: flex;
+    padding: 12px 90px 6px 16px;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
+
+    color: var(--text-contrast);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+
+    position: relative;
+    /* เพื่อให้ลูกศรสามารถปรับตำแหน่งได้ */
+
+}
+
+.input11 {
+    display: flex;
+    padding: 12px 20px 6px 16px;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
+
+    color: var(--text-contrast);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+
+    width: 170px;
+
+    /* เพื่อให้ลูกศรสามารถปรับตำแหน่งได้ */
+}
+
+
+/* ปรับลูกศรให้สมดุล */
+
+.input1::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.input1 {
+    appearance: none;
+    /* ปิดการแสดงลูกศรแบบเดิม */
+}
+
+/* สร้างลูกศรที่ปรับเอง */
+.input1::after {
+    content: '▼';
+    /* ใช้ลูกศร */
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    /* วางลูกศรทางขวาให้ไม่ติดขอบ */
+    transform: translateY(-100%);
+    /* จัดตำแหน่งให้ลูกศรอยู่กลาง */
+    font-size: 18px;
+    color: red;
+    /* ปรับสีของลูกศร */
+    pointer-events: none;
+    /* ทำให้ไม่สามารถคลิกลูกศร */
+}
+
+
+.Moveinput1 {
+    position: relative;
+    top: 50px;
+}
+
+.frameinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-20px);
+}
+
+.fontMonth {
+    color: var(--text-secondary);
+    font-feature-settings: "liga" off;
+    font-family: Supreme;
+    font-size: var(--medium-14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: 0.28px;
+
+    position: relative;
+    top: var(--medium-20px);
+    right: -15px;
+}
+
+.frameinput2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--small-4px);
+    align-self: stretch;
+}
+
+.fip2 {
+    display: flex;
+    padding-right: var(--small-8px);
+    align-items: center;
+    gap: var(--large-80px);
+    align-self: stretch;
+    position: relative;
+    top: var(--small-8px);
+}
+
+.Select {
+    display: flex;
+    padding: var(--medium-12px) var(--medium-12px) var(--medium-12px) var(--medium-16px);
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
+
+    color: var(--text-primary);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.input {
+    display: flex;
+    padding: var(--medium-12px) var(--medium-12px) var(--medium-12px) var(--medium-16px);
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
+
+    color: var(--text-contrast);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.button {
+    margin-top: -50px;
+    display: flex;
+    width: 400px;
+    height: 10px;
+    padding: var(--medium-24px) var(--small-8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--small-0px);
+    flex-shrink: var(--small-0px);
+    border-radius: var(--medium-20px);
+    background: #57e578;
+}
+
+.fontsignup {
+    color: var(--text-primary);
+    font-feature-settings: "liga" off;
+
+    /* Body/Emphasized */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.error {
+    background-color: #f56565;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
+
+    position: relative;
+    top: 890px;
+    right: -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    background-color: #3df904;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
+
+    position: relative;
+    top: 45px;
+    right: -210px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error1 {
+    background-color: #f56565;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
+
+    position: relative;
+    top: 890px;
+    right: -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonIconLeft {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    background: #b68d4f;
+    /* เปลี่ยนเป็นสีน้ำตาล */
+    --button-primary: var(--color-neutral-0);
+}
+
+
+.MovetoggleButtons {
+    position: relative;
+    top: -257px;
+    right: -270px;
+}
+
+.MovetoggleButtonn {
+    position: relative;
+    top: -235px;
+    right: -270px;
+}
+
+.buttoneye {
+    display: flex;
+    width: var(--medium-16px);
+    height: var(--medium-16px);
+    padding: var(--medium-12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--small-8px);
+
+    border-radius: var(--large-40px);
+    background: var(--button-secondary);
+}

@@ -1,51 +1,24 @@
-
-
-
-
-
-
-
-
-
 <div class="containersbuilding">
-<div class="Lineup">
+    <div class="Lineup">
+        <a href="Admin-room.php?act=building_1" style="text-decoration: none;">
+            <div class="frame">
 
+                <div class="containers">
+                    <h1 class="messagebuilding"> อาคาร</h1>
+                    <h1 class="messageflex"> 1</h1>
+                </div>
+            </div>
+        </a>
 
-<a href="room.php?act=building_1" >
-<div class="frame">
+        <a href="Admin-room.php?act=building_2" style="text-decoration: none;">
+            <div class="frame">
+                <div class="containers">
+                    <h1 class="messagebuilding"> อาคาร</h1>
+                    <h1 class="messageflex"> 2</h1>
+                </div>
 
-<div class="containers">
-<h1 class="messagebuilding" > อาคาร</h1>
-<h1 class="messageflex" > 1</h1>
+            </div>
+        </a>
+
+    </div>
 </div>
-</div>
-
-</a>
-
-
-
-<a href="room.php?act=building_2" >
-<div class="frame">
-
-<div class="containers">
-<h1 class="messagebuilding"> อาคาร</h1>
-<h1 class="messageflex" > 2</h1>
-</div>
-
-</div>
-</a>
-
-
-
-</div></div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>

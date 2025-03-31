@@ -11,10 +11,6 @@ $mysqli = require __DIR__ . "/database.php";
 
 $sql = "SELECT * FROM user
         WHERE reset_token_hash = ?";
-
-       
-
-
 $stmt = $mysqli->prepare($sql);
 
 $stmt->bind_param("s", $token_hash);
@@ -26,8 +22,6 @@ $result = $stmt->get_result();
 $user = $result->fetch_assoc();
 
 if ($user === null) {
-  
-
     echo '<script>';
     echo "alert('token not found');";
     echo "window.location='Forgotpassword.php';";
@@ -35,19 +29,11 @@ if ($user === null) {
 }
 
 if (strtotime($user["reset_token_expires_at"]) <= time()) {
-
-
-
-
     echo '<script>';
     echo "alert('token has expired');";
     echo "window.location='Forgotpassword.php';";
-    
     echo '</script>';
 }
-
-
-
 
 $sql = "UPDATE user
         SET user_password = ?,
@@ -62,11 +48,7 @@ $stmt = $mysqli->prepare($sql);
 $stmt->bind_param("ss", $Password, $user["Id_User"]);
 
 $stmt->execute();
-
 echo '<script>';
 echo "alert('Password reset successful .');";
 echo "window.location='formlogin.php';";
 echo '</script>';
-
-
-?>

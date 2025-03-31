@@ -14,22 +14,16 @@ $user_img = $_SESSION['user_img'];
 
 if ($m_level != 'User') {
     header("Location: ../logout.php");
-} 
+}
 
 $sql = "SELECT * FROM user WHERE Id_User = $member_id";
-$result = mysqli_query($con,$sql) or die ("Error in query:  $sql" . mysqli_error());
-$row = mysqli_fetch_array($result);
-extract($row);
+$result = mysqli_query($con, $sql) or die("Error in query:  $sql" . mysqli_error());
+$rowuser = mysqli_fetch_array($result);
+extract($rowuser);
 
-$user_name = $row['user_name'];
-$user_img = $row['user_img'];
+$user_name = $rowuser['user_name'];
+$user_img = $rowuser['user_img'];
 
 
 // echo $sql;
 // exit();
-
-
-
-?>
-
-  

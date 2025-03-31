@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E2EDD2;
+    margin: 0;
+    padding: 0;
+}
+
+.Account {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    margin-left: 300px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input1,
+.input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #8B7E66;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: #6A5D4E;
+}
+
+.group-Birthday {
+
+    display: flex;
+    padding: var(--small-6px);
+    align-items: center;
+    gap: 10px;
+
+}
+
+.group-Birthday a {
+    margin-right: 5px;
+    /* ระยะห่างขวาเล็กน้อย */
+}
+
+.groupp {
+
+    display: flex;
+    padding: var(--small-6px);
+    align-items: center;
+    gap: 10px;
+}
+
+.groupp a {
+    margin-right: 5px;
+    /* ระยะห่างขวาเล็กน้อย */
+}

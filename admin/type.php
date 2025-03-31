@@ -1,15 +1,15 @@
-<?php include('h.php');?>
+<?php include('h.php'); ?>
+
 <body class="hold-transition skin-purple sidebar-mini">
   <div class="wrapper">
     <!-- Main Header -->
-    <?php include('menutop.php');?>
-        <?php include('menu_l.php');?>
+    <?php include('menutop.php'); ?>
+    <?php include('menu_l.php'); ?>
     <div class="content-wrapper">
       <section class="content-header">
         <h1>
-        <i class="glyphicon glyphicon-list-alt hidden-xs"></i> <span class="hidden-xs">ข้อมูลรายการประเภทสินค้า</span>
-        
-        <a href="type.php?act=add" class="btn btn-primary btn-sm">เพิ่มประเภทสินค้า</a>
+          <i class="glyphicon glyphicon-list-alt hidden-xs"></i> <span class="hidden-xs">ข้อมูลรายการประเภทสินค้า</span>
+          <a href="type.php?act=add" class="btn btn-primary btn-sm">เพิ่มประเภทสินค้า</a>
         </h1>
       </section>
       <section class="content">
@@ -21,14 +21,14 @@
                   <div class="box-body">
                     <?php
                     $act = (isset($_GET['act']) ? $_GET['act'] : '');
-                    if($act == 'add'){
-                        include('type_form_add.php');
-                    }elseif ($act == 'edit') {
-                        include('type_form_edit.php');
-                    }else {
-                        include('type_list.php');
+                    if ($act == 'add') {
+                      include('type_form_add.php');
+                    } elseif ($act == 'edit') {
+                      include('type_form_edit.php');
+                    } else {
+                      include('type_list.php');
                     }
-                  ?>                   
+                    ?>
                   </div>
                 </div>
               </div>
@@ -36,6 +36,7 @@
           </div>
         </div>
       </section>
-    </body>
-  </html>
-  <?php include('footerjs.php');?>
+</body>
+
+</html>
+<?php include('footerjs.php'); ?>
