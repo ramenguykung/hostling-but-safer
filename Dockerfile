@@ -51,13 +51,10 @@ FROM php:8.2.12-apache as final
 # This example adds the apt packages for the 'gd' extension's dependencies and then
 # installs the 'gd' extension. For additional tips on running apt-get, see
 # https://docs.docker.com/go/dockerfile-aptget-best-practices/
-# RUN apt-get update && apt-get install -y \
-#     libfreetype-dev \
-#     libjpeg62-turbo-dev \
-#     libpng-dev \
-# && rm -rf /var/lib/apt/lists/* \
-#     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-#     && docker-php-ext-install -j$(nproc) gd
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    zip \
+    && docker-php-ext-install mysqli zip
 #
 # Add PECL extensions, see
 # https://github.com/docker-library/docs/tree/master/php#pecl-extensions

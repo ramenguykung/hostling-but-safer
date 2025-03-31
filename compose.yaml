@@ -13,6 +13,23 @@ services:
       context: .
     ports:
       - 9000:80
+  database:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: bc_house
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: database
+      PMA_PORT: 3306
+      PMA_ARBITRAEY: 1
+    depends_on:
+      - database
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
