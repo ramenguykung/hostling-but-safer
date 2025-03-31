@@ -20,7 +20,7 @@ services:
     environment:
       PMA_HOST: database
       PMA_PORT: 3306
-      PMA_ARBITRAEY: 1
+      PMA_ARBITRARY: 1
     depends_on:
       - database
 volumes:
