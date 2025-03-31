@@ -10,7 +10,6 @@ if ($_SESSION['m_level'] != 'admin') {
 $Id_Room = mysqli_real_escape_string($con, $_POST["Id_Room"]);
 $RoomNumber = mysqli_real_escape_string($con, $_POST["RoomNumber"]);
 $MonthlyPrice = mysqli_real_escape_string($con, $_POST["MonthlyPrice"]);
-$RoomSatatus = mysqli_real_escape_string($con, $_POST["RoomSatatus"]);
 $Room_Dimensions = mysqli_real_escape_string($con, $_POST["Room_Dimensions"]);
 $building_1_id = mysqli_real_escape_string($con, $_POST["building_1_id"]);
 $ค่าไฟ = mysqli_real_escape_string($con, $_POST["ค่าไฟ"]);
@@ -26,14 +25,23 @@ $image_urls = array_fill(0, 7, '');
 foreach ($_FILES["Room_img"]["name"] as $key => $name) {
     $upload = $_FILES["Room_img"]["name"][$key];
     if ($upload != '') {
+        // ถ้ามีการอัปโหลดรูปใหม่
         $path = "../Room_img/";
         $type = strrchr($_FILES["Room_img"]["name"][$key], ".");
         $newname = $numrand . $date1 . $key . $type;
         $path_copy = $path . $newname;
         $path_link = "../Room_img/" . $newname;
+
+        // ลบรูปเก่าหากมี
+        if ($_POST["Room_img0"][$key] != '' && file_exists("../Room_img/" . $_POST["Room_img0"][$key])) {
+            unlink("../Room_img/" . $_POST["Room_img0"][$key]);
+        }
+
+        // อัปโหลดรูปใหม่
         move_uploaded_file($_FILES["Room_img"]["tmp_name"][$key], $path_copy);
         $image_urls[$key] = $newname; // บันทึกชื่อรูปภาพลงใน array
     } else {
+        // ถ้าไม่มีการอัปโหลดรูปใหม่ ใช้รูปเดิม
         $image_urls[$key] = $_POST["Room_img0"][$key];
     }
 }
@@ -56,7 +64,6 @@ if ($row_check > 0) {
     // ดำเนินการแก้ไขข้อมูล
     $sql = "UPDATE room_building_1 SET 
             RoomNumber='$RoomNumber',
-            RoomSatatus='$RoomSatatus',
             Room_Dimensions='$Room_Dimensions',
             MonthlyPrice='$MonthlyPrice',
             ค่าไฟ='$ค่าไฟ',

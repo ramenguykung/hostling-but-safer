@@ -28,7 +28,6 @@ $Success = false;
 if ($mysqli->affected_rows) {
 
     $mail = require __DIR__ . "/mailer.php";
-
     $mail->setFrom("bchouseforrent1@gmail.com ", 'BC House for rent');
     $mail->addAddress($email);
     $mail->Subject = "Password Reset";

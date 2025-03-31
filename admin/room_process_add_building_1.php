@@ -23,7 +23,7 @@ $image_urls = array_fill(0, 7, ''); // เตรียม array สำหรั�
 
 foreach ($_FILES["Room_img"]["name"] as $key => $name) {
     $upload = $_FILES["Room_img"]["name"][$key];
-    if ($upload != '') { 
+    if ($upload != '') {
         $path = "../Room_img/";
         $type = strrchr($_FILES["Room_img"]["name"][$key], ".");
         $newname = $numrand . $date1 . $key . $type;
@@ -103,4 +103,3 @@ if ($row_check > 0) {
         echo '</script>';
     }
 }
-?>

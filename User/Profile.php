@@ -1,108 +1,99 @@
-<!-- <?php 
-$sql = "SELECT * FROM user WHERE Id_User =$member_id";
-$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
-$row = mysqli_fetch_array($result);
-?> -->
+<?php
+include("h.php");
+include("../condb.php");
+?>
+<!DOCTYPE html>
 
+<head>
+    <title>BC House</title> 
+    <meta charset="utf-8"><link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="../หน้าบ้าน/logout.css?v=1.0" rel="stylesheet">
+    <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
+    <link href="../หน้าบ้าน/Profile.css?v=1.0" rel="stylesheet">
+</head>
 
-
-
-<div class="po">
-    <img src="../user_img/<?php echo $row['user_img']; ?>" width="150" height="150" alt="logo" />
-</div>
-
-<div class="containers">
-    <div class="frame">
-        <div class="frameinput2">
-            <h5 class="fip2">Name</h5>
-            <div class="input">
-            <?php echo $row['user_name'];?>
+<body>
+    <?php include('navbarnew.php'); ?>
+    <img class="Account" src="../user_img/<?php echo $rowuser['user_img']; ?>" width="100px" height="100px">
+    <div class="container-2">
+        <div class="nt">
+            <a>Name</a>
+            <div class="input1">
+                <?php echo $rowuser['user_name']; ?>
             </div>
-
-            <h5 class="fip3">Last name</h5>
-            <br>
-            <div class="input">
-            <?php echo $row['Surname'];?>
+            <a>Surname</a>
+            <div class="input1">
+                <?php echo $rowuser['Surname']; ?>
             </div>
-            <br>
-
-            <h5 class="fip4">Day</h5>
-            <h5 class="fip5">Month</h5>
-            <h5 class="fip6">Year</h5>
-
-            <div class="ntPF">
-                <div class="inputDay">
-                <?php echo $row['user_Day'];?>
-                
+            <div class="group-Birthday">
+                <a>Day</a>
+                <div class="input1">
+                    <?php echo $rowuser['user_Day']; ?>
                 </div>
-                <div class="inputMonth">
-                <?php echo $row['user_Month'];?>
-                   
+                <a>Month</a>
+                <div class="input">
+                    <?php echo $rowuser['user_Month']; ?>
                 </div>
-                <div class="inputYear">
-                <?php echo $row['user_Year'];?>
-                  
+                <a>Year</a>
+                <div class="input1">
+                    <?php echo $rowuser['user_Year']; ?>
                 </div>
+            </div>
+            <div class="groupp">
+                <a>Age</a>
+                <div class="input1">
+                    <?php echo $rowuser['Age']; ?>
+                </div>
+                <a>Gender</a>
+                <div class="input">
+                    <?php echo $rowuser['Gender']; ?>
+                </div>
+            </div>
 
-              
+            <a>Phone No.</a>
+            <div class="input">
+                <?php echo $rowuser['Phone']; ?>
+            </div>
 
-                
+            <a>Resident Registration Address</a>
+            <div class="input">
+                <?php echo $rowuser['Card_Address']; ?>
+            </div>
 
+            <a>Job</a>
+            <div class="input">
+                <?php echo $rowuser['Job']; ?>
             </div>
-            <br>
 
-            <h5 class="fip7">Age</h5>
-           
+            <a>Email</a>
             <div class="input">
-            <?php echo $row['Age'];?>
-              
+                <?php echo $rowuser['Email']; ?>
             </div>
-            <br>
-           
-            <h5 class="fip78">Gender</h5>
-            <div class="input">
-            <?php echo $row['Gender'];?>
-              
-            </div>
-            <br>
+            <a href="Edit-Profile.php" style="text-decoration: none;">
+                <button type="button" class="buttons">
+                    <h3 class="submit">Edit</h3>
+                </button>
+            </a>
+        </div>
+    </div>
 
-            <h5 class="fip8">Phone No.</h5>
-            <div class="input">
-            <?php echo $row['Phone'];?>
-               
-            </div>
-            <br>
-            <h5 class="fip9">Resident Registration Address</h5>
-          
-            <div class="input">
-            <?php echo $row['Card_Address'];?>
-             
-            </div>
-       
-            <h5 class="fip10">Job</h5>
-            <br>
-            <div class="input">
-            <?php echo $row['Job'];?>
-             
-            </div>
-            <br>
-            <h5 class="fip11">Email</h5>
-         
-            <div class="input">
-            <?php echo $row['Email'];?>
-               
-            </div>
-            <br>
-            <a href="index.php?act=Edit" style="text-decoration: none;">
-                <button class="button">
-                    <h6 class="fontsignup">Edit Profile</h6>
+    <div class="container-3">
+        <div class="Form">
+            <h1>สถานะการสั่งจอง มี 3 สถานะ</h1>
+            <a href="Booking_detailprofileเช็กออเดอร์.php" role="button" style="text-decoration: none;">
+                <button type="button" class="button">
+                    <h2 class="submit">Detail</h2>
                 </button>
             </a>
 
-            <br><br><br>
+            <a>รอทำสัญญา</a><br>
+            <a>สำเร็จ</a><br>
+            <div class="buttonQut">ไม่สำเร็จ</div><br>
         </div>
     </div>
-</div>
+</body>
 
-
+</html>

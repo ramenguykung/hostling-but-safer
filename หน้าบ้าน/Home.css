@@ -1,347 +1,484 @@
-    .divhome{
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        align-self: stretch;
-    }
+.divhome {
+    background-color: #E2EDD2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
 
-                .top-navigation-mainhome{
-
-
-            display: flex;
-            padding: var(--medium-24px, 24px) var(--large-32px, 32px);
-            justify-content: space-between;
-            align-items: flex-end;
-            align-self: stretch;
-
-            background: var(--fade, rgba(251, 251, 249, 0.80));
-            box-shadow: 0px var(--small-4px, 4px) var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
-            backdrop-filter: blur(calc(var(--large-32px, 32px) / 2));
-        }
-
-                            .left-navH{
-
-                                display: flex;
-                                padding: var(--small-6px, 6px);
-                                align-items: center;
-                                gap: var(--medium-20px, 20px);
-
-                            }
-                                
-                                    .menu-dividerH{
-                                        display: flex;
-                                        align-items: center;
-                                        gap: var(--small-8px, 8px);
-
-                                    }
-
-                                    .text-navigatorH{
-
-                                        display: flex;
-                                        align-items: center;
-                                        gap: var(--medium-16px, 16px);
-                                    }
+.top-navigation-mainhome {
 
 
-                            .Frame70H{
+    display: flex;
+    padding: var(--medium-24px, 24px) var(--large-32px, 32px);
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+
+    background: var(--fade, rgba(251, 251, 249, 0.80));
+    box-shadow: 0px var(--small-4px, 4px) var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
+    backdrop-filter: blur(calc(var(--large-32px, 32px) / 2));
+}
+
+.left-navH {
+
+    display: flex;
+    padding: var(--small-6px, 6px);
+    align-items: center;
+    gap: var(--medium-20px, 20px);
+
+}
+
+.menu-dividerH {
+    display: flex;
+    align-items: center;
+    gap: var(--small-8px, 8px);
+
+}
+
+.text-navigatorH {
+
+    display: flex;
+    align-items: center;
+    gap: var(--medium-16px, 16px);
+}
 
 
-                                display: flex;
-                                justify-content: flex-end;
-                                align-items: center;
-                                gap: var(--medium-16px, 16px);
-                            }
+.Frame70H {
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--medium-16px, 16px);
+}
 
 
 
 
-        .textHome{
+.textHome {
 
-            color: var(--text-primary, #0F0E0A);
-            font-feature-settings: 'liga' off;
-            
-            /* Body/Regular */
-            font-family: "Supreme Variable";
-            font-size: var(--medium-16px, 16px);
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%; /* 24px */
-            letter-spacing: 0.32px;
-        }
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
 
-        
-.ButtonH{
+    /* Body/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.ButtonH {
     display: flex;
     padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: var(--medium-12px, 12px);
-    
+
     background: var(--button-brand-primary);
 
-    color: var(--text-primary, #0f0e0a);
+    color: var(--text-primary, #8B7E66);
     font-feature-settings: "liga" off;
     font-family: "Supreme Variable";
-    font-size:  20px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
-}               
+}
 
 
-                    .divhome2{
+.buttonreview {
 
-                        display: flex;
-                        height: 800px;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        align-self: stretch;
-                    }
+    background: var(--button-brand-secondary, #A9C6B2);
+
+    width: 100%;
 
 
-                    .title-bannerH{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                    }
 
-                            .imgmainH{
-
-                                flex: 1 0 0;
-                                align-self: stretch;
-                                background: linear-gradient(0deg, rgba(136, 175, 167, 0.50) 0%, rgba(136, 175, 167, 0.50) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-                                filter: blur(calc(var(--medium-24px, 24px) / 2));
-                            }
-
-                                        .textimgH{
-                                            position: absolute;
-                                            right: 502px;
-                                            top: 365px;
-                                            color: var(--text-invert, #ff0000);
-                                            text-align: center;
-                                            font-feature-settings: 'liga' off;
-                                            
-                                            /* หัวข้อ 1/ธรรมดา */
-                                            font-family: "IBM Plex Sans Thai Looped";
-                                            font-size: var(--large-64px, 64px);
-                                            font-style: normal;
-                                            font-weight: 700;
-                                            line-height: 110%; /* 70.4px */
-                                            letter-spacing: -1.28px;
-                                        }
-
-            .divimgsH{
-                display: flex;
-                height: 320px;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                align-self: stretch;
-
-            }
-
-                    .flex-column-divH{
-
-                        display: flex;
-                        min-height: 320px;
-                        max-height: 720px;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex: 1 0 0;
-                        align-self: stretch;
-
-                    }
-                                .imgss{
-
-                                    display: flex;
-                                    padding: 0px var(--small-4px, 4px);
-                                    justify-content: center;
-                                    align-items: center;
-                                    gap: 10px;
-                                    flex: 1 0 0;
-                                    align-self: stretch;
-
-                                            
-/* Default Drop Shadow */
-box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
-                                }
-
-                                        .imgsss{
-
-                                            flex: 1 0 0;
-                                            align-self: stretch;
-                                            border-radius: var(--small-8px, 8px);
-                                            background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-                                            box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(0, 0, 0, 0.25);
-                                        }
-                                
-
-            .storyboard-slideH{
-                display: flex;
-                padding: var(--medium-16px, 16px) var(--large-64px, 64px);
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--medium-12px, 12px);
-                align-self: stretch;
-            }
-
-                    .top-navigationH{
-
-                        display: flex;
-                        padding: var(--medium-24px, 24px) var(--large-64px, 64px);
-                        align-items: center;
-                        gap: var(--large-80px, 80px);
-                        align-self: stretch;
-                    }
-
-                            .texttopmain{
-                                color: var(--text-primary, #0F0E0A);
-                                font-feature-settings: 'liga' off;
-                                font-family: "Supreme Variable";
-                                font-size: var(--medium-16px, 16px);
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 150%; /* 24px */
-                                letter-spacing: 0.32px;
-                                text-decoration-line: underline;
-                                text-decoration-style: solid;
-                                text-decoration-skip-ink: auto;
-                                text-decoration-thickness: auto;
-                                text-underline-offset: auto;
-                                text-underline-position: from-font;
-                            }
-
-                            .texttop{
-
-                                color: var(--text-primary, #0F0E0A);
-                                font-feature-settings: 'liga' off;
-                                
-                                /* Body/Regular */
-                                font-family: "Supreme Variable";
-                                font-size: var(--medium-16px, 16px);
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 150%; /* 24px */
-                                letter-spacing: 0.32px;
-                            }
-
-                    .middle-holderH{
-
-                        display: flex;
-                        max-width: 1700px;
-                        padding: 0px var(--large-64px, 64px);
-                        justify-content: space-between;
-                        align-items: center;
-                        align-self: stretch;
-                    }
-
-                            .flex-row-div{
-
-                                display: flex;
-                                max-width: 700px;
-                                flex-direction: column;
-                                align-items: center;
-                                gap: var(--medium-12px, 12px);
-                                flex: 1 0 0;
-                                align-self: stretch;
-                            }
+}
 
 
-                                    .imgflex-row-div{
+.ButtonHH {
+    display: flex;
+    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-12px, 12px);
 
-                                        height: 520px;
-                                        min-width: 320px;
-                                        align-self: stretch;
+    background: var(--button-brand-primary);
 
-                                        border-radius: var(--medium-16px, 16px);
-                                        background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-                                        
-                                        /* Default Drop Shadow */
-                                        box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
-                                    }
+    color: var(--text-primary, #8B7E66);
+    font-feature-settings: "liga" off;
+    font-family: "Supreme Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
 
-                                    .buttoonsimgflex-row-div{
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: flex-start;
-                                        align-self: stretch;
-                                    }
+.ButtonHHS {
+    display: flex;
+    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-12px, 12px);
 
-                                            .Button-right{
+    background: var(--button-brand-primary);
 
-                                                display: flex;
-                                                padding: 1px 300px ;
-                                                height: var(--large-80px, 80px);
-                                               
-                                                justify-content: center;
-                                                align-items: center;
-                                                gap: 8px;
-                                                flex: 1 0 0;
-                                                border-radius: var(--large-40px, 40px);
-                                                background: var(--button-brand-secondary, #A9C6B2);
-                                            }
-
-                            .storyboard-text-rightbutton{
-
-                                display: flex;
-                                padding: 0px var(--large-32px, 32px);
-                                flex-direction: column;
-                                align-items: center;
-                                gap: var(--large-32px, 32px);
-                                align-self: stretch;
-                            }
-
-                                    .textstoryboard-text-rightbutton{
-
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: flex-start;
-                                        gap: 10px;
-                                    }
-
-                                                                
-                                            .textstoryboard-text-rightbuttonmain{
-
-                                                align-self: stretch;
-                                                color: var(--text-primary, #0F0E0A);
-                                                font-feature-settings: 'liga' off;
-                                                
-                                                /* Heading 1/Regular */
-                                                font-family: "Supreme Variable";
-                                                font-size: var(--large-64px, 64px);
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                line-height: 110%; /* 70.4px */
-                                                letter-spacing: -1.28px;
-                                            }
+    color: var(--text-primary, #8B7E66);
+    font-feature-settings: "liga" off;
+    font-family: "Supreme Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
 
 
-                                            .textstoryboard-text{
 
-                                                min-width: 320px;
-                                                max-width: 520px;
-                                                align-self: stretch;
+.divimgsH {
+    display: flex;
+    height: 320px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
 
-                                                color: var(--text-primary, #0F0E0A);
-                                                font-feature-settings: 'liga' off;
-                                                
-                                                /* ย่อหน้า/ธรรมดา */
-                                                font-family: "IBM Plex Sans Thai Looped";
-                                                font-size: var(--medium-16px, 16px);
-                                                font-style: normal;
-                                                font-weight: 400;
-                                                line-height: 150%; /* 24px */
-                                                letter-spacing: 0.32px;
-                                            }
+}
 
+.flex-column-divH {
+    display: flex;
+    min-height: 300px;
+    max-height: 720px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    margin-left: -10px;
+}
+
+.imgss {
+    margin-top: 30px;
+    display: flex;
+    padding: 0px var(--small-4px, 4px);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    margin: 10px;
+}
+
+.imgsss {
+    justify-content: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: var(--small-8px, 8px);
+    box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.storyboard-slideH {
+
+    display: flex;
+    padding: var(--medium-16px, 16px) var(--large-64px, 64px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--medium-12px, 12px);
+    align-self: stretch;
+}
+
+.top-navigationH {
+
+    display: flex;
+    padding: var(--medium-24px, 24px) var(--large-64px, 64px);
+    align-items: center;
+    gap: var(--large-80px, 80px);
+    align-self: stretch;
+}
+
+.texttopmain {
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.texttop {
+
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Body/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.middle-holderH {
+
+    display: flex;
+    max-width: 1700px;
+    padding: 0px var(--large-64px, 64px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.flex-row-div {
+
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--medium-12px, 12px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+
+.imgflex-row-div {
+
+    height: 520px;
+    min-width: 320px;
+    align-self: stretch;
+
+    border-radius: var(--medium-16px, 16px);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+    /* Default Drop Shadow */
+    box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.10);
+}
+
+.buttoonsimgflex-row-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Button-right {
+
+    display: flex;
+    padding: 1px 300px;
+    height: var(--large-80px, 80px);
+
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: var(--large-40px, 40px);
+    background: var(--button-brand-secondary, #A9C6B2);
+}
+
+.storyboard-text-rightbutton {
+
+    display: flex;
+    padding: 0px var(--large-32px, 32px);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--large-32px, 32px);
+    align-self: stretch;
+}
+
+.textstoryboard-text-rightbutton {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.textstoryboard-text-rightbuttonmain {
+
+    align-self: stretch;
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Heading 1/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--large-64px, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -1.28px;
+}
+
+
+.textstoryboard-text {
+
+    min-width: 320px;
+    max-width: 520px;
+    align-self: stretch;
+
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* ย่อหน้า/ธรรมดา */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.divRe {
+    position: absolute;
+    width: 500px;
+    height: 163px;
+    left: 107px;
+    top: 349px;
+
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.containers {
+    position: relative;
+    top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.SU {
+    color: #000;
+    font-feature-settings: "liga" off;
+
+    /* Heading 2/Regular */
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Supreme;
+    font-size: var(--large-48px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 52.8px */
+    letter-spacing: -0.48px;
+}
+
+
+.frameReview {
+    width: 500px;
+    height: 100px;
+    flex-shrink: 0;
+
+    border-radius: var(--medium-20px, 20px);
+    background: var(--surface-minimal, #fcfc95);
+    box-shadow: 0px 4px var(--small-8px, 8px) 0px var(--surface-minimal, #efef7d);
+}
+
+.text1 {
+
+    color: #000;
+    font-feature-settings: 'liga' off;
+
+    /* Body/Emphasized */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.text2 {
+    flex: 1 0 0;
+    color: #000;
+    font-feature-settings: 'liga' off;
+
+    /* Body/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+
+
+}
+
+.storyboard-text-facilities {
+    margin-top: 50px;
+    /* ปรiับระยะห่างของทั้ง block จากด้านบน */
+    text-align: center;
+}
+
+.storyboard-text-facilities h {
+    align-self: stretch;
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+    font-family: "Supreme Variable";
+    font-size: var(--large-64px, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -1.28px;
+}
+
+.storyboard-facilities {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* ให้รูปขึ้นบรรทัดใหม่เมื่อเกินขนาดของแถว */
+    gap: 15px;
+    /* ระยะห่างระหว่างรูป */
+    justify-content: space-between;
+    /* กระจายรูปให้เต็มพื้นที่ */
+}
+
+.storyboard-facilities img {
+    width: calc(33.33% - 10px);
+    /* ให้แต่ละรูปมีขนาด 1 ใน 3 ของแถว */
+    max-width: 100%;
+    height: auto;
+}

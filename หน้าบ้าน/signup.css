@@ -97,10 +97,10 @@
     --button-success: var(--color-green-400);
     --button-success-contrast: var(--color-green-600);
 }
+
 .containers {
     position: relative;
     top: 15px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,19 +118,18 @@
     font-size: var(--large-48px);
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; /* 52.8px */
+    line-height: 110%;
+    /* 52.8px */
     letter-spacing: -0.48px;
 }
 
 .frame {
     width: 600px;
-    height: 1350px;
+    height: 1010px;
     flex-shrink: 0;
-
     border-radius: var(--medium-20px);
     background: var(--surface-minimal);
-    box-shadow: var(--small-0px) var(--small-4px) var(--small-8px) var(--small-0px)
-        var(--surface-minimal);
+    box-shadow: var(--small-0px) var(--small-4px) var(--small-8px) var(--small-0px) var(--surface-minimal);
 }
 
 .signup {
@@ -156,7 +155,8 @@
     font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
 }
 
@@ -174,8 +174,7 @@
 
 .input1 {
     display: flex;
-    padding: var(--medium-12px) var(--medium-12px)
-        var(--small-6px) var(--medium-16px);
+    padding: 12px 10px 6px 16px;
     align-items: center;
     align-self: stretch;
 
@@ -190,8 +189,10 @@
     font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
+    width: 270px;
 }
 
 .Moveinput1 {
@@ -213,7 +214,8 @@
     font-size: var(--medium-14px);
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
+    /* 21px */
     letter-spacing: 0.28px;
 
     position: relative;
@@ -241,8 +243,7 @@
 
 .Select {
     display: flex;
-    padding: var(--medium-12px) var(--medium-12px)
-        var(--medium-12px) var(--medium-16px);
+    padding: var(--medium-12px) var(--medium-12px) var(--medium-12px) var(--medium-16px);
     align-items: center;
     align-self: stretch;
 
@@ -257,14 +258,14 @@
     font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
 }
 
 .input {
     display: flex;
-    padding: var(--medium-12px) var(--medium-12px)
-        var(--medium-12px) var(--medium-16px);
+    padding: var(--medium-12px) var(--medium-12px) var(--medium-12px) var(--medium-16px);
     align-items: center;
     align-self: stretch;
 
@@ -279,11 +280,13 @@
     font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
 }
 
 .button {
+    margin-top: -50px;
     display: flex;
     width: 400px;
     height: 10px;
@@ -292,9 +295,8 @@
     align-items: center;
     gap: var(--small-0px);
     flex-shrink: var(--small-0px);
-
     border-radius: var(--medium-20px);
-    background: var(--button-primary);
+    background: #57e578;
 }
 
 .fontsignup {
@@ -306,21 +308,32 @@
     font-size: var(--medium-16px);
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
     letter-spacing: 0.32px;
 }
 
 .error {
-    background-color: #f56565; /* bg-red-500 */
-    width: fit-content; /* w-fit */
-    font-size: 0.875rem; /* text-sm */
-    color: white; /* text-white */
-    padding-top: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-bottom: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-left: 0.75rem; /* px-3 (left and right padding) */
-    padding-right: 0.75rem; /* px-3 (left and right padding) */
-    border-radius: 0.375rem; /* rounded-md */
-    margin-top: 0.5rem; /* mt-2 */
+    background-color: #f56565;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
 
     position: relative;
     top: 890px;
@@ -333,16 +346,26 @@
 }
 
 .success {
-    background-color: #3df904; /* bg-red-500 */
-    width: fit-content; /* w-fit */
-    font-size: 0.875rem; /* text-sm */
-    color: white; /* text-white */
-    padding-top: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-bottom: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-left: 0.75rem; /* px-3 (left and right padding) */
-    padding-right: 0.75rem; /* px-3 (left and right padding) */
-    border-radius: 0.375rem; /* rounded-md */
-    margin-top: 0.5rem; /* mt-2 */
+    background-color: #3df904;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
 
     position: relative;
     top: 45px;
@@ -355,16 +378,26 @@
 }
 
 .error1 {
-    background-color: #f56565; /* bg-red-500 */
-    width: fit-content; /* w-fit */
-    font-size: 0.875rem; /* text-sm */
-    color: white; /* text-white */
-    padding-top: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-bottom: 0.25rem; /* py-1 (top and bottom padding) */
-    padding-left: 0.75rem; /* px-3 (left and right padding) */
-    padding-right: 0.75rem; /* px-3 (left and right padding) */
-    border-radius: 0.375rem; /* rounded-md */
-    margin-top: 0.5rem; /* mt-2 */
+    background-color: #f56565;
+    /* bg-red-500 */
+    width: fit-content;
+    /* w-fit */
+    font-size: 0.875rem;
+    /* text-sm */
+    color: white;
+    /* text-white */
+    padding-top: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-bottom: 0.25rem;
+    /* py-1 (top and bottom padding) */
+    padding-left: 0.75rem;
+    /* px-3 (left and right padding) */
+    padding-right: 0.75rem;
+    /* px-3 (left and right padding) */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    margin-top: 0.5rem;
+    /* mt-2 */
 
     position: relative;
     top: 890px;
@@ -379,15 +412,17 @@
 .buttonIconLeft {
     display: flex;
     width: 50px;
-    height: var(--large-64px);
-    padding: var(--medium-16px);
+    height: 50px;
+    padding: 16px;
     justify-content: center;
     align-items: center;
-    gap: var(--small-8px);
-
-    border-radius: var(--large-40px);
-    background: var(--button-secondary);
+    gap: 8px;
+    border-radius: 30px;
+    background: #b68d4f;
+    /* เปลี่ยนเป็นสีน้ำตาล */
+    --button-primary: var(--color-neutral-0);
 }
+
 
 .MovetoggleButtons {
     position: relative;
@@ -401,6 +436,32 @@
     right: -270px;
 }
 
+.input11 {
+    display: flex;
+    padding: 12px 20px 6px 16px;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px);
+    border: 1px solid var(--border-primary);
+
+    color: var(--text-contrast);
+    font-feature-settings: "liga" off;
+
+    /* Body/Regular */
+    font-family: Supreme;
+    font-size: var(--medium-16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+
+    width: 170px;
+
+    /* เพื่อให้ลูกศรสามารถปรับตำแหน่งได้ */
+}
+
 .buttoneye {
     display: flex;
     width: var(--medium-16px);
@@ -412,4 +473,154 @@
 
     border-radius: var(--large-40px);
     background: var(--button-secondary);
+}
+
+@media (min-width: 780px) and (max-width: 899px) {
+    .buttonIconLeft {
+        margin-left: -150px;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 779px) {
+    .buttonIconLeft {
+        margin-left: -150px;
+    }
+
+    .photo {
+        width: 20%;
+        height: 30%;
+    }
+
+    .input1 {
+        width: 30%;
+    }
+
+    .nt {
+        margin-left: 160px;
+    }
+
+    .input {
+        width: 50%;
+        margin-left: 153px;
+    }
+
+    .fontMonth {
+        right: -170px;
+    }
+
+    .buttoneye {
+        margin-top: 5px;
+        margin-left: -155px;
+    }
+
+    .frame {
+        width: 500px;
+        height: 930px;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .buttonIconLeft {
+        margin-left: -150px;
+    }
+
+    .photo {
+        width: 20%;
+        height: 30%;
+    }
+
+    .input1 {
+        width: 30%;
+    }
+
+    .nt {
+        margin-left: 120px;
+    }
+
+    .input {
+        width: 50%;
+        margin-left: 121px;
+    }
+
+    .fontMonth {
+        right: -135px;
+    }
+
+    .buttoneye {
+        margin-top: 5px;
+        margin-left: -189px;
+    }
+
+    .frame {
+        width: 470px;
+        height: 930px;
+        margin-left: 30px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .buttonIconLeft {
+        margin-left: -250px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .photo {
+        width: 15%;
+        height: 30%;
+    }
+
+    .input1 {
+        width: 30%;
+    }
+
+    .nt {
+        margin-left: 120px;
+    }
+
+    .input {
+        width: 50%;
+        margin-left: 121px;
+    }
+
+    .fontMonth {
+        right: -135px;
+    }
+
+    .buttoneye {
+        margin-top: 5px;
+        margin-left: -189px;
+    }
+
+    .frame {
+        margin-top: 10px;
+        width: 470px;
+        height: 930px;
+        margin-left: 30px;
+        overscroll-behavior-x: unset !important;
+        background-color: #E2EDD2;
+    }
+
+    .SU {
+        t-size: var(--large-40px);
+    }
+
+    .form-control {
+        margin-top: -10px;
+        width: 190px !important;
+        display: block !important;
+    }
+
+    .button {
+        margin-top: -100px;
+        width: 253px;
+    }
+
+    .containers {
+        top: -18px;
+    }
 }

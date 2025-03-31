@@ -1,724 +1,1193 @@
-
-.Admin-dashboard-loading{
-      display: flex;
-    width: 1280px;
-    height: 7000px;
-    align-items: flex-start;
-    background: var(--surface-primary, #FBFBF9);
-
-}
-
-
-.Admin-verticle-navigation{
-
-    display: flex;
-width: 100px;
-padding: var(--large-32px, 32px) 0px 32px 0px;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-flex-shrink: 0;
-align-self: stretch;
-background: var(--surface-mild-contrast, #C0C0BE);
-
-
-position: sticky; /* ใช้ position: sticky */
-top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
+.Admin-dashboard-loading {
+  display: flex;
+  min-height: 100vh;
+  /* เริ่มต้นที่ขนาดหน้าจอ */
+  height: auto;
+  /* ขยายตามเนื้อหา */
+  max-width: 100%;
+  /* ทำให้รองรับทุกหน้าจอ */
+  align-items: flex-start;
+  background: var(--surface-primary, #FBFBF9);
 
 }
 
-            .top-flex{
-                display: flex;
-flex-direction: column;
-align-items: center;
-gap: 80px;
-align-self: stretch;
-
-
-
-position: sticky; /* ใช้ position: sticky */
-top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
-
-            }
-
-                    .Logoweb{
-
-                        display: flex;
-width: 80px;
-height: 80px;
-padding: var(--medium-24px, 4.286px);
-justify-content: center;
-align-items: center;
-aspect-ratio: 1/1;
-
-                    }
-
-            .menuAdmin{
-
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--large-32px, 32px);
-                align-self: stretch;
-            
-            
-            }
-
-                    .Admin-icon-navigation{
-
-                        display: flex;
-                        padding-left: var(--large-40px, 40px);
-                        align-items: center;
-                        align-self: stretch;
-
-                    }
-
-                            .iconหลักFrame28{
-
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex: 1 0 0;
-                            }
-
-                                    .iconหลัก{
-
-                                        display: flex;
-                                        width: 24px;
-                                        height: 24px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 10px;
-                                    }
-
-                                        .imgicon{
-                                            width: 18px;
-                                            height: 18px;
-                                            flex-shrink: 0;
-                                            fill: var(--surface-heavy-contrast, #0F0E0A);
-                                        }
-
-
-
-                                        .แถบกำหนดหน้า{
-
-                                            width: 4px;
-                                            align-self: stretch;
-                                            border-radius: 1px;
-    background: var(--button-brand-primary-contrast, #9E7700);
-    box-shadow: 0px 0px var(--small-8px, 8px) 0px var(--button-brand-primary-contrast, #9E7700);
-                                          }
-
-
-                            .iconรองFrame28{
-
-                                display: flex;
-                                align-items: center;
-                                gap: 8px;
-                                flex: 1 0 0;
-                            }
-
-                                    .iconรอง{
-                                        display: flex;
-                                        width: 24px;
-                                        height: 24px;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 10px;
-                                    } 
-
-                                      .ขนาดภาพ1{
-                                        width: 20px;
-                                        height: 14px;
-                                        flex-shrink: 0;
-                                        fill: var(--surface-heavy-contrast, #0F0E0A);
-
-                                        
-                                      } 
-
-
-
-
-                                      
-
-
-
-
-
-                        
-
-                                      .iconlogout{
-
-                                        display: flex;
-                                        padding-left: var(--large-40px, 40px);
-                                        align-items: center;
-                                        align-self: stretch;
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 8px;
-                                        flex: 1 0 0;
-                                      }
-
-            
-
-
-
-.คุมพื้นที่หน้าจอ{
-
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                flex: 1 0 0;
-              align-self: stretch;
-     }
-
-
-           .Admin-top_ribbon{
-
-                            display: flex;
-                            padding: var(--large-32px, 32px) var(--medium-16px, 16px) var(--medium-24px, 24px) var(--medium-16px, 16px);
-                            justify-content: space-between;
-                            align-items: center;
-                            align-self: stretch;
-                            background: var(--surface-primary, #FBFBF9);
-                            box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(15, 14, 10, 0.10);
-
-                            position: sticky; /* ใช้ position: sticky */
-                            top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-                            z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
-                            
-              }
-
-                 .ข้อมความหัว{
-
-                            color: var(--text-primary, #0F0E0A);
-                            font-feature-settings: 'liga' off;
-                            
-                            /* Heading 1/Regular */
-                            font-family: "Supreme Variable";
-                            font-size: var(--large-64px, 64px);
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 110%; /* 70.4px */
-                            letter-spacing: -1.28px;
-                      }
-
-                        
-
-                      .divAdmin{
-                        display: flex;
-                        padding: var(--large-32px, 32px);
-                        flex-direction: column;
-                        align-items: flex-end;
-                        gap: var(--medium-12px, 12px);
-                        align-self: stretch;
-                      }
-
-
-    
-                      .divroom{
-                        display: flex;
-                        padding: var(--large-32px, 32px);
-                        flex-direction: column;
-                        align-items: flex-end;
-                        gap: var(--medium-12px, 12px);
-                        align-self: stretch;
-                      }
-                      
-                      .room-card {
-                        display: flex;
-                        height: 250px;
-                        /* width: 202px; */
-                        min-height: 160px;
-                        padding: var(--medium-16px, 16px);
-                        justify-content: space-between;
-                        align-items: center;
-                        row-gap: 17px;
-                        align-self: stretch;
-                        flex-wrap: wrap;
-                      
-                        border-radius: var(--medium-16px, 16px);
-                        background: var(--surface-minimal, #d9d9d8);
-                      }
-                      
-                      .div-align-left {
-                        display: flex;
-                        padding-right: var(--small-8px, 8px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: var(--medium-16px, 16px);
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .placeholder {
-                        width: 128px;
-                        align-self: stretch;
-                        aspect-ratio: 1/1;
-                      
-                        border-radius: var(--medium-16px, 16px);
-                        background: #fff;
-                      
-                        /* Default Drop Shadow */
-                        box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px)
-                          rgba(15, 14, 10, 0.1);
-                      }
-                      
-                      .flex-column-row {
-                        display: flex;
-                        min-width: 280px;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .flex-column-div {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 8px;
-                        align-self: stretch;
-                      }
-                      
-                      .message {
-                        color: var(--text-primary, #0f0e0a);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-                      
-                      .messageflex {
-                        color: var(--text-primary, #0f0b0a);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Regular */
-                        font-family: "Supreme Variable";
-                        font-size: 140px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-
-
-                       
-                      }
-                      
-                      .messagebuilding {
-                        color: var(--text-primary, #0f0e0a);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Regular */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 40px);
-                        font-style: normal;
-                        font-weight: 400;
-                      }
-                      .action-button {
-                        display: flex;
-                        width: 107px;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
-                        align-self: stretch;
-                      }
-                      
-                      .containers {
-                    
-                      
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                      }
-                      .containersbuilding {
-                        position: relative;
-                        top: 15px;
-                        right: 200px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                      
-                      
-                      }
-                      
-                      .frame {
-                        width: 300px;
-                        height: 300px;
-                        flex-shrink: 0;
-                      
-                        border-radius: var(--medium-20px, 20px);
-                        background: var(--surface-minimal, #ededeb);
-                        box-shadow: 0px 4px var(--small-8px, 8px) 0px var(--surface-minimal, #ededeb);
-                      }
-                      
-                      .Moveframe {
-                        position: relative;
-                        top: 100px;
-                        right: 200px;
-                      }
-                      
-                      .Moveframe2 {
-                        position: relative;
-                        top: 80px;
-                        right: 200px;
-                      }
-                      
-                      .Lineup {
-                        display: flex;
-                        padding: var(--small-6px, 6px);
-                        align-items: center;
-                        gap: var(--medium-20px, 100px);
-                      }
-
-                      .LineupBuildingandNewRoom {
-                        display: flex;
-                        padding: var(--small-6px, 6px);
-                        align-items: center;
-                        gap: var(--medium-20px, 740px);
-                      }
-                      
-                      .Lineupfile {
-                        display: flex;
-                        padding: var(--small-6px, 6px);
-                        align-items: center;
-                        gap: var(--medium-20px, 10px);
-                      }
-                      .ButtonEdit {
-                        display: flex;
-                        padding: 12px 34px ;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        align-self: stretch;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        border: 1px solid var(--border-primary, #0f0e0a);
-                        background: var(--button-minimal, #ededeb);
-                      
-                        color: var(--text-primary, #0f0e0a);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-                      
-
-                      .buttonIconLeft {
-                       
-                    
-                        display: inline-flex;
-                        padding: var(--small-8px) var(--medium-16px) var(--small-8px) var(--medium-12px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: var(--small-8px);
-                        font-size: var(--medium-20px);
-                    
-                        border-radius: 8px;
-                    }
-
-                    .buttonIconLefts {
-                      display: flex;
-                      width: 50px;
-                      height: var(--large-64px);
-                      padding: var(--medium-16px);
-                      justify-content: center;
-                      align-items: center;
-                      gap: var(--small-8px);
-                  
-                      border-radius: var(--large-40px);
-                      background: var(--button-secondary);
-                  }
-                      .ButtonNewRoom {
-                        display: flex;
-                        width: 180px;
-                        padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        background: var(--button-brand-primary, #9f936f);
-                      
-                        color: var(--text-primary, #0f0e0a);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-                      .ButtonDelete {
-                        display: flex;
-                        padding: 12px var(--medium-16px, 25px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        align-self: stretch;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        border: 1px solid var(--border-error, #f94839);
-                        background: var(--button-minimal, #ededeb);
-                      
-                        color: var(--surface-error, #f94839);
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-                      
-                      /* ด้านล่าง หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit  */
-                      
-                      .divEdit {
-                        display: flex;
-                        padding: var(--large-32px, 32px);
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .divEditin {
-                        display: flex;
-                        padding: 10px;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        align-self: stretch;
-                      }
-                      
-                      .Feature_picture {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                      }
-                      
-                      .textFeature_picture {
-                        color: #000;
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-
-
-
-                      .ButtonDeleteimg{
-
-                        display: flex;
-                        padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-                        justify-content: center;
-                        align-items: center;
-                        align-self: stretch;
-
-                        border-radius: var(--medium-12px, 12px);
-                        background: var(--button-error-contrast, #ff7b6f);
-
-
-                      }
-
-                      .textButtonDeleteimg{
-
-                        color: var(--text-invert, #000000);
-                        font-feature-settings: 'liga' off;
-                        
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-
-                      }
-
-                      .imgmin {
-                        height: 114px;
-                        width: 114px;
-                        align-self: stretch;
-                        aspect-ratio: 1/1;
-                      
-                        background: var(--surface-mild-contrast, #c0c0be);
-                      }
-                      
-                      .ButtonFile {
-                        display: flex;
-                        padding: 12px var(--medium-16px, 16px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                      
-                        width: 210px;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        background: var(--button-minimal, #ededeb);
-                      }
-                      
-                      .Feature_pictureimg {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                      }
-                      
-                      .Picture {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: var(--small-8px, 8px);
-                      }
-                      
-                      .imgexample {
-                        width: 114px;
-                        height: 114px;
-                        aspect-ratio: 1/1;
-                      
-                        background: var(--surface-mild-contrast, #c0c0be);
-                      }
-                      
-                      .room-info {
-                        display: flex;
-                        align-items: flex-start;
-                        gap: var(--medium-12px, 12px);
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .flex-row-div {
-                        display: flex;
-                        padding: 10px;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
-                        align-self: stretch;
-                      }
-                      
-                      .Frame81 {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-end;
-                        gap: var(--medium-16px, 16px);
-                      }
-                      
-                      .ButtonSave {
-                        display: flex;
-                        padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        align-self: stretch;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        background: var(--button-brand-primary, #9f936f);
-                      }
-                      
-                      .flex-row-div {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .div1 {
-                        display: flex;
-                        padding: 0px var(--small-8px, 8px);
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
-                      .Frame83 {
-                        display: flex;
-                        padding: var(--medium-12px, 12px);
-                        flex-direction: column;
-                        align-items: center;
-                        gap: var(--medium-12px, 12px);
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      
-                        border-radius: var(--medium-16px, 16px);
-                        background: var(--surface-mild-contrast, #c0c0be);
-                      }
-                      
-                      .Description {
-                        color: #000;
-                        font-feature-settings: "liga" off;
-                      
-                        /* Heading 3/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--large-32px, 32px);
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 110%; /* 35.2px */
-                      }
-                      
-                      .Frame84 {
-                        display: flex;
-                        padding: 10px;
-                        align-items: flex-start;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        background: #fff;
-                      }
-                      
-                      .textinFrame84 {
-                        flex: 1 0 0;
-                      
-                        color: #000;
-                        font-feature-settings: "liga" off;
-                      
-                        /* Body/Regular */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-                      
-                      .div2 {
-                        display: flex;
-                        padding: 0px var(--small-8px, 8px);
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 10px;
-                        flex: 1 0 0;
-                        align-self: stretch;
-                      }
-                      
+.Admin-verticle-navigation {
+  display: flex;
+  width: 100px;
+  padding: var(--large-32px, 32px) 0px 32px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: var(--surface-mild-contrast, #C0C0BE);
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.top-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.Logoweb {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: var(--medium-24px, 4.286px);
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+
+.menuAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--large-32px, 32px);
+  align-self: stretch;
+}
+
+.Admin-icon-navigation {
+  display: flex;
+  padding-left: var(--large-40px, 40px);
+  align-items: center;
+  align-self: stretch;
+}
+
+.iconหลักFrame28 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.iconหลัก {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgicon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: var(--surface-heavy-contrast, #0F0E0A);
+}
+
+.แถบกำหนดหน้า {
+  width: 4px;
+  align-self: stretch;
+  border-radius: 1px;
+  background: var(--button-brand-primary-contrast, #9E7700);
+  box-shadow: 0px 0px var(--small-8px, 8px) 0px var(--button-brand-primary-contrast, #9E7700);
+}
+
+
+.iconรองFrame28 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.iconรอง {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ขนาดภาพ1 {
+  width: 20px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: var(--surface-heavy-contrast, #0F0E0A);
+}
+
+.iconlogout {
+  display: flex;
+  padding-left: var(--large-40px, 40px);
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.คุมพื้นที่หน้าจอ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 100vh;
+  /* เริ่มต้นเท่ากับขนาดหน้าจอ */
+  width: 100%;
+  /* กำหนดให้กว้างเต็มจอ */
+  background-color: #E2EDD2;
+}
+
+.Admin-top_ribbon {
+  display: flex;
+  padding: var(--large-32px, 32px) var(--medium-16px, 16px) var(--medium-24px, 24px) var(--medium-16px, 16px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--surface-primary, #FBFBF9);
+  box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(15, 14, 10, 0.10);
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.ข้อมความหัว {
+  color: var(--text-primary, #0F0E0A);
+  font-feature-settings: 'liga' off;
+  /* Heading 1/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--large-64px, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 70.4px */
+  letter-spacing: -1.28px;
+}
+
+.divAdmin {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--medium-12px, 12px);
+  align-self: stretch;
+}
+
+.divroom {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--medium-12px, 12px);
+  align-self: stretch;
+}
+
+.room-card {
+  display: flex;
+  height: 250px;
+  /**width: 1000px;**/
+  min-height: 160px;
+  padding: var(--medium-16px, 16px);
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 17px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: var(--medium-16px, 16px);
+  background: var(--surface-minimal, #d9d9d8);
+}
+
+.div-align-left {
+  display: flex;
+  padding-right: var(--small-8px, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--medium-16px, 16px);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.placeholder {
+  width: 128px;
+  align-self: stretch;
+  aspect-ratio: 1/1;
+  border-radius: var(--medium-16px, 16px);
+  background: #fff;
+  /* Default Drop Shadow */
+  box-shadow: 0px 4px var(--large-32px, 32px) var(--small-8px, 8px) rgba(15, 14, 10, 0.1);
+}
+
+.flex-column-row {
+  display: flex;
+  min-width: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.flex-column-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.message {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.messageflex {
+  color: var(--text-primary, #0f0b0a);
+  font-feature-settings: "liga" off;
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.messagebuilding {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 40px);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.action-button {
+  display: flex;
+  width: 107px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containersbuilding {
+  position: relative;
+  top: 15px;
+  right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.frame {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+
+  border-radius: var(--medium-20px, 20px);
+  background: var(--surface-minimal, #ededeb);
+  box-shadow: 0px 4px var(--small-8px, 8px) 0px var(--surface-minimal, #ededeb);
+}
+
+.Moveframe {
+  position: relative;
+  top: 100px;
+  right: 200px;
+}
+
+.Moveframe2 {
+  position: relative;
+  top: 80px;
+  right: 200px;
+}
+
+.Lineup {
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 100px);
+}
+
+.LineupBuildingandNewRoom {
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 650px);
+}
+
+.Lineupfile {
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 10px);
+}
+
+.ButtonEdit {
+  display: flex;
+  padding: 12px 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ededeb);
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+
+.buttonIconLeft {
+  display: inline-flex;
+  padding: var(--small-8px) var(--medium-16px) var(--small-8px) var(--medium-12px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--small-8px);
+  font-size: var(--medium-20px);
+  border-radius: 8px;
+}
+
+.buttonIconLefts {
+  display: flex;
+  width: 50px;
+  height: var(--large-64px);
+  padding: var(--medium-16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--small-8px);
+  border-radius: var(--large-40px);
+  background: var(--button-secondary);
+}
+
+.ButtonNewRoom {
+  display: flex;
+  width: 180px;
+  padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-brand-primary, #9f936f);
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.ButtonDelete {
+  display: flex;
+  padding: 12px var(--medium-16px, 25px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-error, #f94839);
+  background: var(--button-minimal, #ededeb);
+  color: var(--surface-error, #f94839);
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+/* ด้านล่าง หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit หน้าEdit  */
+
+.divEdit {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.divEditin {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Feature_picture {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.textFeature_picture {
+  color: #000;
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+
+
+.ButtonDeleteimg {
+  display: flex;
+  padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-error-contrast, #ff7b6f);
+}
+
+.textButtonDeleteimg {
+  color: var(--text-invert, #000000);
+  font-feature-settings: 'liga' off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+
+}
+
+.imgmin {
+  margin-right: -5px;
+  height: 114px;
+  width: 114px;
+  align-self: stretch;
+  aspect-ratio: 1/1;
+  background: var(--surface-mild-contrast, #c0c0be);
+}
+
+.ButtonFile {
+  display: flex;
+  padding: 12px var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 210px;
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-minimal, #ededeb);
+}
+
+.Feature_pictureimg {
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Picture {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--small-8px, 8px);
+}
+
+.imgexample {
+  width: 114px;
+  height: 114px;
+  aspect-ratio: 1/1;
+  background: var(--surface-mild-contrast, #c0c0be);
+}
+
+.room-info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--medium-12px, 12px);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.flex-row-div {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.Frame81 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--medium-16px, 16px);
+}
+
+.ButtonSave {
+  display: flex;
+  padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  background: var(--button-brand-primary, #9f936f);
+}
+
+.flex-row-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.div1 {
+  display: flex;
+  padding: 0px var(--small-8px, 8px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.Frame83 {
+  display: flex;
+  padding: var(--medium-12px, 12px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-12px, 12px);
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: var(--medium-16px, 16px);
+  background: var(--surface-mild-contrast, #c0c0be);
+}
+
+.Description {
+  color: #000;
+  font-feature-settings: "liga" off;
+
+  /* Heading 3/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--large-32px, 32px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 35.2px */
+}
+
+.Frame84 {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: var(--medium-12px, 12px);
+  background: #fff;
+}
+
+.textinFrame84 {
+  flex: 1 0 0;
+
+  color: #000;
+  font-feature-settings: "liga" off;
+
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.div2 {
+  display: flex;
+  padding: 0px var(--small-8px, 8px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+/*********** สำหรับจอ 1200px ********/
+@media (min-width:1199px)and(max-width:1200px) {
+  .Lineup {
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .action-button {
+    display: contents;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .ButtonNewRoom {
+    width: 100px;
+    height: 60px;
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 650px);
+  }
+
+  .message {
+    font-size: var(--medium-16px, 12px);
+  }
+}
+
+/*********** สำหรับจอ 1024px ********/
+@media (min-width:1024px) and (max-width:1198px) {
+  .Lineup {
+    margin-right: -100px;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .ButtonNewRoom {
+    width: 100px;
+    height: 60px;
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 650px);
+  }
+
+  .message {
+    font-size: var(--medium-16px, 12px);
+  }
+
+  .AddroomFrame83 {
+    width: 400px;
+  }
+}
+
+/*********** สำหรับจอ 900px ********/
+@media (min-width:900px) and (max-width:1023px) {
+  .Lineup {
+    display: block;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .ButtonNewRoom {
+    width: 100px;
+    height: 60px;
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 500px);
+  }
+
+  .message {
+    font-size: var(--medium-16px, 12px);
+  }
+
+  .ButtonFile {
+    width: 170px;
+  }
+
+  .divEditin {
+    transform: scale(0.8);
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .divAdmin {
+    margin-top: -30px;
+  }
+}
+
+/*********** สำหรับจอ 760px ********/
+@media (min-width:760px) and (max-width:899px) {
+  .Lineup {
+    margin-right: -70px;
+    display: block;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .ButtonNewRoom {
+    width: 100px;
+    height: 60px;
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 380px);
+  }
+
+  .message {
+    font-size: var(--medium-16px, 12px);
+  }
+
+  .divEditin {
+    margin-right: -120px;
+    transform: scale(0.7);
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .divAdmin {
+    margin-top: -30px;
+  }
+
+}
+
+/*********** สำหรับจอ 600px ********/
+@media (min-width: 600px) and (max-width: 759px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
+
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
+
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
+
+  .ข้อมความหัว {
+    font-size: 25px !important;
+    /* ใช้ค่าแน่นอน */
+  }
+
+  .divAdmin {
+    align-items: flex-start !important;
+    margin-left: 150px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .textPaymentEntries {
+    font-size: 25px !important;
+  }
+
+  .ButtonBookingdetai {
+    margin-left: 75px;
+    padding: 2px 2px;
+    width: 120px;
+    height: 30px;
+  }
+
+  .messageBookingdetails {
+    font-size: 12px !important;
+  }
+
+  .action-button {
+    display: contents;
+    width: 100px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 12px !important;
+  }
+
+  .room-card {
+    width: 280px;
+    height: 80px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .messagebuilding {
+    font-size: 16px !important;
+  }
+
+  .messageflex {
+    font-size: 50px;
+  }
+
+  .frame {
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .Lineup {
+    display: block;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .message {
+    font-size: var(--medium-16px, 6px);
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 100px);
+  }
+
+  .ButtonNewRoom {
+    width: 82px;
+    height: 44px;
+  }
+
+  .placeholder {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ButtonEdit {
+    height: 25px;
+    width: 60px;
+  }
+
+  .ButtonDelete {
+    height: 25px;
+    width: 60px;
+  }
+
+  .divEditin {
+    transform: scale(0.55);
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .divEdit {
+    margin-top: -60px;
+    margin-left: -400px;
+  }
+}
+
+/*********** สำหรับจอ 480px - 599px ********/
+@media (min-width: 480px) and (max-width: 599px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
+
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
+
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
+
+  .ข้อมความหัว {
+    font-size: 25px !important;
+    /* ใช้ค่าแน่นอน */
+  }
+
+  .divAdmin {
+    align-items: flex-start !important;
+    margin-left: 80px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .textPaymentEntries {
+    font-size: 25px !important;
+  }
+
+  .ButtonBookingdetai {
+    margin-left: 75px;
+    padding: 2px 2px;
+    width: 120px;
+    height: 30px;
+  }
+
+  .messageBookingdetails {
+    font-size: 12px !important;
+  }
+
+  .action-button {
+    display: contents;
+    width: 100px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 12px !important;
+  }
+
+  .room-card {
+    margin-left: -20px;
+    width: 280px;
+    height: 80px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .messagebuilding {
+    font-size: 16px !important;
+  }
+
+  .messageflex {
+    font-size: 50px;
+  }
+
+  .frame {
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .Lineup {
+    display: block;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .message {
+    font-size: var(--medium-16px, 6px);
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 80px);
+  }
+
+  .ButtonNewRoom {
+    width: 82px;
+    height: 44px;
+  }
+
+  .placeholder {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ButtonEdit {
+    height: 25px;
+    width: 60px;
+  }
+
+  .ButtonDelete {
+    height: 25px;
+    width: 60px;
+  }
+
+  .divEditin {
+    transform: scale(0.5);
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+
+  .divEdit {
+    margin-top: -60px;
+    margin-left: -320px;
+  }
+
+  .imgmin {
+    height: 100px;
+    width: 95px;
+  }
+
+  .ButtonFile {
+    width: 170px;
+  }
+}
+
+
+/*********** สำหรับจอ 320px - 479px ********/
+@media (min-width: 320px) and (max-width: 479px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
+
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
+
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
+
+  .ข้อมความหัว {
+    font-size: 25px !important;
+    /* ใช้ค่าแน่นอน */
+  }
+
+  .divAdmin {
+    align-items: flex-start !important;
+    margin-left: 20px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .textPaymentEntries {
+    font-size: 25px !important;
+  }
+
+  .ButtonBookingdetai {
+    margin-left: 75px;
+    padding: 2px 2px;
+    width: 120px;
+    height: 30px;
+  }
+
+  .messageBookingdetails {
+    font-size: 12px !important;
+  }
+
+  .action-button {
+    display: contents;
+    width: 100px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 12px !important;
+  }
+
+  .room-card {
+    margin-left: -25px;
+    width: 250px;
+    height: 80px;
+  }
+
+  .div-align-left {
+    margin-left: 40px;
+    width: 250px;
+  }
+
+  .containers {
+    margin-top: 50px;
+  }
+
+  .messagebuilding {
+    font-size: 16px !important;
+  }
+
+  .messageflex {
+    font-size: 50px;
+  }
+
+  .frame {
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .Lineup {
+    display: block;
+    margin-top: -50px;
+    gap: 50px;
+  }
+
+  .message {
+    font-size: var(--medium-16px, 6px);
+
+  }
+
+  .LineupBuildingandNewRoom {
+    gap: var(--medium-20px, 15px);
+  }
+
+  .ButtonNewRoom {
+    width: 82px;
+    height: 44px;
+  }
+
+  .placeholder {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ButtonEdit {
+    height: 25px;
+    width: 60px;
+  }
+
+  .ButtonDelete {
+    height: 25px;
+    width: 60px;
+  }
+
+  .divEditin {
+    transform: scale(0.31);
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+
+  .divEdit {
+    margin-top: -110px;
+    margin-left: -320px;
+  }
+
+  .imgmin {
+    height: 100px;
+    width: 95px;
+  }
+
+  .ButtonFile {
+    width: 170px;
+  }
+
+}

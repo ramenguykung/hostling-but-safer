@@ -1,0 +1,20 @@
+.Buttonlogout {
+    display: flex;
+    padding: var(--medium-12px, 12px) var(--medium-16px, 16px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--medium-12px, 12px);
+
+    background: var(--text-primary, #ff5c56);
+
+    color: var(--text-primary, #fffefd);
+    font-feature-settings: "liga" off;
+    font-family: "Supreme Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}

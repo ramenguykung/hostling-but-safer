@@ -1,316 +1,928 @@
+.Admin-dashboard-loading {
+  display: flex;
+  min-height: 100vh;
+  /* เริ่มต้นที่ขนาดหน้าจอ */
+  height: auto;
+  /* ขยายตามเนื้อหา */
+  max-width: 100%;
+  /* ทำให้รองรับทุกหน้าจอ */
+  align-items: flex-start;
+  background: var(--surface-primary, #FBFBF9);
 
-.Admin-dashboard-loading{
-    display: flex;
-    width: 1280px;
-    height: 2000px;
-    align-items: flex-start;
-    background: var(--surface-primary, #FBFBF9);
+}
+
+.hhh {
+  font-size: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.Admin-verticle-navigation {
+
+  display: flex;
+  width: 100px;
+  padding: var(--large-32px, 32px) 0px 32px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: var(--surface-mild-contrast, #C0C0BE);
+
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.top-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.Logoweb {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: var(--medium-24px, 4.286px);
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+
+}
+
+.menuAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--large-32px, 32px);
+  align-self: stretch;
+
+
+}
+
+.Admin-icon-navigation {
+  display: flex;
+  padding-left: var(--large-40px, 40px);
+  align-items: center;
+  align-self: stretch;
+
+}
+
+.iconหลักFrame28 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.iconหลัก {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgicon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: var(--surface-heavy-contrast, #0F0E0A);
+}
+
+
+
+.แถบกำหนดหน้า {
+  width: 4px;
+  align-self: stretch;
+  border-radius: 1px;
+  background: var(--button-brand-primary-contrast, #9E7700);
+  box-shadow: 0px 0px var(--small-8px, 8px) 0px var(--button-brand-primary-contrast, #9E7700);
+}
+
+
+.iconรองFrame28 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.iconรอง {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ขนาดภาพ1 {
+  width: 20px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: var(--surface-heavy-contrast, #0F0E0A);
+
+
+}
+
+.iconlogout {
+  display: flex;
+  padding-left: var(--large-40px, 40px);
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.คุมพื้นที่หน้าจอ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 100vh;
+  /* เริ่มต้นเท่ากับขนาดหน้าจอ */
+  width: 100%;
+  /* กำหนดให้กว้างเต็มจอ */
+  background-color: #E2EDD2;
+}
+
+.Admin-top_ribbon {
+  display: flex;
+  padding: var(--large-32px, 32px) var(--medium-16px, 16px) var(--medium-24px, 24px) var(--medium-16px, 16px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--surface-primary, #FBFBF9);
+  box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(15, 14, 10, 0.10);
+  position: sticky;
+  /* ใช้ position: sticky */
+  top: 0;
+  /* ติดอยู่ด้านบนของหน้าจอ */
+  z-index: 1000;
+  /* เพื่อให้ navbar อยู่ด้านบน */
+}
+
+.ข้อมความหัว {
+  color: var(--text-primary, #0F0E0A);
+  font-feature-settings: 'liga' off;
+  /* Heading 1/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--large-64px, 64px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 70.4px */
+  letter-spacing: -1.28px;
+}
+
+.divAdmin {
+  display: flex;
+  padding: var(--large-32px, 32px);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--medium-12px, 12px);
+  align-self: stretch;
+}
+
+.Button {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ceca48);
+}
+
+.Button1 {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ceca48);
+}
+
+.Button2 {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ceca48);
+}
+
+.message {
+  color: var(--text-primary, #0f0e0a);
+  font-feature-settings: "liga" off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+  width: 150px;
+}
+
+.ButtonView {
+  display: flex;
+  padding: 11px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--medium-12px, 12px);
+  border: 1px solid var(--border-primary, #0f0e0a);
+  background: var(--button-minimal, #ceca48);
+}
+
+.text {
+  color: #000;
+  font-feature-settings: 'liga' off;
+  align-self: stretch;
+  /* Heading 2/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--large-48px, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 52.8px */
+  letter-spacing: -0.48px;
+}
+
+.containersbuilding {
+  position: relative;
+  right: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Lineup {
+  display: flex;
+  padding: var(--small-6px, 6px);
+  align-items: center;
+  gap: var(--medium-20px, 20px);
+}
+
+.text1 {
+  color: #000;
+  font-feature-settings: 'liga' off;
+  /* Body/Emphasized */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.text2 {
+  flex: 1 0 0;
+  color: #000;
+  font-feature-settings: 'liga' off;
+  /* Body/Regular */
+  font-family: "Supreme Variable";
+  font-size: var(--medium-16px, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.input {
+  padding: 10px 30px;
+  border-radius: var(--medium-12px);
+  /* ขอบโค้ง */
+  border: 10px solid var(--border-primary);
+  /* ขอบของกล่อง */
+  box-sizing: border-box;
+  /* ทำให้ขนาดกล่องไม่รวมขอบและการ padding */
+}
+
+.inpu {
+  padding: 10px 30px;
+}
+
+.containers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mone {
+  position: relative;
+  right: -300px;
+}
+
+.hh {
+  font-size: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+/*********** สำหรับจอ 1200px ********/
+@media (min-width:1199px) and (max-width:1200px) {
+
+  th:nth-child(1) {
+    width: 10% !important;
+  }
+
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Job */
+  th:nth-child(4) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Guests */
+  th:nth-child(5) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Stay */
+  th:nth-child(6) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Move-out */
+  th:nth-child(7) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Room price */
+  th:nth-child(8) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Date */
+  th:nth-child(9) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Status */
+  th:nth-child(10) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Rating */
+  th:nth-child(11) {
+    width: 10% !important;
+  }
+
+  /* ขยาย Comment */
 
 }
 
 
-.Admin-verticle-navigation{
+/*********** สำหรับจอ 1024px ********/
+@media (min-width:1024px) and (max-width:1198px) {
+  .containersbuilding {
+    right: 10px;
+  }
 
-    display: flex;
-width: 100px;
-padding: var(--large-32px, 32px) 0px 32px 0px;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-flex-shrink: 0;
-align-self: stretch;
-background: var(--surface-mild-contrast, #C0C0BE);
+  th:nth-child(1) {
+    width: 10% !important;
+  }
 
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 5% !important;
+  }
 
-position: sticky; /* ใช้ position: sticky */
-top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Job */
+  th:nth-child(4) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Guests */
+  th:nth-child(5) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Stay */
+  th:nth-child(6) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Move-out */
+  th:nth-child(7) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Room price */
+  th:nth-child(8) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Date */
+  th:nth-child(9) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Status */
+  th:nth-child(10) {
+    width: 5% !important;
+  }
+
+  /* ขยาย Rating */
+  th:nth-child(11) {
+    width: 10% !important;
+  }
+
+  /* ขยาย Comment */
 }
 
-            .top-flex{
-                display: flex;
-flex-direction: column;
-align-items: center;
-gap: 80px;
-align-self: stretch;
+/*********** สำหรับจอ 900px ********/
+@media (min-width:900px) and (max-width:1023px) {
+  .containersbuilding {
+    right: 100px;
+  }
 
-position: sticky; /* ใช้ position: sticky */
-top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
-            }
+  th:nth-child(1) {
+    width: 6% !important;
+  }
 
-                    .Logoweb{
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 3% !important;
+  }
 
-                        display: flex;
-width: 80px;
-height: 80px;
-padding: var(--medium-24px, 4.286px);
-justify-content: center;
-align-items: center;
-aspect-ratio: 1/1;
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 6% !important;
+  }
 
-                    }
+  /* ขยาย Job */
+  th:nth-child(4) {
+    width: 5% !important;
+  }
 
-            .menuAdmin{
+  /* ขยาย Guests */
+  th:nth-child(5) {
+    width: 5% !important;
+  }
 
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--large-32px, 32px);
-                align-self: stretch;
-            
-            
-            }
+  /* ขยาย Stay */
+  th:nth-child(6) {
+    width: 5% !important;
+  }
 
-                    .Admin-icon-navigation{
+  /* ขยาย Move-out */
+  th:nth-child(7) {
+    width: 5% !important;
+  }
 
-                        display: flex;
-                        padding-left: var(--large-40px, 40px);
-                        align-items: center;
-                        align-self: stretch;
+  /* ขยาย Room price */
+  th:nth-child(8) {
+    width: 5% !important;
+  }
 
-                    }
+  /* ขยาย Date */
+  th:nth-child(9) {
+    width: 5% !important;
+  }
 
-                            .iconหลักFrame28{
+  /* ขยาย Status */
+  th:nth-child(10) {
+    width: 4% !important;
+  }
 
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex: 1 0 0;
-                            }
+  /* ขยาย Rating */
+  th:nth-child(11) {
+    width: 10% !important;
+  }
 
-                                    .iconหลัก{
+  /* ขยาย Comment */
 
-                                        display: flex;
-                                        width: 24px;
-                                        height: 24px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 10px;
-                                    }
+  .Lineup {
+    margin-right: -120px;
+  }
+}
 
-                                        .imgicon{
-                                            width: 18px;
-                                            height: 18px;
-                                            flex-shrink: 0;
-                                            fill: var(--surface-heavy-contrast, #0F0E0A);
-                                        }
+/*********** สำหรับจอ 1024px ********/
+@media (min-width:760px) and (max-width:899px) {
+  th:nth-child(1) {
+    width: 14% !important;
+  }
 
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 5% !important;
+  }
 
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 10% !important;
+  }
 
-                                        .แถบกำหนดหน้า{
+  /* ขยาย Job */
+  th:nth-child(4) {
+    width: 10% !important;
+  }
 
-                                            width: 4px;
-                                            align-self: stretch;
-                                            border-radius: 1px;
-    background: var(--button-brand-primary-contrast, #9E7700);
-    box-shadow: 0px 0px var(--small-8px, 8px) 0px var(--button-brand-primary-contrast, #9E7700);
-                                          }
+  /* ขยาย Guests */
+  th:nth-child(5) {
+    width: 10% !important;
+  }
 
+  /* ขยาย Stay */
+  th:nth-child(6) {
+    width: 10% !important;
+  }
 
-                            .iconรองFrame28{
+  /* ขยาย Move-out */
+  th:nth-child(9) {
+    width: 8% !important;
+  }
 
-                                display: flex;
-                                align-items: center;
-                                gap: 8px;
-                                flex: 1 0 0;
-                            }
+  /* ขยาย Status */
+  th:nth-child(10) {
+    width: 10% !important;
+  }
 
-                                    .iconรอง{
-                                        display: flex;
-                                        width: 24px;
-                                        height: 24px;
-                                        flex-direction: column;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 10px;
-                                    } 
+  /* ขยาย Rating */
+  th:nth-child(11) {
+    width: 15% !important;
+  }
 
-                                      .ขนาดภาพ1{
-                                        width: 20px;
-                                        height: 14px;
-                                        flex-shrink: 0;
-                                        fill: var(--surface-heavy-contrast, #0F0E0A);
+  /* ขยาย Comment */
 
-                                        
-                                      } 
+  th:nth-child(8),
+  td:nth-child(8),
+  th:nth-child(7),
+  td:nth-child(7) {
+    display: none;
+  }
 
+  .Lineup {
+    margin-right: -230px;
+  }
 
+  .ButtonView {
+    margin-right: 178px;
+  }
+}
 
+/*********** สำหรับจอ 600px ********/
+@media (min-width:600px) and (max-width:759px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
 
-                                      
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
 
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
 
+  .ข้อมความหัว {
+    font-size: var(--large-64px, 25px);
+  }
 
+  th:nth-child(1) {
+    width: 8% !important;
+  }
 
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 4% !important;
+  }
 
-                        
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 5% !important;
+  }
 
-                                      .iconlogout{
+  /* ขยาย Job */
+  th:nth-child(5) {
+    width: 5% !important;
+  }
 
-                                        display: flex;
-                                        padding-left: var(--large-40px, 40px);
-                                        align-items: center;
-                                        align-self: stretch;
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 8px;
-                                        flex: 1 0 0;
-                                      }
+  /* ขยาย Stay */
+  th:nth-child(6) {
+    width: 5% !important;
+  }
 
-            
+  /* ขยาย Move-out */
+  th:nth-child(9) {
+    width: 6% !important;
+  }
 
+  /* ขยาย Status */
+  th:nth-child(10) {
+    width: 5% !important;
+  }
 
+  /* ขยาย Rating */
+  th:nth-child(11) {
+    width: 8% !important;
+  }
 
-.คุมพื้นที่หน้าจอ{
+  /* ขยาย Comment */
 
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                flex: 1 0 0;
-              align-self: stretch;
-     }
+  th:nth-child(8),
+  td:nth-child(8),
+  th:nth-child(7),
+  td:nth-child(7),
+  th:nth-child(4),
+  td:nth-child(4) {
+    display: none;
+  }
 
+  .message {
+    height: 28px;
+    width: 75px;
+    font-size: var(--medium-16px, 8px);
+  }
 
-           .Admin-top_ribbon{
+  .inpu {
+    padding: 0px;
+  }
 
-                            display: flex;
-                            padding: var(--large-32px, 32px) var(--medium-16px, 16px) var(--medium-24px, 24px) var(--medium-16px, 16px);
-                            justify-content: space-between;
-                            align-items: center;
-                            align-self: stretch;
-                            background: var(--surface-primary, #FBFBF9);
-                            box-shadow: 0px 4px var(--medium-16px, 16px) 0px rgba(15, 14, 10, 0.10);
+  .Lineup {
+    gap: var(--medium-20px, 10px)
+  }
 
-                            position: sticky; /* ใช้ position: sticky */
-                            top: 0; /* ติดอยู่ด้านบนของหน้าจอ */
-                            z-index: 1000; /* เพื่อให้ navbar อยู่ด้านบน */
-              }
+  .ButtonView {
+    width: 87px;
+    height: 36px;
+  }
 
-                 .ข้อมความหัว{
+  .Button1 {
+    height: 30px;
+    width: 61px;
+  }
 
-                            color: var(--text-primary, #0F0E0A);
-                            font-feature-settings: 'liga' off;
-                            
-                            /* Heading 1/Regular */
-                            font-family: "Supreme Variable";
-                            font-size: var(--large-64px, 64px);
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 110%; /* 70.4px */
-                            letter-spacing: -1.28px;
-                      }
+  .Button {
+    font-size: 8px;
+  }
 
-                        
+  .containersbuilding {
+    right: 0px;
+  }
 
-                      .divAdmin{
-                        display: flex;
-                        padding: var(--large-32px, 32px);
-                        flex-direction: column;
-                        align-items: flex-end;
-                        gap: var(--medium-12px, 12px);
-                        align-self: stretch;
-                      }
+}
 
+/*********** สำหรับจอ 480px ********/
+@media (min-width:480px) and (max-width:599px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
 
-                      .Button{
-                        display: flex;
-                        padding: 10px 20px  ;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        align-self: stretch;
-                        
-                        
-                      
-                        border-radius: var(--medium-12px, 12px);
-                        border: 1px solid var(--border-primary, #0f0e0a);
-                        background: var(--button-minimal, #80a4ff);
-                      }
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
 
-                      .text{
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
 
-                        color: #000;
-                        font-feature-settings: 'liga' off;
-                        
-                        align-self: stretch;
-                        /* Heading 2/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--large-48px, 48px);
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 110%; /* 52.8px */
-                        letter-spacing: -0.48px;
-                      }
+  .ข้อมความหัว {
+    font-size: var(--large-64px, 25px);
+  }
 
-                      .containersbuilding {
-                        position: relative;
-                        top: 15px;
-                        right: 200px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                      
-                      
-                      }
+  th:nth-child(1) {
+    width: 10% !important;
+  }
 
-                      .Lineup {
-                        display: flex;
-                        padding: var(--small-6px, 6px);
-                        align-items: center;
-                        gap: var(--medium-20px, 10px);
-                      }
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 5% !important;
+  }
 
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 10% !important;
+  }
 
-                      .text1{
+  /* ขยาย Job */
+  th:nth-child(9) {
+    width: 6% !important;
+  }
 
-                        color: #000;
-                        font-feature-settings: 'liga' off;
-                        
-                        /* Body/Emphasized */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-                      }
-      
-                      .text2{
-                        flex: 1 0 0;
-                        color: #000;
-                        font-feature-settings: 'liga' off;
-                        
-                        /* Body/Regular */
-                        font-family: "Supreme Variable";
-                        font-size: var(--medium-16px, 16px);
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%; /* 24px */
-                        letter-spacing: 0.32px;
-      
-                        
-                      }
+  /* ขยาย Status */
 
-                      .input { 
-                       
-                        padding: 10px 30px;
-                       
-                        
-                        border-radius: var(--medium-12px);  /* ขอบโค้ง */
-                        border: 10px solid var(--border-primary);  /* ขอบของกล่อง */
-                        
-                    
-                        
-                        box-sizing: border-box; /* ทำให้ขนาดกล่องไม่รวมขอบและการ padding */
-                    }
-                    
-                    .inpu { 
-                       
-                      padding: 10px 30px;
-                     
-                      
-                  }
-                  
+  th:nth-child(8),
+  td:nth-child(8),
+  th:nth-child(7),
+  td:nth-child(7),
+  th:nth-child(4),
+  td:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(10),
+  td:nth-child(10),
+  th:nth-child(11),
+  td:nth-child(11) {
+    display: none;
+  }
+
+  .containersbuilding {
+    right: -22px;
+  }
+
+  .divAdmin {
+    margin-right: 90px;
+  }
+
+  .inpu {
+    width: 100px;
+    padding: 0px;
+  }
+
+  .message {
+    margin-top: -9px;
+    height: 11px;
+    width: 69px;
+    font-size: var(--medium-16px, 8px);
+  }
+
+  .Button1 {
+    height: 35px;
+    width: 57px;
+  }
+
+  .ButtonView {
+    margin-left: -35px;
+    width: 87px;
+    height: 36px;
+  }
+
+  .Lineup {
+    gap: var(--medium-20px, 3px)
+  }
+
+  .Button {
+    font-size: 8px;
+  }
+}
+
+/*********** สำหรับจอ 320px ********/
+@media (min-width:320px) and (max-width:479px) {
+  .Admin-verticle-navigation {
+    width: 6rem !important;
+  }
+
+  .menuAdmin {
+    margin-left: -2rem !important;
+  }
+
+  .Admin-top_ribbon {
+    height: 5rem !important;
+  }
+
+  .ข้อมความหัว {
+    font-size: var(--large-64px, 25px);
+  }
+
+  th:nth-child(1) {
+    width: 15% !important;
+  }
+
+  /* ขยาย Username ให้ใหญ่ขึ้น */
+  th:nth-child(2) {
+    width: 7% !important;
+  }
+
+  /* ขยาย Age */
+  th:nth-child(3) {
+    width: 15% !important;
+  }
+
+  /* ขยาย Job */
+  th:nth-child(9) {
+    width: 10% !important;
+  }
+
+  /* ขยาย Status */
+
+  th:nth-child(8),
+  td:nth-child(8),
+  th:nth-child(7),
+  td:nth-child(7),
+  th:nth-child(4),
+  td:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(6),
+  td:nth-child(6),
+  th:nth-child(5),
+  td:nth-child(5),
+  th:nth-child(10),
+  td:nth-child(10),
+  th:nth-child(11),
+  td:nth-child(11) {
+    display: none;
+  }
+
+  .containersbuilding {
+    right: -22px;
+  }
+
+  .divAdmin {
+    margin-right: 70px;
+  }
+
+  .inpu {
+    width: 83px;
+    padding: 0px;
+  }
+
+  .message {
+    margin-top: -9px;
+    height: 11px;
+    width: 69px;
+    font-size: var(--medium-16px, 8px);
+  }
+
+  .Button1 {
+    height: 35px;
+    width: 57px;
+  }
+
+  .ButtonView {
+    margin-left: -105px;
+    width: 87px;
+    height: 36px;
+  }
+
+  .Lineup {
+    gap: var(--medium-20px, 3px)
+  }
+
+  th {
+    font-size: 9px;
+  }
+
+  td {
+    font-size: 8px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .form-control {
+    height: 20px;
+    width: 40px;
+  }
+
+  .Button {
+    font-size: 8px;
+    height: 33px;
+    width: 82px;
+  }
+
+}

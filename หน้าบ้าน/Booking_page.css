@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E2EDD2;
+    margin: 0;
+    padding: 0;
+}
+
+.divB {
+    display: flex;
+    padding: 48px var(--large-48px, 48px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--large-32px, 32px);
+    align-self: stretch;
+}
+
+.textBooking {
+
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Heading 1/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--large-64px, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 70.4px */
+    letter-spacing: -1.28px;
+}
+
+
+.flex-row-divB {
+    display: flex;
+    padding: var(--medium-16px, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--medium-16px, 16px);
+    align-self: stretch;
+
+    border-radius: var(--medium-16px, 16px);
+    background: var(--surface-mild-contrast, #C0C0BE);
+
+}
+
+.flex-row-divtextBin {
+
+    display: flex;
+    align-items: flex-start;
+    gap: var(--large-32px, 32px);
+}
+
+.Roomtext {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.textmain {
+
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Heading 3/Regular */
+    font-family: "Supreme Variable";
+    font-size: var(--large-32px, 32px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    /* 35.2px */
+
+}
+
+.AC {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+
+.flex-row-div-data {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+
+
+}
+
+
+.flex-column-divimg {
+
+    display: flex;
+    min-width: 640px;
+    max-width: 760px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.imgmain {
+    height: 443px;
+    align-self: stretch;
+
+    border-radius: var(--medium-16px, 16px);
+    border: 1px solid var(--border-primary, #0F0E0A);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.flex-div-row-imgs {
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: var(--small-8px, 2px);
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.imgs {
+
+    height: 136.8px;
+    min-width: 120px;
+    max-width: 200px;
+    min-height: 120px;
+    max-height: 200px;
+    flex: 1 0 0;
+    aspect-ratio: 136.80/136.80;
+
+    border-radius: var(--medium-16px, 16px);
+    border: 1px solid var(--border-primary, #0F0E0A);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.dataroom {
+
+    display: flex;
+    max-width: 420px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+
+
+.Label {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--small-8px, 8px);
+    align-self: stretch;
+
+    border-radius: var(--medium-16px, 16px);
+}
+
+.Frame50data {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+
+.texttext {
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Body/Emphasized */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+.texts {
+
+    flex: 1 0 0;
+
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* ย่อหน้า/ธรรมดา */
+    font-family: "IBM Plex Sans Thai Looped";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+.Button {
+
+
+    display: flex;
+    padding: 12px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    border-radius: var(--medium-12px, 12px);
+    background: var(--button-brand-primary, #9F936F);
+}
+
+
+.textButton {
+    color: var(--text-primary, #0F0E0A);
+    font-feature-settings: 'liga' off;
+
+    /* Body/Emphasized */
+    font-family: "Supreme Variable";
+    font-size: var(--medium-16px, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.32px;
+}
+
+
+
+.thumbnail {
+    width: 150px;
+
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* สไตล์สำหรับป๊อปอัป */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup img {
+    max-width: 90%;
+    /* เปลี่ยนเป็น 100% เพื่อให้ขยายเต็มหน้าจอ */
+    max-height: 90%;
+    /* เปลี่ยนเป็น 100% เพื่อให้ขยายเต็มความสูง */
+    width: auto;
+    /* ควบคุมการย่อขนาดรูปเพื่อรักษาสัดส่วน */
+    height: auto;
+    /* ควบคุมการย่อขนาดรูปเพื่อรักษาสัดส่วน */
+    border: 2px solid #fff;
+    /* เพิ่มกรอบ */
+    border-radius: 10px;
+    /* มุมโค้งมน */
+}
+
+.popup:target {
+    display: flex;
+}
+
+/* ปุ่มปิด */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+
+}

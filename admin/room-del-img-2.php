@@ -33,7 +33,7 @@ if ($row) {
             Room_img5 = NULL, 
             Room_img6 = NULL 
         WHERE Id_Room = $ID";
-$result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error());
+    $result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error());
 
     if ($result) {
         echo "<script type='text/javascript'>";
@@ -52,4 +52,3 @@ $result = mysqli_query($con, $sql) or die("Error in query: $sql " . mysqli_error
 }
 
 mysqli_close($con);
-?>
