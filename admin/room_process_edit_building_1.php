@@ -25,14 +25,23 @@ $image_urls = array_fill(0, 7, '');
 foreach ($_FILES["Room_img"]["name"] as $key => $name) {
     $upload = $_FILES["Room_img"]["name"][$key];
     if ($upload != '') {
+        // ถ้ามีการอัปโหลดรูปใหม่
         $path = "../Room_img/";
         $type = strrchr($_FILES["Room_img"]["name"][$key], ".");
         $newname = $numrand . $date1 . $key . $type;
         $path_copy = $path . $newname;
         $path_link = "../Room_img/" . $newname;
+
+        // ลบรูปเก่าหากมี
+        if ($_POST["Room_img0"][$key] != '' && file_exists("../Room_img/" . $_POST["Room_img0"][$key])) {
+            unlink("../Room_img/" . $_POST["Room_img0"][$key]);
+        }
+
+        // อัปโหลดรูปใหม่
         move_uploaded_file($_FILES["Room_img"]["tmp_name"][$key], $path_copy);
         $image_urls[$key] = $newname; // บันทึกชื่อรูปภาพลงใน array
     } else {
+        // ถ้าไม่มีการอัปโหลดรูปใหม่ ใช้รูปเดิม
         $image_urls[$key] = $_POST["Room_img0"][$key];
     }
 }
@@ -86,3 +95,4 @@ if ($row_check > 0) {
         echo '</script>';
     }
 }
+?>

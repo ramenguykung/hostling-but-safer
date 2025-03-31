@@ -8,7 +8,7 @@ include("../condb.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+    <title>BC House</title> <link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
     <link href="../หน้าบ้าน/logout.css?v=1.0" rel="stylesheet">
     <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
     <link href="../หน้าบ้าน/Edit-Profile.css?v=1.0" rel="stylesheet">
@@ -18,7 +18,7 @@ include("../condb.php");
     <?php include('navbarnew.php'); ?>
     <img class="Account" src="../user_img/<?php echo $rowuser['user_img']; ?>" width="100px" height="100px">
 
-    <form name="register" action="fileEditProfile.php" method="POST" enctype="multipart/form-data" class="form-horizontal" id="signupForm" id="signupForm" onsubmit="handleSubmit(event)">
+    <form name="register" action="fileEditProfile.php" method="POST" enctype="multipart/form-data" class="form-horizontal" id="signupForm"  onsubmit="handleSubmit(event)">
         <div class="container-2">
             <div class="nt">
                 <a>Name</a><input name="Name" id="Name" class="input1" type="text" value="<?php echo $rowuser['user_name']; ?>" required>

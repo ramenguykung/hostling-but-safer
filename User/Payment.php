@@ -21,7 +21,7 @@ if (!isset($_POST['ID']) || empty($_POST['ID'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>BC House</title> 
     <link href="../หน้าบ้าน/User_Payment.css" rel="stylesheet">
 </head>
 

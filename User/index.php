@@ -5,6 +5,8 @@ include("../condb.php");
 <!DOCTYPE html>
 
 <head>
+<title>BC House</title> 
+<link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +15,7 @@ include("../condb.php");
   <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" > 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script> -->
-  <title>BC House</title>
+
   <link href="../หน้าบ้าน/logout.css?v=1.0" rel="stylesheet">
   <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
   <link href="../หน้าบ้าน/Rent-building-select.css?v=1.0" rel="stylesheet">

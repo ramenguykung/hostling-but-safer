@@ -8,7 +8,7 @@ include("../condb.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <title>BC House</title> <link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
     <link href="../หน้าบ้าน/Feedback-write.css?v=1.0" rel="stylesheet">
 </head>
 

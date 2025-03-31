@@ -5,11 +5,11 @@ include("../condb.php");
 <!DOCTYPE html>
 
 <head>
-
-    <meta charset="utf-8">
+    <title>BC House</title> 
+    <meta charset="utf-8"><link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+
     <link href="../หน้าบ้าน/logout.css?v=1.0" rel="stylesheet">
     <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
     <link href="../หน้าบ้าน/Profile.css?v=1.0" rel="stylesheet">

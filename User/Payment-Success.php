@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Success</title>
+    <title>BC House</title> <link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
     <link href="../หน้าบ้าน/Payment-Success.css" rel="stylesheet">
 
 </head>

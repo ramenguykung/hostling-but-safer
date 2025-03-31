@@ -6,6 +6,7 @@ include("../condb.php");
 
 <head>
     <!-- <title>Sidebar Example</title> -->
+    <title>BC House</title><link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
 
     <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
     <link href="../หน้าบ้าน/Contact.css?v=1.0" rel="stylesheet">

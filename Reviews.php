@@ -5,7 +5,7 @@ include("condb.php");
 <!DOCTYPE html>
 
 <head>
-  
+<title>BC House</title>
   <link href="./หน้าบ้าน/css/as.css?v=1.0" rel="stylesheet">
   <link href="./หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
   <link href="./หน้าบ้าน/feedback.css?v=1.0" rel="stylesheet">

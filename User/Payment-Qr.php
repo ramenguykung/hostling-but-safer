@@ -52,7 +52,7 @@ $baseRentAmountcash = 0;  // ไม่ต้องจ่ายอีกครั
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment QR</title>
+    <title>BC House</title> <link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
     <link href="../หน้าบ้าน/Payment-Qr.css" rel="stylesheet">
 
 </head>

@@ -3,14 +3,6 @@ session_start();
 echo '<meta charset="utf-8">';
 include('condb.php');
 
-// echo "<pre>";
-// print_r($_POST);
-// echo "</pre>";
-// exit();
-
-
-
-
 $m_level = 'User';
 $Name = mysqli_real_escape_string($con, $_POST["Name"]);
 $Surname = mysqli_real_escape_string($con, $_POST["Surname"]);
@@ -40,6 +32,7 @@ if ($upload != '') {
 	move_uploaded_file($_FILES['user_img']['tmp_name'], $path_copy);
 }
 
+
 $check = "
 		SELECT Email
 		FROM user
@@ -47,9 +40,6 @@ $check = "
 		";
 $result1 = mysqli_query($con, $check) or die(mysqli_error());
 $num = mysqli_num_rows($result1);
-
-
-
 $check_phone = "
 SELECT Phone
 FROM user
@@ -71,43 +61,15 @@ if ($num_phone > 0) {
 	echo '</script>';
 } else {
 
-
-	$sql = "INSERT INTO user
-	(
-	m_level,
-	user_name,
-	Surname,
-	Age,
-	Job,
-	Card_Address,
-	Phone,
-	Gender,
-	Email,
-	user_password,
-	user_Day,
-	user_Month,
-	user_Year,
-	user_img
-
-	)
-	VALUES
-	(
-	'$m_level',
-	'$Name',
-	'$Surname',
-	'$Age',
-	'$Job',
-	'$address',
-	'$Phone',
-	'$Gender',
-	'$Email',
-	'$Password',
-	'$Day',
-	'$Month',
-	'$Year',
-	'$newname'
-
-
+	$sql = "INSERT INTO user (
+		m_level, user_name, Surname, Age, Job,
+		Card_Address, Phone, Gender, Email, 
+		user_password, user_Day, user_Month, 
+		user_Year, user_img
+	) VALUES (
+		'$m_level', '$Name', '$Surname', '$Age', '$Job',
+		'$address', '$Phone', '$Gender', '$Email',
+		'$Password', '$Day', '$Month', '$Year', '$newname'
 	)";
 }
 

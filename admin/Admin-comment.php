@@ -79,7 +79,7 @@
       </div>
       <div class="divAdmin">
         <?php
-        include('Feedbackเทส.php');
+        include('Feedback.php');
         ?>
       </div>
     </div>

@@ -21,10 +21,12 @@ $row12 = mysqli_fetch_array($resulttt);
 <!DOCTYPE html>
 
 <head>
+<title>BC House</title><link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
   <!-- <title>Sidebar Example</title> -->
   <link href="../หน้าบ้าน/logout.css?v=1.0" rel="stylesheet">
   <link href="../หน้าบ้าน/Home.css?v=1.0" rel="stylesheet">
   <link href="../หน้าบ้าน/feedback.css?v=1.0" rel="stylesheet">
+
 </head>
 
 <body>
@@ -45,7 +47,7 @@ $row12 = mysqli_fetch_array($resulttt);
         </button>
       </a>
     <?php } else { ?>
-      <div class="container1">
+      <div class="container">
         <p>You need to complete your booking before submitting a review.</p>
       </div>
     <?php } ?>

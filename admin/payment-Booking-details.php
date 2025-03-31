@@ -60,19 +60,32 @@ $row2 = mysqli_fetch_array($result_t);
 
 <div class="flex-column-div">
 <h class= "text1">Username:</h>
-<h class= "text2"><?php echo $row["user_name"]?> <?php echo $row["Surname"]?></h>
+<h class= "text2"><?php echo $row["user_name"]?> <?php echo $row["Surname"]?>  </h>
 </div>
 
+<div class="flex-column-div">
+<h class= "text1"> Gender:<h class= "text2"> <?php echo $row2["Gender"]?></h></h></h>
+</div>
 
 <div class="flex-column-div">
 <h class= "text1">Job:
 <h class= "text2"><?php echo $row2["Job"]?>  <h class= "text1">Age: <?php echo $row2["Age"]?></h></h>
 </div>
 
+
+
+<div class="flex-column-div">
+<h class= "text1">ฺBirthday:
+<h class= "text2"><?php echo $row2["user_Day"]?>  <h class= "text1"> <?php echo $row2["user_Month"]?></h> <h class= "text1"> <?php echo $row2["user_Year"]?></h></h>
+</div>
+
 <div class="flex-column-div">
 <h class= "text1">Contact information</h>
 </div>
 
+<div class="flex-column-div">
+<h class= "text1"> Address according to ID card:<h class= "text2"> <?php echo $row2["Card_Address"]?></h></h></h>
+</div>
 
 <div class="flex-column-div">
 <h class= "text1"> Email:<h class= "text2"> <?php echo $row2["Email"]?></h></h></h>

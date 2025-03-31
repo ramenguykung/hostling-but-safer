@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="../icon/LogoBC.png" type="image/x-icon">
+    <title>BC House</title> 
     <link href="../หน้าบ้าน/Feedback-write-success.css?v=1.0" rel="stylesheet">
 </head>
 

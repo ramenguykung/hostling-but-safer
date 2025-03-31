@@ -243,13 +243,11 @@ include("condb.php");
         function handleSubmit(event) {
             event.preventDefault();
             const phonenumber = document.getElementById('phonenumber').value;
-
-
             const Card_Address = document.getElementById('Card_Address').value;
             const Day = document.getElementById('Day').value;
             const Year = document.getElementById('Year').value;
             
-            const currentYear = new Date().getFullYear(); // ปีปัจจุบัน
+            const currentYear = new Date().getFullYear(); 
 
             const Age = document.getElementById('Age').value;
 
@@ -259,14 +257,10 @@ include("condb.php");
 
             const Surname = document.getElementById('Surname').value;
 
-
-
-
             const Email = document.getElementById('Email').value;
 
             const P = document.getElementById('Password').value;
             const CP = document.getElementById('Passwords').value;
-
 
 
             if (phonenumber.length !== 10 || !/^\d+$/.test(phonenumber)) {
@@ -275,11 +269,34 @@ include("condb.php");
 
                 return;
             }
-
             if (phonenumber === "0000000000") {
                 alert('The phone number is not allowed to be 0000000000.');
                 return;
             }
+
+             
+         
+
+
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(Email)) {
+                alert("Please enter a valid email address (e.g. user@example.com)");
+                return;
+            }
+
+
+            if (P.length < 6) {
+                alert('Password must contain at least 6 characters.');
+                return;
+            }
+
+            if (P != CP) {
+
+alert('Password do not match!');
+
+return;
+}
+
 
 
 
@@ -289,31 +306,15 @@ include("condb.php");
                 return;
             }
 
+          
 
-            if (P != CP) {
-
-
-                alert('Password do not match!');
-
-                return;
-
-
-            }
-
-
-            if (P.length < 6) {
-                alert('Password must contain at least 6 characters.');
-                return;
-            }
+           
 
             if (!/^\d{1,2}$/.test(Day)) {
 
                 alert('day must contain only numbers and be no longer than 2 digits.');
                 return;
             }
-
-
-
 
             if (!/^(0?[1-9]|[12][0-9]|3[01])$/.test(Day)) {
                 alert("Day must be a number between 1 and 31.");
@@ -324,6 +325,7 @@ include("condb.php");
                 alert("Year must contain only numbers and exactly 4 digits.");
                 return;
             }
+
 
 
             const validMonths = [
@@ -362,23 +364,8 @@ include("condb.php");
                 return;
             }
 
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (!emailPattern.test(Email)) {
-                alert("Please enter a valid email address (e.g. user@example.com)");
-                return;
-            }
-
-
-
-
-
-            // If no error, clear the error message
-
-
-
-
-
-
+           
+         // If no error, clear the error message
             event.target.submit();
         }
 

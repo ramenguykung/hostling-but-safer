@@ -62,7 +62,7 @@ $currentPassword = $user["user_password"];
                 <h2 class="textcontent">Please enter your desired new password!</h2>
                 <br>
                 <br>
-                <form name="register" action="reset-password-process" method="POST" enctype="multipart/form-data" class="form-horizontal" id="signupForm" onsubmit="handleSubmit(event)">
+                <form name="register" action="reset-password-process.php" method="POST" enctype="multipart/form-data" class="form-horizontal" id="signupForm" onsubmit="handleSubmit(event)">
                     <div class="ipg1">
                         <input name="Password" id="Password" class="input" type="password" placeholder="New Password" required>
                         <input name="ConfirmPassword" id="Passwords" class="input" type="password" placeholder="Confirm new password" required>
@@ -107,6 +107,13 @@ $currentPassword = $user["user_password"];
 
             if (P === currentPassword) {
                 alert("The new password can't be the same as the current password.");
+                return;
+            }
+
+            
+
+            if (P.length < 6) {
+                alert('Password must contain at least 6 characters.');
                 return;
             }
             event.target.submit();
